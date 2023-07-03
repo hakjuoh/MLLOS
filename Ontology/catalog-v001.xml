@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/mnd14/ml/" uri="ml_reworked_clean.rdf"/>
+    <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/mnd14/ml/" uri="ml_reworked.rdf"/>
+    <uri id="User Entered Import Resolution" name="https://purl.industrialontologies.org/ontology/core/Core/" uri="Core_k.rdf"/>
+    <uri id="Imports Wizard Entry" name="https://spec.industrialontologies.org/ontology/core/20221109/MappingCommonsToIOFCore/" uri="commons-to-core-mapping/MappingCommonsToIOF.rdf"/>
+    <uri id="Imports Wizard Entry" name="https://spec.industrialontologies.org/ontology/core/202202/Core/" uri="Core_k.rdf"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/bfo/2020/bfo.owl" uri="http://purl.obolibrary.org/obo/bfo/2020/bfo.owl"/>
+    <uri id="User Entered Import Resolution" name="https://purl.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/" uri="./meta/AnnotationVocabulary.rdf"/>
+</catalog>
