@@ -1,1 +1,1 @@
-# MLLOS (Machine Learning Lifecycle Ontology System)
+# MLLOS (Machine Learning Lifecycle Ontology and System)
