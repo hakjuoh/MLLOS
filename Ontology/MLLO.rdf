@@ -604,9 +604,9 @@ For a continuous random variable, a curve described by a mathematical formula wh
     
 
 
-    <!-- http://www.semanticweb.org/mnd14/ml/ArtificalNeuralNetwork -->
+    <!-- http://www.semanticweb.org/mnd14/ml/ArtificialNeuralNetwork -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/ArtificalNeuralNetwork">
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/ArtificialNeuralNetwork">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -627,7 +627,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <!-- http://www.semanticweb.org/mnd14/ml/ArtificialNeuralNetworkTrainingAlgorithm -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/ArtificialNeuralNetworkTrainingAlgorithm">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningTrainingAlgortihm"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningTrainingAlgorithm"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/prescribes"/>
@@ -643,7 +643,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
                                             <rdf:Description rdf:about="http://www.semanticweb.org/mnd14/ml/MachineLearningTraining"/>
                                             <owl:Restriction>
                                                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
-                                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/ArtificalNeuralNetwork"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/ArtificialNeuralNetwork"/>
                                             </owl:Restriction>
                                         </owl:intersectionOf>
                                     </owl:Class>
@@ -655,7 +655,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">artificial neural network training algorithm</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>machine learning algorithm that prescribes the training of an artifical neural network</AnnotationVocabulary:naturalLanguageDefinition>
+        <AnnotationVocabulary:naturalLanguageDefinition>machine learning algorithm that prescribes the training of an artificial neural network</AnnotationVocabulary:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -663,7 +663,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <!-- http://www.semanticweb.org/mnd14/ml/AssociationRuleLearningAlgorithm -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/AssociationRuleLearningAlgorithm">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningTrainingAlgortihm"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningTrainingAlgorithm"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/prescribes"/>
@@ -720,7 +720,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <!-- http://www.semanticweb.org/mnd14/ml/BayesianAlgorithm -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/BayesianAlgorithm">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningTrainingAlgortihm"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningTrainingAlgorithm"/>
         <rdfs:label xml:lang="en">bayesian algorithm</rdfs:label>
         <skos:example>training a neural network with a prior probability distribution for neural network weights; utilization of prior distribution for loss regularization</skos:example>
         <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">machine learning algorithm that prescribes how bayesian statistics is used in training a machine learning model</AnnotationVocabulary:naturalLanguageDefinition>
@@ -737,7 +737,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
                     <rdf:Description rdf:about="http://www.semanticweb.org/mnd14/ml/Feature"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/prescribedBy"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/ClasificationScheme"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/ClassificationScheme"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -750,9 +750,9 @@ For a continuous random variable, a curve described by a mathematical formula wh
     
 
 
-    <!-- http://www.semanticweb.org/mnd14/ml/ClasificationScheme -->
+    <!-- http://www.semanticweb.org/mnd14/ml/ClassificationScheme -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/ClasificationScheme">
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/ClassificationScheme">
         <rdfs:subClassOf rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/InformationContentEntity"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -803,7 +803,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <!-- http://www.semanticweb.org/mnd14/ml/ClusteringAlgorithm -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/ClusteringAlgorithm">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningTrainingAlgortihm"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningTrainingAlgorithm"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/prescribes"/>
@@ -977,7 +977,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
                             <rdf:Description rdf:about="https://purl.industrialontologies.org/ontology/core/Core/EncodedAlgorithm"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://www.semanticweb.org/mnd14/ml/isExecutedIn"/>
-                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/DataClearningOperation"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/DataCleaningOperation"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -1002,7 +1002,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
                             <rdf:Description rdf:about="http://www.semanticweb.org/mnd14/ml/DataCleaningPipeline"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/mnd14/ml/DataClearningOperation"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/mnd14/ml/DataCleaningOperation"/>
                         </owl:unionOf>
                     </owl:Class>
                 </owl:allValuesFrom>
@@ -1023,7 +1023,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
                     <rdf:Description rdf:about="http://www.semanticweb.org/mnd14/ml/DataProcessingPipeline"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/DataClearningOperation"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/DataCleaningOperation"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/mnd14/ml/hasDataInput"/>
@@ -1043,9 +1043,9 @@ For a continuous random variable, a curve described by a mathematical formula wh
     
 
 
-    <!-- http://www.semanticweb.org/mnd14/ml/DataClearningOperation -->
+    <!-- http://www.semanticweb.org/mnd14/ml/DataCleaningOperation -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/DataClearningOperation">
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/DataCleaningOperation">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -1099,7 +1099,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/mnd14/ml/DataClearningOperation"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mnd14/ml/DataCleaningOperation"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/mnd14/ml/executes"/>
                         <owl:someValuesFrom>
@@ -1117,7 +1117,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/DataClearningOperation"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/DataCleaningOperation"/>
         <rdfs:label>data imputation operation</rdfs:label>
         <AnnotationVocabulary:naturalLanguageDefinition>computing process in which missing values are replaced by some encoded data imputation algorithm</AnnotationVocabulary:naturalLanguageDefinition>
     </owl:Class>
@@ -1288,7 +1288,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <!-- http://www.semanticweb.org/mnd14/ml/DecisionTreeAlgorithm -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/DecisionTreeAlgorithm">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningTrainingAlgortihm"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningTrainingAlgorithm"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/prescribes"/>
@@ -1456,7 +1456,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <!-- http://www.semanticweb.org/mnd14/ml/DimensionalityReductionAlgorithm -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/DimensionalityReductionAlgorithm">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningTrainingAlgortihm"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningTrainingAlgorithm"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/prescribes"/>
@@ -1616,7 +1616,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
                     <rdf:Description rdf:about="https://purl.industrialontologies.org/ontology/core/Core/EncodedAlgorithm"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/prescribedBy"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningTrainingAlgortihm"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningTrainingAlgorithm"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1674,7 +1674,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <!-- http://www.semanticweb.org/mnd14/ml/EnsembleAlgorithm -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/EnsembleAlgorithm">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningTrainingAlgortihm"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningTrainingAlgorithm"/>
         <rdfs:label xml:lang="en">ensemble algorithm</rdfs:label>
         <AnnotationVocabulary:naturalLanguageDefinition>machine learning algorithm that prescribes how to combine elements of multiple machine learning models trained on the same task in order to achieve better performance</AnnotationVocabulary:naturalLanguageDefinition>
     </owl:Class>
@@ -2203,7 +2203,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <!-- http://www.semanticweb.org/mnd14/ml/Instance-basedAlgorithm -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/Instance-basedAlgorithm">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningTrainingAlgortihm"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningTrainingAlgorithm"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/prescribes"/>
@@ -2827,9 +2827,9 @@ For a continuous random variable, a curve described by a mathematical formula wh
     
 
 
-    <!-- http://www.semanticweb.org/mnd14/ml/MachineLearningTrainingAlgortihm -->
+    <!-- http://www.semanticweb.org/mnd14/ml/MachineLearningTrainingAlgorithm -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/MachineLearningTrainingAlgortihm">
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/MachineLearningTrainingAlgorithm">
         <rdfs:subClassOf rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/Algorithm"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -3269,7 +3269,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
                     <rdf:Description rdf:about="http://www.semanticweb.org/mnd14/ml/MachineLearningModelComponent"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000137"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/ArtificalNeuralNetwork"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/ArtificialNeuralNetwork"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/mnd14/ml/isComposedOf"/>
@@ -3312,13 +3312,13 @@ For a continuous random variable, a curve described by a mathematical formula wh
                         <owl:someValuesFrom>
                             <owl:Class>
                                 <owl:unionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://www.semanticweb.org/mnd14/ml/ArtificalNeuralNetwork"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/mnd14/ml/ArtificialNeuralNetwork"/>
                                     <owl:Class>
                                         <owl:intersectionOf rdf:parseType="Collection">
                                             <rdf:Description rdf:about="http://www.semanticweb.org/mnd14/ml/MachineLearningModelComponent"/>
                                             <owl:Restriction>
                                                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000137"/>
-                                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/ArtificalNeuralNetwork"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/ArtificialNeuralNetwork"/>
                                             </owl:Restriction>
                                         </owl:intersectionOf>
                                     </owl:Class>
@@ -3365,7 +3365,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <!-- http://www.semanticweb.org/mnd14/ml/NominalClassificationScheme -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/NominalClassificationScheme">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/ClasificationScheme"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/ClassificationScheme"/>
         <terms:description>classification scheme that prescribes values which do not have any implicit ordering relation between them</terms:description>
         <rdfs:label>nominal classification scheme</rdfs:label>
     </owl:Class>
@@ -3417,7 +3417,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <!-- http://www.semanticweb.org/mnd14/ml/OrdinalClassificationScheme -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/OrdinalClassificationScheme">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/ClasificationScheme"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/ClassificationScheme"/>
         <terms:description>classification scheme that prescribes values which have an implicit ordering relation between them</terms:description>
         <rdfs:label>ordinal classification scheme</rdfs:label>
     </owl:Class>
@@ -3546,7 +3546,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <!-- http://www.semanticweb.org/mnd14/ml/RegressionAlgorithm -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/RegressionAlgorithm">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningTrainingAlgortihm"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningTrainingAlgorithm"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/prescribes"/>
