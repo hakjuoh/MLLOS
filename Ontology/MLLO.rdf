@@ -1264,9 +1264,9 @@ For a continuous random variable, a curve described by a mathematical formula wh
     
 
 
-    <!-- http://www.semanticweb.org/mnd14/ml/Date-timeFeature -->
+    <!-- http://www.semanticweb.org/mnd14/ml/DateTimeFeature -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/Date-timeFeature">
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/DateTimeFeature">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -2200,9 +2200,9 @@ For a continuous random variable, a curve described by a mathematical formula wh
     
 
 
-    <!-- http://www.semanticweb.org/mnd14/ml/Instance-basedAlgorithm -->
+    <!-- http://www.semanticweb.org/mnd14/ml/InstanceBasedAlgorithm -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/Instance-basedAlgorithm">
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/InstanceBasedAlgorithm">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningTrainingAlgorithm"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2219,7 +2219,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
                                             <rdf:Description rdf:about="http://www.semanticweb.org/mnd14/ml/MachineLearningTraining"/>
                                             <owl:Restriction>
                                                 <owl:onProperty rdf:resource="https://purl.industrialontologies.org/ontology/core/Core/hasSpecifiedOutput"/>
-                                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/Instance-basedModel"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/InstanceBasedModel"/>
                                             </owl:Restriction>
                                         </owl:intersectionOf>
                                     </owl:Class>
@@ -2237,9 +2237,9 @@ For a continuous random variable, a curve described by a mathematical formula wh
     
 
 
-    <!-- http://www.semanticweb.org/mnd14/ml/Instance-basedModel -->
+    <!-- http://www.semanticweb.org/mnd14/ml/InstanceBasedModel -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/Instance-basedModel">
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/InstanceBasedModel">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningModel"/>
         <rdfs:subClassOf>
             <owl:Restriction>
