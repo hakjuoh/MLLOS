@@ -929,7 +929,7 @@
         <obo:BFO_0000059 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#dssa1"/>
         <obo:BFO_0000059 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#sns1"/>
         <obo:BFO_0000059 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#tss1"/>
-        <obo:BFO_0000063 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#MLDp1"/>
+        <obo:BFO_0000062 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#MLDp1"/>
         <ml:hasDataInput rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#Mld1"/>
         <ml:hasDataOutput rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#trd1"/>
         <ml:hasDataOutput rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#vd1"/>
