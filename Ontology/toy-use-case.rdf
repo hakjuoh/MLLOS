@@ -788,6 +788,20 @@
     
 
 
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#MlDevpipeline -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#MlDevpipeline">
+        <rdf:type rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/PlannedProcess"/>
+        <obo:BFO_0000117 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#MLDp1"/>
+        <obo:BFO_0000117 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#dssp1"/>
+        <obo:BFO_0000117 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#me1"/>
+        <obo:BFO_0000117 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#mex1"/>
+        <obo:BFO_0000117 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#mlt1"/>
+        <Core:hasSpecifiedOutput rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#ConvNet1"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/mnd14/ml/usecase#Mld1 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#Mld1">
@@ -921,9 +935,17 @@
     
 
 
-    <!-- http://www.semanticweb.org/mnd14/ml/usecase#dss1 -->
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#dssa1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#dss1">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#dssa1">
+        <rdf:type rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/EncodedAlgorithm"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#dssp1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#dssp1">
         <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningDataSetPartitioning"/>
         <obo:BFO_0000059 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#dssa1"/>
         <obo:BFO_0000059 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#sns1"/>
@@ -933,14 +955,6 @@
         <ml:hasDataOutput rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#vd1"/>
         <Core:meets rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#mlt1"/>
         <Core:metBy rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#MLDp1"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/mnd14/ml/usecase#dssa1 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#dssa1">
-        <rdf:type rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/EncodedAlgorithm"/>
     </owl:NamedIndividual>
     
 
