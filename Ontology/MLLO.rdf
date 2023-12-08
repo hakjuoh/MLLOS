@@ -427,7 +427,7 @@
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mnd14/ml/hasIndexValue">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/mnd14/ml/DataSetIndex"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mnd14/ml/Index"/>
         <rdfs:label>has index value</rdfs:label>
     </owl:DatatypeProperty>
     
