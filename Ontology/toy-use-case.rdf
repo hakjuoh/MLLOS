@@ -1,0 +1,1630 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/milos/ontologies/2023/11/untitled-ontology-293#"
+     xml:base="http://www.semanticweb.org/milos/ontologies/2023/11/untitled-ontology-293"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ml="http://www.semanticweb.org/mnd14/ml/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:Core="https://spec.industrialontologies.org/ontology/core/Core/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:usecase="http://www.semanticweb.org/mnd14/ml/usecase#"
+     xmlns:AnnotationVocabulary="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/"
+     xmlns:AnnotationVocabulary1="https://purl.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/mnd14/ml/usecase">
+        <owl:imports rdf:resource="http://www.semanticweb.org/mnd14/ml/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/configurationVariableOf -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/mnd14/ml/configurationVariableOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/hasConfigurationVariable -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/mnd14/ml/hasConfigurationVariable">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#frameworkDevelopedFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#frameworkDevelopedFor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningFramework"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/IAO_0000025"/>
+        <rdfs:label>framework developed for</rdfs:label>
+        <AnnotationVocabulary1:naturalLanguageDefinition>relation between a machine learning framework and a programming language which the framework was developed to be used for</AnnotationVocabulary1:naturalLanguageDefinition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#hasConfigurationSettingValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#hasConfigurationSettingValue">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:label>has configuration setting value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#specifiesDataType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#specifiesDataType">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:label>specifies data type</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#specifiesDimensionNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#specifiesDimensionNumber">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:label>specifies dimension number</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#specifiesDimensionShape -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#specifiesDimensionShape">
+        <rdfs:label>specifies dimension shape</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#specifiesMathematicalFormula -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#specifiesMathematicalFormula">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:label>specifies mathematical formula</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#supportsVersions -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#supportsVersions">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:label>supports versions</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#AccuracyPerformanceMetric -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#AccuracyPerformanceMetric">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/PerformanceMetric"/>
+        <rdfs:label>accuracy performance metric</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#AveragePoolingLayer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#AveragePoolingLayer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#PoolingLayer"/>
+        <rdfs:label>average pooling layer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#BatchSize -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#BatchSize">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/Hyperparameter"/>
+        <rdfs:label>batch size</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#CategoricalCrossEntropy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#CategoricalCrossEntropy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/LossFunction"/>
+        <rdfs:label>categorical cross entropy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#ConvolutionalLayer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#ConvolutionalLayer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/NeuralNetworkLayer"/>
+        <rdfs:label>convolutional layer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#ConvolutionalNeuralNetwork -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#ConvolutionalNeuralNetwork">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mnd14/ml/ArtificialNeuralNetwork"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000110"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#InputDimensionRequirement"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#specifiesDimensionNumber"/>
+                                        <owl:someValuesFrom>
+                                            <rdfs:Datatype>
+                                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                                                <owl:withRestrictions rdf:parseType="Collection">
+                                                    <rdf:Description>
+                                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</xsd:minInclusive>
+                                                    </rdf:Description>
+                                                </owl:withRestrictions>
+                                            </rdfs:Datatype>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mnd14/ml/isComposedOf"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#ConvolutionalLayer"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/ArtificialNeuralNetwork"/>
+        <rdfs:label>convolutional neural network</rdfs:label>
+        <AnnotationVocabulary1:naturalLanguageDefinition>artificial neural network that is composed primairly of convolutional  layers and that requires input that have dimensions of at least two</AnnotationVocabulary1:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#DataProcessingAlgorithm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#DataProcessingAlgorithm">
+        <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/Algorithm"/>
+        <rdfs:label>data processing algorithm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#EncodedDataProcessingAlgorithm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#EncodedDataProcessingAlgorithm">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://spec.industrialontologies.org/ontology/core/Core/EncodedAlgorithm"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#DataProcessingAlgorithm"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/EncodedAlgorithm"/>
+        <rdfs:label>encoded data processing algorithm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#EpochNumber -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#EpochNumber">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/Hyperparameter"/>
+        <rdfs:label>epoch number</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#FeatureScalingOperation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#FeatureScalingOperation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/FeatureEngineeringTransformation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mnd14/ml/hasDataOutput"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#ScaledFeature"/>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/mnd14/ml/DerivedFeatureVector"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mnd14/ml/isComposedOf"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#ScaledFeature"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>feature scaling operation</rdfs:label>
+        <AnnotationVocabulary1:naturalLanguageDefinition>feature engineering transformation that produced scaled features as its output</AnnotationVocabulary1:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#FilterNumber -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#FilterNumber">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#NeuronNumber"/>
+        <rdfs:label>filter number</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#FlatteningFunction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#FlatteningFunction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningModelComponent"/>
+        <rdfs:label>flattening function</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#FullyConnectedLayer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#FullyConnectedLayer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/NeuralNetworkLayer"/>
+        <rdfs:label>fully connected layer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#ImageReshapingOperation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#ImageReshapingOperation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/DataProcessingOperation"/>
+        <rdfs:label>image reshaping operation</rdfs:label>
+        <AnnotationVocabulary1:naturalLanguageDefinition>data processing operation that changes the dimensions of one or more images</AnnotationVocabulary1:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#InputDimensionRequirement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#InputDimensionRequirement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelInputRequirementSpecification"/>
+        <rdfs:label>input dimension requirement</rdfs:label>
+        <AnnotationVocabulary1:naturalLanguageDefinition>model input requirement that specifies the required number of dimensions that the individual machine learning model input must have</AnnotationVocabulary1:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#Keras -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#Keras">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningFramework"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#frameworkDevelopedFor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#PythonProgrammingLanguage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Keras</rdfs:label>
+        <AnnotationVocabulary1:adaptedFrom>https://en.wikipedia.org/wiki/Keras</AnnotationVocabulary1:adaptedFrom>
+        <AnnotationVocabulary1:naturalLanguageDefinition>machine learning framework developed for python that serves as an interface for other artificial neural network machine learning frameworks</AnnotationVocabulary1:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#KernelSize -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#KernelSize">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#NeuralNetworkConfigurationVariable"/>
+        <rdfs:label>kernel size</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#LayerPadding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#LayerPadding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#NeuralNetworkConfigurationVariable"/>
+        <rdfs:label>layer padding</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#LayerStride -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#LayerStride">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#NeuralNetworkConfigurationVariable"/>
+        <rdfs:label>layer stride</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#LearningRate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#LearningRate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#OptimizationAlgorithmConfigurationVariable"/>
+        <rdfs:label>learning rate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#NeuralNetworkConfigurationVariable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#NeuralNetworkConfigurationVariable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/ConfigurationVariable"/>
+        <rdfs:label>neural network configuration variable</rdfs:label>
+        <AnnotationVocabulary1:naturalLanguageDefinition>configuration variable of a neural network or its component</AnnotationVocabulary1:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#NeuronNumber -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#NeuronNumber">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#NeuralNetworkConfigurationVariable"/>
+        <rdfs:label>neuron number</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#OptimizationAlgorithmConfigurationVariable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#OptimizationAlgorithmConfigurationVariable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/Hyperparameter"/>
+        <rdfs:label>optimization algorithm configuration variable</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#PoolingLayer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#PoolingLayer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/NeuralNetworkLayer"/>
+        <rdfs:label>pooling layer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#PoolingSize -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#PoolingSize">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#NeuralNetworkConfigurationVariable"/>
+        <rdfs:label>pooling size</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#PythonProgrammingLanguage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#PythonProgrammingLanguage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#ScriptingLanguage"/>
+        <rdfs:label>python programming language</rdfs:label>
+        <AnnotationVocabulary1:adaptedFrom>https://en.wikipedia.org/wiki/Python_(programming_language)</AnnotationVocabulary1:adaptedFrom>
+        <AnnotationVocabulary1:naturalLanguageDefinition>scripting programming language that is high-level, general-purpose dynamically typed and garbage-collected</AnnotationVocabulary1:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#RectifiedLinearUnitActivationFunction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#RectifiedLinearUnitActivationFunction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/ActivationFunction"/>
+        <rdfs:label>rectified linear unit activation function</rdfs:label>
+        <AnnotationVocabulary:abbreviation>ReLu</AnnotationVocabulary:abbreviation>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#ScaledFeature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#ScaledFeature">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mnd14/ml/DerivedFeature"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mnd14/ml/dataOutputOf"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#FeatureScalingOperation"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/DerivedFeature"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mnd14/ml/informationContentEntityDerivedFrom"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/NumericalFeature"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>scaled feature</rdfs:label>
+        <AnnotationVocabulary1:naturalLanguageDefinition>derived feature that was generated by scaling values of the feature to a particular range</AnnotationVocabulary1:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#ScikitLearn -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#ScikitLearn">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningFramework"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#frameworkDevelopedFor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#PythonProgrammingLanguage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>scikit-learn</rdfs:label>
+        <AnnotationVocabulary1:naturalLanguageDefinition>machine learning framework developed in python and built upon numpy, scipy and matplotlib</AnnotationVocabulary1:naturalLanguageDefinition>
+        <AnnotationVocabulary:abbreviation>sklearn</AnnotationVocabulary:abbreviation>
+        <AnnotationVocabulary:adaptedFrom>https://scikit-learn.org/stable/</AnnotationVocabulary:adaptedFrom>
+        <AnnotationVocabulary:explanatoryNote>the scikit-learn library is primariy used for more &quot;traditional&quot; (simpler) machine learning. It is not optimized to be used as a deep learning framework for which some other alternatives should be used</AnnotationVocabulary:explanatoryNote>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#ScriptingLanguage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#ScriptingLanguage">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000025"/>
+        <rdfs:label>scripting language</rdfs:label>
+        <AnnotationVocabulary1:naturalLanguageDefinition>programming language that is interpreted at runtime</AnnotationVocabulary1:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#SeedNumber -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#SeedNumber">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/ConfigurationVariable"/>
+        <rdfs:label>seed number</rdfs:label>
+        <skos:altLabel>random state</skos:altLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#SoftmaxActivationFunction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#SoftmaxActivationFunction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/ActivationFunction"/>
+        <rdfs:label>softmax activation function</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#TargetVariableTransformation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#TargetVariableTransformation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/DataProcessingOperation"/>
+        <rdfs:label>target variable transformation</rdfs:label>
+        <AnnotationVocabulary1:naturalLanguageDefinition>data processing operation that changes the representation or value of a target variable</AnnotationVocabulary1:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#TargetVariableTransformationAlgorithm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#TargetVariableTransformationAlgorithm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#DataProcessingAlgorithm"/>
+        <rdfs:label>target variable transformation algorithm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#TensorFLowPython -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#TensorFLowPython">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#TensorFlow"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#frameworkDevelopedFor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#PythonProgrammingLanguage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>TensorFlow Python</rdfs:label>
+        <AnnotationVocabulary1:naturalLanguageDefinition>tensor flow developed for python</AnnotationVocabulary1:naturalLanguageDefinition>
+        <AnnotationVocabulary:adaptedFrom>https://www.tensorflow.org/</AnnotationVocabulary:adaptedFrom>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#TensorFlow -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#TensorFlow">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningFramework"/>
+        <rdfs:label>TensorFlow</rdfs:label>
+        <AnnotationVocabulary1:naturalLanguageDefinition>machine learning framework created by google that is used for developing artificial neural networks</AnnotationVocabulary1:naturalLanguageDefinition>
+        <AnnotationVocabulary:adaptedFrom>https://en.wikipedia.org/wiki/TensorFlow</AnnotationVocabulary:adaptedFrom>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#TestSize -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#TestSize">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/Hyperparameter"/>
+        <rdfs:label>test size</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#TypeCastingOperation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#TypeCastingOperation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/DataProcessingOperation"/>
+        <rdfs:label>type casting operation</rdfs:label>
+        <AnnotationVocabulary1:naturalLanguageDefinition>data processing operation that casts the values of all the inputs to a particular datatype</AnnotationVocabulary1:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#CL1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#CL1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#ConvolutionalLayer"/>
+        <obo:BFO_0000178 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#reLU1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#CL2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#CL2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#ConvolutionalLayer"/>
+        <obo:BFO_0000178 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#reLU1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#CL3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#CL3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#ConvolutionalLayer"/>
+        <obo:BFO_0000178 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#reLU1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#ConfPs1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#ConfPs1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ConfigurationVariableSettingSet"/>
+        <obo:BFO_0000110 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#Kss1"/>
+        <obo:BFO_0000110 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#Kss2"/>
+        <obo:BFO_0000110 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#Kss3"/>
+        <obo:BFO_0000110 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#fns1"/>
+        <obo:BFO_0000110 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#fns2"/>
+        <obo:BFO_0000110 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#fns3"/>
+        <obo:BFO_0000110 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#lps1"/>
+        <obo:BFO_0000110 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#lps2"/>
+        <obo:BFO_0000110 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#lps3"/>
+        <obo:BFO_0000110 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#lps4"/>
+        <obo:BFO_0000110 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#lps5"/>
+        <obo:BFO_0000110 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#lss1"/>
+        <obo:BFO_0000110 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#lss2"/>
+        <obo:BFO_0000110 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#lss3"/>
+        <obo:BFO_0000110 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#lss4"/>
+        <obo:BFO_0000110 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#lss5"/>
+        <obo:BFO_0000110 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#nns1"/>
+        <obo:BFO_0000110 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#nns2"/>
+        <ml:isConfigurationSettingSetOfAtSomeTime rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#mps1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#ConvNet1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#ConvNet1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningModel"/>
+        <obo:BFO_0000110 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#ir1"/>
+        <obo:BFO_0000110 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#mps1"/>
+        <ml:isEncodedIn rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#Keras1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#DL1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#DL1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#FullyConnectedLayer"/>
+        <obo:BFO_0000178 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#reLU1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#DL2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#DL2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#FullyConnectedLayer"/>
+        <obo:BFO_0000178 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#softmax1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#FS1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#FS1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#FeatureScalingOperation"/>
+        <obo:BFO_0000059 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#fsf1"/>
+        <ml:executes rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#fsa1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#Ff1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#Ff1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#FlatteningFunction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#Keras1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#Keras1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#Keras"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#Ks1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#Ks1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#KernelSize"/>
+        <ml:configurationVariableOf rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#CL1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#Ks2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#Ks2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#KernelSize"/>
+        <ml:configurationVariableOf rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#CL2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#Ks3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#Ks3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#KernelSize"/>
+        <ml:configurationVariableOf rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#CL3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#Kss1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#Kss1">
+        <ml:isConfigurationSettingOfAtSomeTime rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#Ks1"/>
+        <usecase:hasConfigurationSettingValue>(5,5)</usecase:hasConfigurationSettingValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#Kss2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#Kss2">
+        <ml:isConfigurationSettingOfAtSomeTime rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#Ks2"/>
+        <usecase:hasConfigurationSettingValue>(5,5)</usecase:hasConfigurationSettingValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#Kss3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#Kss3">
+        <ml:isConfigurationSettingOfAtSomeTime rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#Ks3"/>
+        <usecase:hasConfigurationSettingValue>(5,5)</usecase:hasConfigurationSettingValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#MLDp1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#MLDp1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/DataProcessingPipeline"/>
+        <obo:BFO_0000117 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#FS1"/>
+        <obo:BFO_0000117 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#Tco1"/>
+        <obo:BFO_0000117 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#iro1"/>
+        <ml:hasDataInput rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#Rd1"/>
+        <ml:hasDataOutput rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#Mld1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#Mld1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#Mld1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningDataSet"/>
+        <ml:informationContentEntityDerivedFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#Rd1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#Mlta1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#Mlta1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/EncodedMachineLearningTrainingAlgorithm"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/Backpropagation"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000178 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#oa1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#PL1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#PL1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#AveragePoolingLayer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#PL2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#PL2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#AveragePoolingLayer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#Ps1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#Ps1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#PoolingSize"/>
+        <ml:configurationVariableOf rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#PL1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#Ps2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#Ps2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#PoolingSize"/>
+        <ml:configurationVariableOf rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#PL2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#Pss1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#Pss1">
+        <ml:isConfigurationSettingOfAtSomeTime rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#Ps1"/>
+        <usecase:hasConfigurationSettingValue>(2, 2)</usecase:hasConfigurationSettingValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#Pss2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#Pss2">
+        <ml:isConfigurationSettingOfAtSomeTime rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#Ps2"/>
+        <usecase:hasConfigurationSettingValue>(2, 2)</usecase:hasConfigurationSettingValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#Rd1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#Rd1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/RawDataSet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#Tca1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#Tca1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#EncodedDataProcessingAlgorithm"/>
+        <obo:BFO_0000110 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#Tcaos"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#Tcaos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#Tcaos">
+        <rdf:type rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/ObjectiveSpecification"/>
+        <usecase:specifiesDataType>float32</usecase:specifiesDataType>
+        <terms:description>the objective of the tca1 data processing algorithm is to, when concretized, cast all the input data fields into float32 python datatype</terms:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#Tco1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#Tco1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#TypeCastingOperation"/>
+        <obo:BFO_0000059 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#Tca1"/>
+        <obo:BFO_0000063 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#FS1"/>
+        <ml:hasDataInput rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#Rd1"/>
+        <Core:achievesAtSomeTime rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#Tcaos"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#bs1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#bs1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#BatchSize"/>
+        <ml:configurationVariableOf rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#Mlta1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#bss1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#bss1">
+        <ml:isConfigurationSettingOfAtSomeTime rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#bs1"/>
+        <usecase:hasConfigurationSettingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">128</usecase:hasConfigurationSettingValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#dss1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#dss1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningDataSetPartitioning"/>
+        <obo:BFO_0000059 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#dssa1"/>
+        <obo:BFO_0000059 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#sns1"/>
+        <obo:BFO_0000059 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#tss1"/>
+        <obo:BFO_0000063 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#MLDp1"/>
+        <ml:hasDataInput rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#Mld1"/>
+        <ml:hasDataOutput rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#trd1"/>
+        <ml:hasDataOutput rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#vd1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#dssa1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#dssa1">
+        <rdf:type rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/EncodedAlgorithm"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#em1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#em1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#AccuracyPerformanceMetric"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#en1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#en1">
+        <ml:configurationVariableOf rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#Mlta1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#ens1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#ens1">
+        <ml:isConfigurationSettingOfAtSomeTime rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#en1"/>
+        <usecase:hasConfigurationSettingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</usecase:hasConfigurationSettingValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#fn1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#fn1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#FilterNumber"/>
+        <ml:configurationVariableOf rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#CL1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#fn2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#fn2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#FilterNumber"/>
+        <ml:configurationVariableOf rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#CL2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#fn3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#fn3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#FilterNumber"/>
+        <ml:configurationVariableOf rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#CL3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#fns1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#fns1">
+        <ml:isConfigurationSettingOfAtSomeTime rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#fn1"/>
+        <usecase:hasConfigurationSettingValue>6</usecase:hasConfigurationSettingValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#fns2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#fns2">
+        <ml:isConfigurationSettingOfAtSomeTime rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#fn2"/>
+        <usecase:hasConfigurationSettingValue>16</usecase:hasConfigurationSettingValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#fns3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#fns3">
+        <ml:isConfigurationSettingOfAtSomeTime rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#fn3"/>
+        <usecase:hasConfigurationSettingValue>120</usecase:hasConfigurationSettingValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#fsa1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#fsa1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/EncodedFeatureEngineeringAlgorithm"/>
+        <obo:BFO_0000178 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#fsf1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#fsf1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#fsf1">
+        <usecase:specifiesMathematicalFormula>x/255</usecase:specifiesMathematicalFormula>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#i0 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#i0">
+        <ml:isTheIndexAssociatedWith rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#ConvNet1"/>
+        <ml:isTheIndexOf rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#CL1"/>
+        <ml:hasIndexValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</ml:hasIndexValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#i1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#i1">
+        <ml:isTheIndexAssociatedWith rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#ConvNet1"/>
+        <ml:isTheIndexOf rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#PL1"/>
+        <ml:hasIndexValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</ml:hasIndexValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#i2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#i2">
+        <ml:isTheIndexAssociatedWith rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#ConvNet1"/>
+        <ml:isTheIndexOf rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#CL2"/>
+        <ml:hasIndexValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ml:hasIndexValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#i3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#i3">
+        <ml:isTheIndexAssociatedWith rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#ConvNet1"/>
+        <ml:isTheIndexOf rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#PL2"/>
+        <ml:hasIndexValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</ml:hasIndexValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#i4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#i4">
+        <ml:isTheIndexAssociatedWith rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#ConvNet1"/>
+        <ml:isTheIndexOf rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#CL3"/>
+        <ml:hasIndexValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</ml:hasIndexValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#i5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#i5">
+        <ml:isTheIndexAssociatedWith rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#ConvNet1"/>
+        <ml:isTheIndexOf rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#Ff1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#i6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#i6">
+        <ml:isTheIndexAssociatedWith rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#ConvNet1"/>
+        <ml:isTheIndexOf rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#DL1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#i7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#i7">
+        <ml:isTheIndexAssociatedWith rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#ConvNet1"/>
+        <ml:isTheIndexOf rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#DL2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#ipps1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#ipps1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/InitialMachineLearningParameterSettingSet"/>
+        <ml:isConfigurationSettingSetOfAtSomeTime rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#mps1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#ir1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#ir1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#InputDimensionRequirement"/>
+        <usecase:specifiesDimensionNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</usecase:specifiesDimensionNumber>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#ira1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#ira1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#EncodedDataProcessingAlgorithm"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#iraos1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#iraos1">
+        <rdf:type rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/ObjectiveSpecification"/>
+        <usecase:specifiesDimensionShape>[28,28,1]</usecase:specifiesDimensionShape>
+        <terms:description>the objective of the ira1 algorithm is to reshape input images into [28,28,1] shape</terms:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#iro1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#iro1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#ImageReshapingOperation"/>
+        <obo:BFO_0000059 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#ira1"/>
+        <ml:hasDataOutput rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#Mld1"/>
+        <Core:achievesAtSomeTime rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#iraos1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#lf1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#lf1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#CategoricalCrossEntropy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#lp1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#lp1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#LayerPadding"/>
+        <ml:configurationVariableOf rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#CL1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#lp2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#lp2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#LayerPadding"/>
+        <ml:configurationVariableOf rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#PL1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#lp3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#lp3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#LayerPadding"/>
+        <ml:configurationVariableOf rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#CL2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#lp4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#lp4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#LayerPadding"/>
+        <ml:configurationVariableOf rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#PL2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#lp5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#lp5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#LayerPadding"/>
+        <ml:configurationVariableOf rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#CL3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#lps1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#lps1">
+        <ml:isConfigurationSettingOfAtSomeTime rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#lp1"/>
+        <usecase:hasConfigurationSettingValue>same</usecase:hasConfigurationSettingValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#lps2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#lps2">
+        <ml:isConfigurationSettingOfAtSomeTime rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#lp2"/>
+        <usecase:hasConfigurationSettingValue>valid</usecase:hasConfigurationSettingValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#lps3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#lps3">
+        <ml:isConfigurationSettingOfAtSomeTime rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#lp3"/>
+        <usecase:hasConfigurationSettingValue>valid</usecase:hasConfigurationSettingValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#lps4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#lps4">
+        <ml:isConfigurationSettingOfAtSomeTime rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#lp4"/>
+        <usecase:hasConfigurationSettingValue>valid</usecase:hasConfigurationSettingValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#lps5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#lps5">
+        <ml:isConfigurationSettingOfAtSomeTime rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#lp5"/>
+        <usecase:hasConfigurationSettingValue>valid</usecase:hasConfigurationSettingValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#lr1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#lr1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#LearningRate"/>
+        <ml:configurationVariableOf rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#oa1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#lrs1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#lrs1">
+        <ml:isConfigurationSettingOfAtSomeTime rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#lr1"/>
+        <usecase:hasConfigurationSettingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.0E-4</usecase:hasConfigurationSettingValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#ls1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#ls1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#LayerStride"/>
+        <ml:configurationVariableOf rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#CL1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#ls2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#ls2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#LayerStride"/>
+        <ml:configurationVariableOf rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#PL1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#ls3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#ls3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#LayerStride"/>
+        <ml:configurationVariableOf rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#CL2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#ls4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#ls4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#LayerStride"/>
+        <ml:configurationVariableOf rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#PL2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#ls5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#ls5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#LayerStride"/>
+        <ml:configurationVariableOf rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#CL3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#lss1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#lss1">
+        <ml:isConfigurationSettingOfAtSomeTime rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#ls1"/>
+        <usecase:hasConfigurationSettingValue>(1,1)</usecase:hasConfigurationSettingValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#lss2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#lss2">
+        <ml:isConfigurationSettingOfAtSomeTime rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#ls2"/>
+        <usecase:hasConfigurationSettingValue>(2, 2)</usecase:hasConfigurationSettingValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#lss3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#lss3">
+        <ml:isConfigurationSettingOfAtSomeTime rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#ls3"/>
+        <usecase:hasConfigurationSettingValue>(1,1)</usecase:hasConfigurationSettingValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#lss4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#lss4">
+        <ml:isConfigurationSettingOfAtSomeTime rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#ls4"/>
+        <usecase:hasConfigurationSettingValue>(2, 2)</usecase:hasConfigurationSettingValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#lss5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#lss5">
+        <ml:isConfigurationSettingOfAtSomeTime rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#ls5"/>
+        <usecase:hasConfigurationSettingValue>(1,1)</usecase:hasConfigurationSettingValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#me1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#me1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelEvaluation"/>
+        <obo:BFO_0000062 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#mex1"/>
+        <ml:hasDataInput rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#od1"/>
+        <Core:hasSpecifiedOutput rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#mer1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#mer1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#mer1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelPerformanceResult"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#mex1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#mex1">
+        <obo:BFO_0000059 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#mltp1"/>
+        <obo:BFO_0000062 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#mlt1"/>
+        <ml:executes rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#ConvNet1"/>
+        <ml:hasDataOutput rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#od1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#mlt1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#mlt1">
+        <obo:BFO_0000057 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#ConvNet1"/>
+        <obo:BFO_0000059 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#ConfPs1"/>
+        <obo:BFO_0000059 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#bss1"/>
+        <obo:BFO_0000059 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#ens1"/>
+        <obo:BFO_0000059 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#lf1"/>
+        <obo:BFO_0000059 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#lrs1"/>
+        <obo:BFO_0000059 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#reLU1"/>
+        <obo:BFO_0000059 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#softmax1"/>
+        <ml:executes rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#Mlta1"/>
+        <ml:executes rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#oa1"/>
+        <ml:hasDataInput rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#trd1"/>
+        <Core:hasInput rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#ipps1"/>
+        <Core:hasSpecifiedOutput rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#mltp1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#mltp1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#mltp1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningParameterSettingSet"/>
+        <ml:isConfigurationSettingSetOfAtSomeTime rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#mps1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#mpa1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#mpa1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelPerformanceAssessment"/>
+        <obo:BFO_0000059 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#em1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#mps1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#mps1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningParameterSet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#nn1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#nn1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#NeuronNumber"/>
+        <ml:configurationVariableOf rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#DL1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#nn2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#nn2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#NeuronNumber"/>
+        <ml:configurationVariableOf rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#DL2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#nns1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#nns1">
+        <ml:isConfigurationSettingOfAtSomeTime rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#nn1"/>
+        <usecase:hasConfigurationSettingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">84</usecase:hasConfigurationSettingValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#nns2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#nns2">
+        <ml:isConfigurationSettingOfAtSomeTime rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#nn2"/>
+        <usecase:hasConfigurationSettingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</usecase:hasConfigurationSettingValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#oa1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#oa1">
+        <rdf:type rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/EncodedAlgorithm"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/AdamOptimizer"/>
+            </owl:Restriction>
+        </rdf:type>
+        <obo:BFO_0000178 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#lf1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#od1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#od1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelOutputDataSet"/>
+        <ml:informationContentEntityDerivedFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#vd1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#reLU1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#reLU1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#RectifiedLinearUnitActivationFunction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#sn1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#sn1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#SeedNumber"/>
+        <ml:configurationVariableOf rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#dssa1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#sns1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#sns1">
+        <ml:isConfigurationSettingOfAtSomeTime rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#sn1"/>
+        <usecase:hasConfigurationSettingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">62</usecase:hasConfigurationSettingValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#softmax1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#softmax1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#SoftmaxActivationFunction"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#trd1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#trd1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/TrainingDataSet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#ts1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#ts1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#TestSize"/>
+        <ml:configurationVariableOf rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#dssa1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#tss1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#tss1">
+        <ml:isConfigurationSettingOfAtSomeTime rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#ts1"/>
+        <usecase:hasConfigurationSettingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.33</usecase:hasConfigurationSettingValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#tv1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#tv1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/TargetVariableVector"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#tvdp1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#tvdp1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/DataProcessingPipeline"/>
+        <obo:BFO_0000117 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#tvto1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#tvpa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#tvpa">
+        <rdf:type rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/EncodedAlgorithm"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/prescribedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#TargetVariableTransformationAlgorithm"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#tvt1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#tvt1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/TargetVariableVector"/>
+        <ml:informationContentEntityDerivedFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#tv1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#tvto1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#tvto1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#TargetVariableTransformation"/>
+        <obo:BFO_0000059 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#tvpa"/>
+        <ml:hasDataInput rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#tv1"/>
+        <ml:hasDataOutput rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#tvt1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/usecase#vd1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#vd1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ValidationDataSet"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
