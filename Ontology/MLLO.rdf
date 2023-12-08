@@ -358,10 +358,10 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mnd14/ml/isTheIndexAssociatedWith">
         <rdfs:subPropertyOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/isAbout"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/mnd14/ml/DataSetIndex"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mnd14/ml/Index"/>
+        <rdfs:range rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity"/>
         <rdfs:label>is the index associated with</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>relationship between a data set index and a dataset indicating that the index determines the position of a data item within that particular dataset</AnnotationVocabulary:naturalLanguageDefinition>
+        <AnnotationVocabulary:naturalLanguageDefinition>relationship between a index and an information content entity indicating that the index determines the position of the ice it is the index of within the ice the index is associated with</AnnotationVocabulary:naturalLanguageDefinition>
     </owl:ObjectProperty>
     
 
@@ -370,10 +370,10 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mnd14/ml/isTheIndexOf">
         <rdfs:subPropertyOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/isAbout"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/mnd14/ml/DataSetIndex"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mnd14/ml/Index"/>
+        <rdfs:range rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity"/>
         <rdfs:label>is the index of</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>relation between a data set index and a data item indicating that the data set index determines the position of the data item within a particular data set</AnnotationVocabulary:naturalLanguageDefinition>
+        <AnnotationVocabulary:naturalLanguageDefinition>relation between a index and an information content entity indicating that the index determines the position of the ice within the ice it is a part of</AnnotationVocabulary:naturalLanguageDefinition>
     </owl:ObjectProperty>
     
 
@@ -2419,7 +2419,12 @@ For a continuous random variable, a curve described by a mathematical formula wh
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000137"/>
+                        <owl:onProperty>
+                            <rdf:Description>
+                                <owl:inverseOf rdf:resource="http://www.semanticweb.org/mnd14/ml/isComposedOf"/>
+                            </rdf:Description>
+                                                    </owl:onProperty>
+
                         <owl:someValuesFrom>
                             <owl:Class>
                                 <owl:unionOf rdf:parseType="Collection">
