@@ -1095,6 +1095,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#i5">
         <ml:isTheIndexAssociatedWith rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#ConvNet1"/>
         <ml:isTheIndexOf rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#Ff1"/>
+        <ml:hasIndexValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</ml:hasIndexValue>
     </owl:NamedIndividual>
     
 
@@ -1104,6 +1105,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#i6">
         <ml:isTheIndexAssociatedWith rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#ConvNet1"/>
         <ml:isTheIndexOf rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#DL1"/>
+        <ml:hasIndexValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</ml:hasIndexValue>
     </owl:NamedIndividual>
     
 
@@ -1113,6 +1115,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#i7">
         <ml:isTheIndexAssociatedWith rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#ConvNet1"/>
         <ml:isTheIndexOf rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#DL2"/>
+        <ml:hasIndexValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</ml:hasIndexValue>
     </owl:NamedIndividual>
     
 
@@ -1373,7 +1376,8 @@
     <!-- http://www.semanticweb.org/mnd14/ml/usecase#me1 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#me1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelEvaluation"/>
+        <rdf:type rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/PlannedProcess"/>
+        <obo:BFO_0000059 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#em1"/>
         <obo:BFO_0000062 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#mex1"/>
         <ml:hasDataInput rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#od1"/>
         <Core:hasSpecifiedOutput rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#mer1"/>
@@ -1392,9 +1396,11 @@
     <!-- http://www.semanticweb.org/mnd14/ml/usecase#mex1 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#mex1">
+        <rdf:type rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/ComputingProcess"/>
         <obo:BFO_0000059 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#mltp1"/>
         <obo:BFO_0000062 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#mlt1"/>
         <ml:executes rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#ConvNet1"/>
+        <ml:hasDataInput rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#vd1"/>
         <ml:hasDataOutput rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#od1"/>
     </owl:NamedIndividual>
     
@@ -1403,6 +1409,7 @@
     <!-- http://www.semanticweb.org/mnd14/ml/usecase#mlt1 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#mlt1">
+        <rdf:type rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/ComputingProcess"/>
         <obo:BFO_0000057 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#ConvNet1"/>
         <obo:BFO_0000059 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#ConfPs1"/>
         <obo:BFO_0000059 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#bss1"/>
