@@ -779,6 +779,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#MLDp1">
         <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/DataProcessingPipeline"/>
+        <obo:BFO_0000063 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#mlt1"/>
         <obo:BFO_0000117 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#FS1"/>
         <obo:BFO_0000117 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#Tco1"/>
         <obo:BFO_0000117 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#iro1"/>
@@ -1585,6 +1586,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#tvdp1">
         <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/DataProcessingPipeline"/>
+        <obo:BFO_0000063 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#mlt1"/>
         <obo:BFO_0000117 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#tvto1"/>
     </owl:NamedIndividual>
     
