@@ -779,7 +779,6 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#MLDp1">
         <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/DataProcessingPipeline"/>
-        <obo:BFO_0000063 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#mlt1"/>
         <obo:BFO_0000117 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#FS1"/>
         <obo:BFO_0000117 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#Tco1"/>
         <obo:BFO_0000117 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#iro1"/>
@@ -897,9 +896,9 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#Tco1">
         <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#TypeCastingOperation"/>
         <obo:BFO_0000059 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#Tca1"/>
-        <obo:BFO_0000063 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#FS1"/>
         <ml:hasDataInput rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#Rd1"/>
         <Core:achievesAtSomeTime rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#Tcaos"/>
+        <Core:meets rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#FS1"/>
     </owl:NamedIndividual>
     
 
@@ -929,10 +928,11 @@
         <obo:BFO_0000059 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#dssa1"/>
         <obo:BFO_0000059 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#sns1"/>
         <obo:BFO_0000059 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#tss1"/>
-        <obo:BFO_0000062 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#MLDp1"/>
         <ml:hasDataInput rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#Mld1"/>
         <ml:hasDataOutput rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#trd1"/>
         <ml:hasDataOutput rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#vd1"/>
+        <Core:meets rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#mlt1"/>
+        <Core:metBy rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#MLDp1"/>
     </owl:NamedIndividual>
     
 
@@ -1164,6 +1164,7 @@
         <obo:BFO_0000059 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#ira1"/>
         <ml:hasDataOutput rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#Mld1"/>
         <Core:achievesAtSomeTime rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#iraos1"/>
+        <Core:metBy rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#FS1"/>
     </owl:NamedIndividual>
     
 
@@ -1379,9 +1380,9 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#me1">
         <rdf:type rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/PlannedProcess"/>
         <obo:BFO_0000059 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#em1"/>
-        <obo:BFO_0000062 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#mex1"/>
         <ml:hasDataInput rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#od1"/>
         <Core:hasSpecifiedOutput rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#mer1"/>
+        <Core:metBy rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#mex1"/>
     </owl:NamedIndividual>
     
 
@@ -1399,10 +1400,10 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#mex1">
         <rdf:type rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/ComputingProcess"/>
         <obo:BFO_0000059 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#mltp1"/>
-        <obo:BFO_0000062 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#mlt1"/>
         <ml:executes rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#ConvNet1"/>
         <ml:hasDataInput rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#vd1"/>
         <ml:hasDataOutput rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#od1"/>
+        <Core:metBy rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#mlt1"/>
     </owl:NamedIndividual>
     
 
@@ -1586,8 +1587,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mnd14/ml/usecase#tvdp1">
         <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/DataProcessingPipeline"/>
-        <obo:BFO_0000063 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#mlt1"/>
         <obo:BFO_0000117 rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#tvto1"/>
+        <Core:meets rdf:resource="http://www.semanticweb.org/mnd14/ml/usecase#mlt1"/>
     </owl:NamedIndividual>
     
 
