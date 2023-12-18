@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/bfoIOFIRI/2020/bfo.owl" uri="bfo2020_IOF_IRI.owl"/>
+    <uri id="User Entered Import Resolution" name="https://spec.industrialontologies.org/ontology/202301/coreBFOnew/Core/" uri="Core_new_BFO.rdf"/>
+    <uri id="User Entered Import Resolution" name="http://www.semanticweb.org/mnd14/IOFBFO/ml/" uri="MLLO_new_BFO.rdf"/>
+    <uri id="User Entered Import Resolution" name="http://www.semanticweb.org/mnd14/ml/" uri="MLLO.rdf"/>
+    <uri id="User Entered Import Resolution" name="https://purl.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/" uri="meta/AnnotationVocabulary.rdf"/>  
+    <uri id="User Entered Import Resolution" name="https://spec.industrialontologies.org/ontology/core/Core/" uri="Core.rdf"/>    
+    <group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base=""></group>
+</catalog>
