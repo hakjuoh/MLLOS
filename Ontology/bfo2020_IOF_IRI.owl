@@ -7,7 +7,7 @@
     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
-  <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/bfo.owl">
+  <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/bfoIOFIRI/2020/bfo.owl">
     <dc:contributor>Alan Ruttenberg</dc:contributor>
     <dc:contributor>Yongqun "Oliver" He</dc:contributor>
     <dc:contributor>Mark Ressler</dc:contributor>
@@ -21,7 +21,7 @@
     <dc:contributor>Thomas Bittner</dc:contributor>
     <dc:contributor>Robert Rovetto</dc:contributor>
     <dc:contributor>Werner Ceusters</dc:contributor>
-    <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/bfo/2020/bfo.owl"/>
+    <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/bfoIOFIRI/2020/bfo.owl"/>
     <dc:contributor>Randall Dipert</dc:contributor>
     <dc:contributor>David Osumi-Sutherland</dc:contributor>
     <rdfs:label>BFO 2020</rdfs:label>
