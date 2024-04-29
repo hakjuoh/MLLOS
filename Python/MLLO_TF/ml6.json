@@ -1,0 +1,293 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "definitions": {
+    "ConfigurationSetting": {
+      "type": "object",
+      "properties": {
+        "configuration_setting_type": {
+          "type": "string"
+        },
+        "uid": {
+          "type": "string"
+        },
+        "configuration_setting_value_type": {
+          "type": "string",
+          "enum": [
+            "boolean",
+            "number",
+            "string",
+            "tuple",
+            "list",
+            "None"
+          ]
+        },
+        "configuration_setting_value": {},
+        "is_default_value":{
+          "type":"boolean"
+        }
+      },
+      "required": [
+        "configuration_setting_type",
+        "uid"
+      ]
+    }
+  },
+  "properties": {
+    "uid": {
+      "type": "string"
+    },
+    "model_name": {
+      "type": "string"
+    },
+    "model_type": {
+      "type": "string"
+    },
+    "model_framework": {
+      "type": "object",
+      "properties": {
+        "uid": {
+          "type": "string"
+        },
+        "framework_type": {
+          "type": "string"
+        },
+        "framework_version": {}
+      },
+      "required": [
+        "framework_type",
+        "uid"
+      ]
+    },
+    "model_location": {
+      "type": "string"
+    },
+    "model_architecture": {
+      "type": "object",
+      "properties": {
+        "uid": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "parameters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "parameter_layer": {
+                "type": "object",
+                "properties": {
+                  "uid": {
+                    "type": "string"
+                  },
+                  "layer_index":{
+                    "type":"integer"
+                  },
+                  "layer_type": {
+                    "type": "string"
+                  },
+                  "activation_function":{
+                    "type":"object",
+                    "properties": {
+                     "activation_function_type":{
+                      "type":"string"
+                     },
+                     "uid":{
+                      "type":"string"
+                     },
+                     "configuration_setting": {
+                      "$ref": "#/definitions/ConfigurationSetting"
+                    }
+                    },
+                    "required": [
+                      "uid",
+                      "activation_function_type"
+                    ]
+                  },
+                  "layer_configuration": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "configuration_setting": {
+                          "$ref": "#/definitions/ConfigurationSetting"
+                        },
+                        "layer_dimension": {
+                          "type": "string"
+                        },
+                        "layer_input_dimension": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "required": [
+                      "configuration_setting"
+                    ]
+                  }
+                },
+                "required": [
+                  "layer_configuration"
+                ]
+              },
+              "parameter": {
+                "type": "object",
+                "properties": {
+                  "uid": {
+                    "type": "string"
+                  },
+                  "parameter_type": {
+                    "type": "string"
+                  },
+                  "parameter_value": {}
+                },
+                "required": [
+                  "parameter_type",
+                  "uid"
+                ]
+              }
+            },
+            "anyOf": [
+              {
+                "required": [
+                  "parameter_layer"
+                ]
+              },
+              {
+                "required": [
+                  "parameter"
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "required": [
+        "parameters",
+        "uid"
+      ]
+    },
+    "training_configuration": {
+      "type": "object",
+      "properties": {
+        "hyperparameters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "configuration_setting": {
+                "$ref": "#/definitions/ConfigurationSetting"
+              }
+            }
+          },
+          "required": [
+            "configuration_setting"
+          ]
+        },
+        "optimizer": {
+          "type": "object",
+          "properties": {
+            "uid": {
+              "type": "string"
+            },
+            "optimizer_type": {
+              "type": "string"
+            },
+            "optimizer_configuration": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "configuration_setting": {
+                    "$ref": "#/definitions/ConfigurationSetting"
+                  }
+                }
+              },
+              "required": [
+                "configuration_setting"
+              ]
+            }
+          },
+          "required": [
+            "optimizer_type",
+            "uid"
+          ]          
+        },
+        "model_initializers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "initializer": {
+                "type": "object",
+                "properties": {
+                  "initializer_type": {
+                    "type": "string"
+                  },
+                  "uid": {
+                    "type": "string"
+                  },
+                  "initializer_configuration": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "configuration_setting": {
+                          "$ref": "#/definitions/ConfigurationSetting"
+                        }
+                      }
+                    },
+                    "required": [
+                      "configuration_setting"
+                    ]
+                  },
+                  "whole_model": {
+                    "type": "boolean"
+                  },
+                  "initializes_layer_index": {
+                    "type": "number"
+                  }               
+                },
+                "required": [
+                  "initializer_type",
+                  "uid",
+                  "whole_model"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "required": [
+        "hyperparameters"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "created_for_project": {
+      "type": "string"
+    },
+    "model_input_requirements": {
+      "type": "object",
+      "properties": {
+        "input_dimension": {
+          "type": "string"
+        },
+        "input_datatype": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "required": [
+    "uid",
+    "model_type",
+    "model_framework",
+    "model_architecture",
+    "created_for_project"
+  ]
+}
