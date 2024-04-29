@@ -18,7 +18,6 @@
      xmlns:AnnotationVocabulary="https://purl.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/"
      xmlns:AnnotationVocabulary1="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/">
     <owl:Ontology rdf:about="http://www.semanticweb.org/mnd14/ml/">
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2020/bfo.owl"/>
         <owl:imports rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/"/>
     </owl:Ontology>
     
@@ -829,6 +828,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/AveragePoolingLayer">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/PoolingLayer"/>
         <rdfs:label>average pooling layer</rdfs:label>
+        <AnnotationVocabulary:naturalLanguageDefinition>pooling layer that reduces input data dimensions by computing the average value of elements within a defined region</AnnotationVocabulary:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -849,6 +849,9 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/BatchSize">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/Hyperparameter"/>
         <rdfs:label>batch size</rdfs:label>
+        <AnnotationVocabulary:directSource>https://medium.com/geekculture/how-does-batch-size-impact-your-model-learning-2dd34d9fb1fa</AnnotationVocabulary:directSource>
+        <AnnotationVocabulary:explanatoryNote>sample in the case of supervised learning consists of the input feature vector as well as the target variable</AnnotationVocabulary:explanatoryNote>
+        <AnnotationVocabulary:naturalLanguageDefinition>parameter that defines the number of samples to work through before updating the internal model parameters</AnnotationVocabulary:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -1795,7 +1798,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/EncodedAlgorithm"/>
-        <rdfs:label>encoded machine learning algorithm </rdfs:label>
+        <rdfs:label>encoded machine learning training algorithm</rdfs:label>
         <AnnotationVocabulary:explanatoryNote>typically a encoded machine learning algorithm is a part of a larger machine learning framework</AnnotationVocabulary:explanatoryNote>
         <AnnotationVocabulary:naturalLanguageDefinition>encoded algorithm that is the implementation of a machine learning training algorithm</AnnotationVocabulary:naturalLanguageDefinition>
     </owl:Class>
@@ -1884,6 +1887,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/EpochNumber">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/Hyperparameter"/>
         <rdfs:label>epoch number</rdfs:label>
+        <AnnotationVocabulary:naturalLanguageDefinition>hyperparameter that specifies the number of epochs a machine learning model will be trained for</AnnotationVocabulary:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -2243,6 +2247,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/FlatteningLayer">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/NeuralNetworkLayer"/>
         <rdfs:label>flattening layer</rdfs:label>
+        <AnnotationVocabulary:naturalLanguageDefinition>neural network layer that transforms multidimensional input data into a one-dimensional array to prepare the data for input to fully connected layers</AnnotationVocabulary:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -2252,6 +2257,8 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/FullyConnectedLayer">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/NeuralNetworkLayer"/>
         <rdfs:label>fully connected layer</rdfs:label>
+        <AnnotationVocabulary:explanatoryNote>in case the FC layer is the input layer, then each node directly takes as inputs all the entries of an individual feature vector</AnnotationVocabulary:explanatoryNote>
+        <AnnotationVocabulary:naturalLanguageDefinition>neural network layer in which each node connects directly to all nodes from a previous layer</AnnotationVocabulary:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -2547,6 +2554,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
 
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/Keras">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningFramework"/>
+        <rdfs:label>keras</rdfs:label>
     </owl:Class>
     
 
@@ -3511,7 +3519,14 @@ For a continuous random variable, a curve described by a mathematical formula wh
 
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/MultiLayerPerceptron">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/ArtificialNeuralNetwork"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mnd14/ml/isComposedOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/FullyConnectedLayer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label>multi layer perceptron</rdfs:label>
+        <AnnotationVocabulary:naturalLanguageDefinition>artificial neural network composed of only fully connected layers</AnnotationVocabulary:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -3764,6 +3779,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/PoolingLayer">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/NeuralNetworkLayer"/>
         <rdfs:label>pooling layer</rdfs:label>
+        <AnnotationVocabulary:naturalLanguageDefinition>neural network layer that reduces the spatial dimensions of input data by applying a downsampling operation</AnnotationVocabulary:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -4266,6 +4282,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
 
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/Tensorflow">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningFramework"/>
+        <rdfs:label>tensorflow</rdfs:label>
     </owl:Class>
     
 
