@@ -95,6 +95,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/mnd14/ml/configurationVariableSetOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mnd14/ml/configurationVariableSetOf">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000137"/>
+        <rdfs:label>configuration variable set of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/mnd14/ml/dataInputOf -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mnd14/ml/dataInputOf">
@@ -272,10 +281,10 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mnd14/ml/hasTargetVariable">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/mnd14/ml/targetVariableOf"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningSample"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mnd14/ml/FeatureVector"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/mnd14/ml/TargetVariable"/>
         <rdfs:label>has target variable</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>relates a machine learning sample to a target variable that is associated with the machine learning sample</AnnotationVocabulary:naturalLanguageDefinition>
+        <AnnotationVocabulary:naturalLanguageDefinition>relates a feature vector to a target variable that is associated with the feature vector</AnnotationVocabulary:naturalLanguageDefinition>
     </owl:ObjectProperty>
     
 
@@ -427,7 +436,7 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mnd14/ml/targetVariableOf">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/mnd14/ml/TargetVariable"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningSample"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mnd14/ml/FeatureVector"/>
         <rdfs:label>target variable of</rdfs:label>
         <AnnotationVocabulary:naturalLanguageDefinition>inverse of has target variable</AnnotationVocabulary:naturalLanguageDefinition>
     </owl:ObjectProperty>
@@ -445,11 +454,28 @@
     
 
 
+    <!-- http://www.semanticweb.org/mnd14/ml/hasConfigurationSettingValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mnd14/ml/hasConfigurationSettingValue">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:label>has configuration setting value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.semanticweb.org/mnd14/ml/hasExponent -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mnd14/ml/hasExponent">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:label>has exponent</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/hasFormula -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mnd14/ml/hasFormula">
+        <rdfs:label>has formula</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -464,12 +490,64 @@
     
 
 
+    <!-- http://www.semanticweb.org/mnd14/ml/hasStandardDeviationValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mnd14/ml/hasStandardDeviationValue">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:label>has standard deviation value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/hasTextValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mnd14/ml/hasTextValue">
+        <rdfs:label>has text value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.semanticweb.org/mnd14/ml/hasVersion -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mnd14/ml/hasVersion">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity"/>
         <rdfs:label>has version</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/specifiesDataType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mnd14/ml/specifiesDataType">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:label>specifies data type</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/specifiesDimensionNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mnd14/ml/specifiesDimensionNumber">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:label>specifies dimension number</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/specifiesDimensionShape -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mnd14/ml/specifiesDimensionShape">
+        <rdfs:label>specifies dimension shape</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/specifiesMathematicalFormula -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mnd14/ml/specifiesMathematicalFormula">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:label>specifies mathematical formula</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -635,6 +713,15 @@ For a continuous random variable, a curve described by a mathematical formula wh
     
 
 
+    <!-- http://www.semanticweb.org/mnd14/ml/AlgorithmVerbosity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/AlgorithmVerbosity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/ConfigurationVariable"/>
+        <rdfs:label>algorithm verbosity</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/mnd14/ml/ArtificialNeuralNetwork -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/ArtificialNeuralNetwork">
@@ -737,6 +824,15 @@ For a continuous random variable, a curve described by a mathematical formula wh
     
 
 
+    <!-- http://www.semanticweb.org/mnd14/ml/AveragePoolingLayer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/AveragePoolingLayer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/PoolingLayer"/>
+        <rdfs:label>average pooling layer</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/mnd14/ml/Backpropagation -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/Backpropagation">
@@ -744,6 +840,15 @@ For a continuous random variable, a curve described by a mathematical formula wh
         <rdfs:label>backpropagation</rdfs:label>
         <AnnotationVocabulary:explanatoryNote>the gradients are calculated during an optimization process</AnnotationVocabulary:explanatoryNote>
         <AnnotationVocabulary:naturalLanguageDefinition>artificial neural network training algorithm that prescribes how the weights of neurons should be updated based on their gradients</AnnotationVocabulary:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/BatchSize -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/BatchSize">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/Hyperparameter"/>
+        <rdfs:label>batch size</rdfs:label>
     </owl:Class>
     
 
@@ -777,6 +882,15 @@ For a continuous random variable, a curve described by a mathematical formula wh
         <rdfs:label xml:lang="en">categorical feature</rdfs:label>
         <skos:example>&quot;low risk&quot; value of a process parameter that is prescribed by a risk analysis classification scheme</skos:example>
         <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">feature that can only have limited, and usually fixed, number of possible values which are prescribed by some classification scheme</AnnotationVocabulary:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/ClassificationAccuracy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/ClassificationAccuracy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/PerformanceMetric"/>
+        <rdfs:label>classification accuracy</rdfs:label>
     </owl:Class>
     
 
@@ -919,7 +1033,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity"/>
         <rdfs:label xml:lang="en">configuration variable</rdfs:label>
         <skos:example>batch size for machine learning training, number of neighbors for KNN model generation, weight of a neuron, intercept of a linear regression model</skos:example>
-        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">information content entity whose value influences the output of an encoded algorithm it is a part of</AnnotationVocabulary:naturalLanguageDefinition>
+        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">information content entity whose value influences the output or behavior of an encoded algorithm it is a part of</AnnotationVocabulary:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -979,6 +1093,60 @@ For a continuous random variable, a curve described by a mathematical formula wh
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/NumericalFeature"/>
         <rdfs:label xml:lang="en">continuous numeric feature</rdfs:label>
         <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">numeric feature that has real numbers as values</AnnotationVocabulary:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/ConvolutionalLayer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/ConvolutionalLayer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/NeuralNetworkLayer"/>
+        <rdfs:label>convolutional layer</rdfs:label>
+        <AnnotationVocabulary:naturalLanguageDefinition>neural network layer that applies learnable filters to its input and that outputs  feature maps that capture spatial hierarchies and patterns</AnnotationVocabulary:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/ConvolutionalNeuralNetwork -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/ConvolutionalNeuralNetwork">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mnd14/ml/ArtificialNeuralNetwork"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000110"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/mnd14/ml/ModelInputRequirementSpecification"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mnd14/ml/specifiesDimensionNumber"/>
+                                        <owl:someValuesFrom>
+                                            <rdfs:Datatype>
+                                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                                                <owl:withRestrictions rdf:parseType="Collection">
+                                                    <rdf:Description>
+                                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</xsd:minInclusive>
+                                                    </rdf:Description>
+                                                </owl:withRestrictions>
+                                            </rdfs:Datatype>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mnd14/ml/isComposedOf"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/ConvolutionalLayer"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/ArtificialNeuralNetwork"/>
+        <rdfs:label>convolutional neural network</rdfs:label>
+        <AnnotationVocabulary:naturalLanguageDefinition>artificial neural network that is composed primairly of convolutional  layers and that requires input that have dimensions of at least two</AnnotationVocabulary:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -1219,6 +1387,16 @@ For a continuous random variable, a curve described by a mathematical formula wh
     
 
 
+    <!-- http://www.semanticweb.org/mnd14/ml/DataReshapingOperation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/DataReshapingOperation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/DataProcessingOperation"/>
+        <rdfs:label>data reshaping operation</rdfs:label>
+        <AnnotationVocabulary:naturalLanguageDefinition>data processing operation that changes the dimensions of one or more datasets or data items</AnnotationVocabulary:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/mnd14/ml/DataSetCharacteristic -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/DataSetCharacteristic">
@@ -1231,30 +1409,6 @@ For a continuous random variable, a curve described by a mathematical formula wh
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/InformationContentEntityCharacteristic"/>
         <rdfs:label>data set characteristic</rdfs:label>
         <AnnotationVocabulary:naturalLanguageDefinition>data item characteristic of a data set</AnnotationVocabulary:naturalLanguageDefinition>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/mnd14/ml/DataSetIndex -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/DataSetIndex">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/mnd14/ml/Index"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mnd14/ml/isTheIndexAssociatedWith"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mnd14/ml/isTheIndexOf"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:label>data set index</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>index of a data item in a particular data set</AnnotationVocabulary:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -1272,7 +1426,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/prescribes"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/DataSetIndex"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/Index"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1436,13 +1590,13 @@ For a continuous random variable, a curve described by a mathematical formula wh
     
 
 
-    <!-- http://www.semanticweb.org/mnd14/ml/DerivedFeatureVector -->
+    <!-- http://www.semanticweb.org/mnd14/ml/DerivedFeatureColumn -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/DerivedFeatureVector">
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/DerivedFeatureColumn">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/mnd14/ml/FeatureVector"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mnd14/ml/FeatureColumn"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/mnd14/ml/isComposedOf"/>
                         <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/DerivedFeature"/>
@@ -1456,8 +1610,8 @@ For a continuous random variable, a curve described by a mathematical formula wh
                 <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/DerivedFeature"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label>derived feature vector</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>feature vector that only has derived features as parts</AnnotationVocabulary:naturalLanguageDefinition>
+        <rdfs:label>derived feature column</rdfs:label>
+        <AnnotationVocabulary:naturalLanguageDefinition>feature column that only has derived features as parts</AnnotationVocabulary:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -1465,9 +1619,9 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <!-- http://www.semanticweb.org/mnd14/ml/DigitalImage -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/DigitalImage">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/Feature"/>
-        <rdfs:label xml:lang="en">digital image feature</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">feature that is a rectangular or cuboid grid of elements (pixels or voxels respectively), whose values are finite, discrete quantities derived from measurements of some quality of a number of entities repeated at regular intervals across a spatial range</AnnotationVocabulary:naturalLanguageDefinition>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:label xml:lang="en">digital image</rdfs:label>
+        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">data item that is a rectangular or cuboid grid of elements (pixels or voxels respectively), whose values are finite, discrete quantities derived from measurements of some quality of a number of entities repeated at regular intervals across a spatial range</AnnotationVocabulary:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -1725,6 +1879,15 @@ For a continuous random variable, a curve described by a mathematical formula wh
     
 
 
+    <!-- http://www.semanticweb.org/mnd14/ml/EpochNumber -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/EpochNumber">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/Hyperparameter"/>
+        <rdfs:label>epoch number</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/mnd14/ml/ExploratoryDataAnalysis -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/ExploratoryDataAnalysis">
@@ -1799,7 +1962,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
 
 2. association here can be interpreted as the feature being about some aspect or characteristic of the entity
 
-3. Feature can also be interpreted as a single item (entry) within a machine learning dataset</AnnotationVocabulary:explanatoryNote>
+3. Feature can also in some cases be interpreted as a single item (entry) within a machine learning dataset</AnnotationVocabulary:explanatoryNote>
         <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">data item associated with an entity that is intended to be used as an input of a machine learning model execution or machine learning training</AnnotationVocabulary:naturalLanguageDefinition>
     </owl:Class>
     
@@ -1817,6 +1980,29 @@ For a continuous random variable, a curve described by a mathematical formula wh
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/DataItemCharacteristic"/>
         <rdfs:label>feature characteristic</rdfs:label>
         <AnnotationVocabulary:naturalLanguageDefinition>data item characteristic of a feature</AnnotationVocabulary:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/FeatureColumn -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/FeatureColumn">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mnd14/ml/isComposedOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/Feature"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mnd14/ml/isComposedOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/Feature"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>feature column</rdfs:label>
+        <skos:example>petal length value of 50 different iris flowers</skos:example>
+        <AnnotationVocabulary:naturalLanguageDefinition>data set that is composed of a number of features of the same type that are associated with different entities</AnnotationVocabulary:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -1899,7 +2085,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
                             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000100"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://www.semanticweb.org/mnd14/ml/isComposedOf"/>
-                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/DerivedFeatureVector"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/DerivedFeatureColumn"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
                     </owl:Class>
@@ -1907,7 +2093,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">feature engineering pipeline</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>planned process that consists of a number of feature engineering operations and that outputs a data set that has at least one derived feature vector as part</AnnotationVocabulary:naturalLanguageDefinition>
+        <AnnotationVocabulary:naturalLanguageDefinition>planned process that consists of a number of feature engineering operations and that outputs a data set that has at least one derived feature column as part</AnnotationVocabulary:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -1928,6 +2114,46 @@ For a continuous random variable, a curve described by a mathematical formula wh
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/FeatureEngineeringOperation"/>
         <rdfs:label xml:lang="en">feature generation</rdfs:label>
         <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">feature engineering operation that generates one or more features by combining multiple features</AnnotationVocabulary:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/FeatureScalingAlgorithm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/FeatureScalingAlgorithm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/FeatureEngineeringAlgorithm"/>
+        <rdfs:label>feature scaling algorithm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/FeatureScalingOperation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/FeatureScalingOperation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/FeatureEngineeringTransformation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mnd14/ml/hasDataOutput"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/mnd14/ml/ScaledFeature"/>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/mnd14/ml/DerivedFeatureColumn"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mnd14/ml/isComposedOf"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/ScaledFeature"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>feature scaling operation</rdfs:label>
+        <AnnotationVocabulary:naturalLanguageDefinition>feature engineering transformation that produced scaled features as its output</AnnotationVocabulary:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -1982,9 +2208,16 @@ For a continuous random variable, a curve described by a mathematical formula wh
                 <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/Feature"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/describes"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label>feature vector</rdfs:label>
-        <skos:example>petal length value of 50 different iris flowers</skos:example>
-        <AnnotationVocabulary:naturalLanguageDefinition>data set that is composed of a number of features of the same type that are associated with different entities</AnnotationVocabulary:naturalLanguageDefinition>
+        <skos:example>petal length value, petal width value, sepal length value and sepal width value associated with a single iris flower</skos:example>
+        <AnnotationVocabulary:naturalLanguageDefinition>data set composed of a set of features that belong to a single entity</AnnotationVocabulary:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -2005,34 +2238,30 @@ For a continuous random variable, a curve described by a mathematical formula wh
     
 
 
-    <!-- http://www.semanticweb.org/mnd14/ml/FeatureVectorSet -->
+    <!-- http://www.semanticweb.org/mnd14/ml/FlatteningLayer -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/FeatureVectorSet">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000110"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/FeatureVector"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label>feature vector set</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>collection of feature vectors</AnnotationVocabulary:naturalLanguageDefinition>
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/FlatteningLayer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/NeuralNetworkLayer"/>
+        <rdfs:label>flattening layer</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/mnd14/ml/FeatureVectorSetCharacteristic -->
+    <!-- http://www.semanticweb.org/mnd14/ml/FullyConnectedLayer -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/FeatureVectorSetCharacteristic">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/mnd14/ml/informationContentEntityCharacteristicOf"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/FeatureVectorSet"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/DataSetCharacteristic"/>
-        <rdfs:label>feature vector set characteristic</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>data set characteristic of a feature vector set</AnnotationVocabulary:naturalLanguageDefinition>
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/FullyConnectedLayer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/NeuralNetworkLayer"/>
+        <rdfs:label>fully connected layer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/GaussianNoise -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/GaussianNoise">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/Noise"/>
+        <rdfs:label>gaussian noise</rdfs:label>
+        <AnnotationVocabulary:naturalLanguageDefinition>noise whose values follow a gaussian distribution</AnnotationVocabulary:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -2040,9 +2269,33 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <!-- http://www.semanticweb.org/mnd14/ml/Graph -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/Graph">
+        <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000027"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000100"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">graph</rdfs:label>
+        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">data item or data set that consists of a set of nodes that are connected with edges</AnnotationVocabulary:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/GraphFeature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/GraphFeature">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/Feature"/>
-        <rdfs:label xml:lang="en">graph feature</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">feature that consists of a set of nodes that are connected with edges</AnnotationVocabulary:naturalLanguageDefinition>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/describes"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/Graph"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>graph feature</rdfs:label>
+        <AnnotationVocabulary:naturalLanguageDefinition>feature of a graph</AnnotationVocabulary:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -2101,6 +2354,22 @@ For a continuous random variable, a curve described by a mathematical formula wh
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/ConfigurationVariableSet"/>
         <rdfs:label>hyperparameter set</rdfs:label>
         <AnnotationVocabulary:naturalLanguageDefinition>collection of hyperparameters that belong to a particular machine learning training implementation</AnnotationVocabulary:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/ImageFeature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/ImageFeature">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/Feature"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/describes"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/DigitalImage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>image feature</rdfs:label>
+        <AnnotationVocabulary:naturalLanguageDefinition>feature of a digital image</AnnotationVocabulary:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -2258,7 +2527,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.semanticweb.org/mnd14/ml/MachineLearningSample"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/mnd14/ml/FeatureVector"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000177"/>
                                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/TrainingDataSet"/>
@@ -2269,7 +2538,15 @@ For a continuous random variable, a curve described by a mathematical formula wh
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>instance-based model</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>machine learning model that consists of a subset of samples present in the training dataset that was used to train the model</AnnotationVocabulary:naturalLanguageDefinition>
+        <AnnotationVocabulary:naturalLanguageDefinition>machine learning model that consists of a subset of feature vectors present in the training dataset that was used to train the model</AnnotationVocabulary:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/Keras -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/Keras">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningFramework"/>
     </owl:Class>
     
 
@@ -2305,7 +2582,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/DataProcessingPipeline"/>
         <rdfs:label>machine learning data preparation pipeline</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>planned process that consists of a set of feature engineering operations and/or data cleaning operations through which a raw data set is converted into a machine learning data set</AnnotationVocabulary:naturalLanguageDefinition>
+        <AnnotationVocabulary:naturalLanguageDefinition>planned process that consists of a set of data processing operations and/or data cleaning operations through which a raw data set is converted into a machine learning data set</AnnotationVocabulary:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -2317,7 +2594,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000110"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningSample"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/FeatureVector"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2336,7 +2613,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         </rdfs:subClassOf>
         <rdfs:label>machine learning data set</rdfs:label>
         <skos:example>data set that consists of patient PET images used as an input into cGAN execution; cNIST data set used for input in an ANN classification; data set that consists of values of several CPPs measured over a certain period of time that is used as an input for a deep learning model that predicts a particular CQA</skos:example>
-        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">data set that consists of a number of machine learning samples and is intended to be an input of machine learning model execution or machine learning training</AnnotationVocabulary:naturalLanguageDefinition>
+        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">data set that consists of a number of feature vectors and is intended to be an input of machine learning model execution or machine learning training</AnnotationVocabulary:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -2722,52 +2999,6 @@ For a continuous random variable, a curve described by a mathematical formula wh
     
 
 
-    <!-- http://www.semanticweb.org/mnd14/ml/MachineLearningSample -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/MachineLearningSample">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/mnd14/ml/isComposedOf"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/Feature"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/mnd14/ml/isComposedOf"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/Feature"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/describes"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label>machine learning sample</rdfs:label>
-        <skos:example>petal length value, petal width value, sepal length value and sepal width value associated with a single iris flower</skos:example>
-        <AnnotationVocabulary:naturalLanguageDefinition>data set composed of a set of features that belong to a single entity</AnnotationVocabulary:naturalLanguageDefinition>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/mnd14/ml/MachineLearningSampleCharacteristic -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/MachineLearningSampleCharacteristic">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/mnd14/ml/informationContentEntityCharacteristicOf"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningSample"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/DataSetCharacteristic"/>
-        <rdfs:label>machine learning sample characteristic</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>data set characteristic of a machine learning sample</AnnotationVocabulary:naturalLanguageDefinition>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/mnd14/ml/MachineLearningSampleIdentifier -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/MachineLearningSampleIdentifier">
@@ -2777,13 +3008,13 @@ For a continuous random variable, a curve described by a mathematical formula wh
                     <rdf:Description rdf:about="https://spec.industrialontologies.org/ontology/core/Core/Identifier"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/designates"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningSample"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/FeatureVector"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:label>machine learning sample identifier</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>identifier that identifies a machine learning sample within a dataset</AnnotationVocabulary:naturalLanguageDefinition>
+        <rdfs:label>feature vector identifier</rdfs:label>
+        <AnnotationVocabulary:naturalLanguageDefinition>identifier that identifies a feature vector within a dataset</AnnotationVocabulary:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -2961,11 +3192,11 @@ For a continuous random variable, a curve described by a mathematical formula wh
                                 <owl:intersectionOf rdf:parseType="Collection">
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="http://www.semanticweb.org/mnd14/ml/hasDataInput"/>
-                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningDataSet"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/FeatureVector"/>
                                     </owl:Restriction>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="http://www.semanticweb.org/mnd14/ml/hasDataOutput"/>
-                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelOutputDataSet"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelOutput"/>
                                     </owl:Restriction>
                                 </owl:intersectionOf>
                             </owl:Class>
@@ -2973,11 +3204,11 @@ For a continuous random variable, a curve described by a mathematical formula wh
                                 <owl:intersectionOf rdf:parseType="Collection">
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="http://www.semanticweb.org/mnd14/ml/hasDataInput"/>
-                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningSample"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningDataSet"/>
                                     </owl:Restriction>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="http://www.semanticweb.org/mnd14/ml/hasDataOutput"/>
-                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelOutput"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelOutputDataSet"/>
                                     </owl:Restriction>
                                 </owl:intersectionOf>
                             </owl:Class>
@@ -2996,7 +3227,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/ComputingProcess"/>
         <rdfs:label xml:lang="en">model execution</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">planned process in which some machine learning model is executed on a machine learning data set or on a machine learning sample</AnnotationVocabulary:naturalLanguageDefinition>
+        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">planned process in which some machine learning model is executed on a machine learning data set or on a feature vector</AnnotationVocabulary:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -3076,14 +3307,14 @@ For a continuous random variable, a curve described by a mathematical formula wh
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/mnd14/ml/informationContentEntityDerivedFrom"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningSample"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/FeatureVector"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <rdfs:label>model output</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>data item that is created as an output of a model execution that corresponds to a single machine learning sample</AnnotationVocabulary:naturalLanguageDefinition>
+        <AnnotationVocabulary:naturalLanguageDefinition>data item that is created as an output of a model execution that corresponds to a single feature vector</AnnotationVocabulary:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -3270,8 +3501,17 @@ For a continuous random variable, a curve described by a mathematical formula wh
         </rdfs:subClassOf>
         <rdfs:label>model validation</rdfs:label>
         <skos:example>Leave one out cross validation</skos:example>
-        <AnnotationVocabulary:explanatoryNote>iterations are typically performed until each machine learning sample is used for model evaluation</AnnotationVocabulary:explanatoryNote>
+        <AnnotationVocabulary:explanatoryNote>iterations are typically performed until each feature vector is used for model evaluation</AnnotationVocabulary:explanatoryNote>
         <AnnotationVocabulary:naturalLanguageDefinition>planned process in which a machine learning model is evaluated through successive iterations of data set partitioning, machine learning training and model evaluation</AnnotationVocabulary:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/MultiLayerPerceptron -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/MultiLayerPerceptron">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/ArtificialNeuralNetwork"/>
+        <rdfs:label>multi layer perceptron</rdfs:label>
     </owl:Class>
     
 
@@ -3378,6 +3618,17 @@ For a continuous random variable, a curve described by a mathematical formula wh
     
 
 
+    <!-- http://www.semanticweb.org/mnd14/ml/Noise -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/Noise">
+        <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity"/>
+        <rdfs:label>noise</rdfs:label>
+        <AnnotationVocabulary:naturalLanguageDefinition>random or unpredictable fluctuations in data that disrupt the ability to identify target patterns or relationships</AnnotationVocabulary:naturalLanguageDefinition>
+        <AnnotationVocabulary1:directSource>https://dataheroes.ai/glossary/noise-in-machine-learning/</AnnotationVocabulary1:directSource>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/mnd14/ml/NominalClassificationScheme -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/NominalClassificationScheme">
@@ -3472,6 +3723,16 @@ For a continuous random variable, a curve described by a mathematical formula wh
     
 
 
+    <!-- http://www.semanticweb.org/mnd14/ml/PoissonNoise -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/PoissonNoise">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/Noise"/>
+        <rdfs:label>poisson noise</rdfs:label>
+        <AnnotationVocabulary:naturalLanguageDefinition>noise whose values follow a poisson distribution</AnnotationVocabulary:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/mnd14/ml/PolynomialFeature -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/PolynomialFeature">
@@ -3494,6 +3755,15 @@ For a continuous random variable, a curve described by a mathematical formula wh
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/MathematicalFunction"/>
         <rdfs:label>polynomial function</rdfs:label>
         <AnnotationVocabulary:naturalLanguageDefinition>mathematical function that consists of coefficients, variables, constants, operators, and non-negative integers as exponents</AnnotationVocabulary:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/PoolingLayer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/PoolingLayer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/NeuralNetworkLayer"/>
+        <rdfs:label>pooling layer</rdfs:label>
     </owl:Class>
     
 
@@ -3566,6 +3836,16 @@ For a continuous random variable, a curve described by a mathematical formula wh
         <rdfs:label xml:lang="en">raw data set</rdfs:label>
         <skos:example>data set that consists of unprocessed outputs from a series of measurement processes</skos:example>
         <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">data set collected from a domain of interest, that has not undergone any data processing</AnnotationVocabulary:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/RectifiedLinearUnit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/RectifiedLinearUnit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/ActivationFunction"/>
+        <rdfs:label>rectified linear unit</rdfs:label>
+        <AnnotationVocabulary1:abbreviation>ReLU</AnnotationVocabulary1:abbreviation>
     </owl:Class>
     
 
@@ -3721,6 +4001,26 @@ For a continuous random variable, a curve described by a mathematical formula wh
     
 
 
+    <!-- http://www.semanticweb.org/mnd14/ml/ScaledFeature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/ScaledFeature">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mnd14/ml/DerivedFeature"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mnd14/ml/dataOutputOf"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/FeatureScalingOperation"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:label>scaled feature</rdfs:label>
+        <AnnotationVocabulary:naturalLanguageDefinition>derived feature that is a result of a feature scaling operation</AnnotationVocabulary:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/mnd14/ml/SemiSupervisedLearning -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/SemiSupervisedLearning">
@@ -3743,7 +4043,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
                                         <owl:someValuesFrom>
                                             <owl:Class>
                                                 <owl:intersectionOf rdf:parseType="Collection">
-                                                    <rdf:Description rdf:about="http://www.semanticweb.org/mnd14/ml/MachineLearningSample"/>
+                                                    <rdf:Description rdf:about="http://www.semanticweb.org/mnd14/ml/FeatureVector"/>
                                                     <owl:Class>
                                                         <owl:complementOf>
                                                             <owl:Restriction>
@@ -3761,7 +4061,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
                                         <owl:someValuesFrom>
                                             <owl:Class>
                                                 <owl:intersectionOf rdf:parseType="Collection">
-                                                    <rdf:Description rdf:about="http://www.semanticweb.org/mnd14/ml/MachineLearningSample"/>
+                                                    <rdf:Description rdf:about="http://www.semanticweb.org/mnd14/ml/FeatureVector"/>
                                                     <owl:Restriction>
                                                         <owl:onProperty rdf:resource="http://www.semanticweb.org/mnd14/ml/hasTargetVariable"/>
                                                         <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/TargetVariable"/>
@@ -3850,6 +4150,15 @@ For a continuous random variable, a curve described by a mathematical formula wh
     
 
 
+    <!-- http://www.semanticweb.org/mnd14/ml/Softmax -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/Softmax">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/ActivationFunction"/>
+        <rdfs:label>softmax</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/mnd14/ml/SpecifiedValueExpression -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/SpecifiedValueExpression">
@@ -3924,7 +4233,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000027"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/mnd14/ml/targetVariableOf"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningSample"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/FeatureVector"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -3932,7 +4241,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <rdfs:label>target variable</rdfs:label>
         <skos:example>the measured value of the intended prediction of a ML model execution (e.g., dose prediction, CQA prediction)</skos:example>
-        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">data item which a machine learning model execution should output if given a particular machine learning sample as input</AnnotationVocabulary:naturalLanguageDefinition>
+        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">data item which a machine learning model execution should output if given a particular feature vector as input</AnnotationVocabulary:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -3949,6 +4258,14 @@ For a continuous random variable, a curve described by a mathematical formula wh
         </rdfs:subClassOf>
         <rdfs:label>target variable vector</rdfs:label>
         <AnnotationVocabulary:naturalLanguageDefinition>data set that is composed a set of target variables of different samples as parts</AnnotationVocabulary:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/Tensorflow -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/Tensorflow">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningFramework"/>
     </owl:Class>
     
 
@@ -4025,6 +4342,16 @@ For a continuous random variable, a curve described by a mathematical formula wh
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningDataSet"/>
         <rdfs:label xml:lang="en">training data set</rdfs:label>
         <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">machine learning data set which is used as an input of some machine learning training</AnnotationVocabulary:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/TypeCastingOperation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/TypeCastingOperation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/DataProcessingOperation"/>
+        <rdfs:label>type casting operation</rdfs:label>
+        <AnnotationVocabulary:naturalLanguageDefinition>data processing operation that casts the values of all the inputs to a particular datatype</AnnotationVocabulary:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -4112,12 +4439,6 @@ For a continuous random variable, a curve described by a mathematical formula wh
     
 
 
-    <!-- https://spec.industrialontologies.org/ontology/core/Core/MeasuredValueExpression -->
-
-    <rdf:Description rdf:about="https://spec.industrialontologies.org/ontology/core/Core/MeasuredValueExpression"/>
-    
-
-
     <!-- https://spec.industrialontologies.org/ontology/core/Core/ObjectiveSpecification -->
 
     <owl:Class rdf:about="https://spec.industrialontologies.org/ontology/core/Core/ObjectiveSpecification"/>
@@ -4179,5 +4500,5 @@ For a continuous random variable, a curve described by a mathematical formula wh
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
 
