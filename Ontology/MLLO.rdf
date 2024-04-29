@@ -15,60 +15,11 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
-     xmlns:AnnotationVocabulary="https://purl.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/"
-     xmlns:AnnotationVocabulary1="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/">
+     xmlns:iof-av="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/">
     <owl:Ontology rdf:about="http://www.semanticweb.org/mnd14/ml/">
         <owl:imports rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/"/>
     </owl:Ontology>
     
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotation properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.w3.org/2002/07/owl#qualifiedCardinality -->
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#qualifiedCardinality"/>
-    
-
-
-    <!-- https://purl.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom -->
-
-    <owl:AnnotationProperty rdf:about="https://purl.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/adaptedFrom"/>
-    
-
-
-    <!-- https://purl.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/directSource -->
-
-    <owl:AnnotationProperty rdf:about="https://purl.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/directSource"/>
-    
-
-
-    <!-- https://purl.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/explanatoryNote -->
-
-    <owl:AnnotationProperty rdf:about="https://purl.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/explanatoryNote"/>
-    
-
-
-    <!-- https://purl.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/naturalLanguageDefinition -->
-
-    <owl:AnnotationProperty rdf:about="https://purl.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/naturalLanguageDefinition"/>
-    
-
-
-    <!-- https://purl.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/synonym -->
-
-    <owl:AnnotationProperty rdf:about="https://purl.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/synonym"/>
-    
-
 
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -89,7 +40,7 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/mnd14/ml/ConfigurationVariable"/>
         <rdfs:range rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/EncodedAlgorithm"/>
         <rdfs:label>configuration variable of</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>relation between a configuration variable and an encoded algorithm it is a part of</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>relation between a configuration variable and an encoded algorithm it is a part of</iof-av:naturalLanguageDefinition>
     </owl:ObjectProperty>
     
 
@@ -118,7 +69,7 @@
         </rdfs:domain>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <rdfs:label>data input of</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>relation from a data item or a data set to a process indicating that it is the input of the process</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>relation from a data item or a data set to a process indicating that it is the input of the process</iof-av:naturalLanguageDefinition>
     </owl:ObjectProperty>
     
 
@@ -138,7 +89,7 @@
         </rdfs:domain>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <rdfs:label>data output of</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>relation from a data item or data set to a process indicating that it is the output of the process</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>relation from a data item or data set to a process indicating that it is the output of the process</iof-av:naturalLanguageDefinition>
     </owl:ObjectProperty>
     
 
@@ -151,7 +102,7 @@
         <rdfs:domain rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/PlannedProcess"/>
         <rdfs:range rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/EncodedAlgorithm"/>
         <rdfs:label>executes</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>relates a planned process to an encoded algorithm that is concretized during the planned process</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>relates a planned process to an encoded algorithm that is concretized during the planned process</iof-av:naturalLanguageDefinition>
     </owl:ObjectProperty>
     
 
@@ -182,7 +133,7 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/mnd14/ml/ConfigurationVariable"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/mnd14/ml/ConfigurationSetting"/>
         <rdfs:label>has configuration setting at some time</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>relation between a configuration variable and configuration variable setting indicating that the configuration variable setting contains the value of the configuration variable</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>relation between a configuration variable and configuration variable setting indicating that the configuration variable setting contains the value of the configuration variable</iof-av:naturalLanguageDefinition>
     </owl:ObjectProperty>
     
 
@@ -193,7 +144,7 @@
         <rdfs:subPropertyOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/describedBy"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/mnd14/ml/isConfigurationSettingSetOfAtSomeTime"/>
         <rdfs:label>has configuration setting set at some time</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>relation between a configuration variable set and configuration variable setting set indicating that the configuration variable setting set contains the value of the configuration variable set</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>relation between a configuration variable set and configuration variable setting set indicating that the configuration variable setting set contains the value of the configuration variable set</iof-av:naturalLanguageDefinition>
     </owl:ObjectProperty>
     
 
@@ -221,7 +172,7 @@
             </owl:Class>
         </rdfs:range>
         <rdfs:label>has data input</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>inverse of data input of</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>inverse of data input of</iof-av:naturalLanguageDefinition>
     </owl:ObjectProperty>
     
 
@@ -233,7 +184,7 @@
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <rdfs:label>has data output</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>inverse of data output of</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>inverse of data output of</iof-av:naturalLanguageDefinition>
     </owl:ObjectProperty>
     
 
@@ -246,7 +197,7 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/mnd14/ml/ConfigurationVariable"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/mnd14/ml/DefaultSetting"/>
         <rdfs:label>has default setting</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>relation between a configuration variable and its default setting</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>relation between a configuration variable and its default setting</iof-av:naturalLanguageDefinition>
     </owl:ObjectProperty>
     
 
@@ -257,7 +208,7 @@
         <rdfs:subPropertyOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/isSubjectOf"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/mnd14/ml/isTheIndexOf"/>
         <rdfs:label>has index</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>inverse of is the index of</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>inverse of is the index of</iof-av:naturalLanguageDefinition>
     </owl:ObjectProperty>
     
 
@@ -270,7 +221,7 @@
         <rdfs:domain rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/mnd14/ml/InformationContentEntityCharacteristic"/>
         <rdfs:label>has information content entity characteristic</rdfs:label>
-        <AnnotationVocabulary:explanatoryNote>relation from an information content entity to its characteristic</AnnotationVocabulary:explanatoryNote>
+        <iof-av:explanatoryNote>relation from an information content entity to its characteristic</iof-av:explanatoryNote>
     </owl:ObjectProperty>
     
 
@@ -283,7 +234,7 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/mnd14/ml/FeatureVector"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/mnd14/ml/TargetVariable"/>
         <rdfs:label>has target variable</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>relates a feature vector to a target variable that is associated with the feature vector</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>relates a feature vector to a target variable that is associated with the feature vector</iof-av:naturalLanguageDefinition>
     </owl:ObjectProperty>
     
 
@@ -295,7 +246,7 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/mnd14/ml/InformationContentEntityCharacteristic"/>
         <rdfs:range rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity"/>
         <rdfs:label>information content entity characteristic of</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>inverse of has information content entity characteristic</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>inverse of has information content entity characteristic</iof-av:naturalLanguageDefinition>
     </owl:ObjectProperty>
     
 
@@ -307,7 +258,7 @@
         <rdfs:domain rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity"/>
         <rdfs:range rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity"/>
         <rdfs:label>information content entity derived from</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>relation from an information content entity to an information content entity it was generated from</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>relation from an information content entity to an information content entity it was generated from</iof-av:naturalLanguageDefinition>
     </owl:ObjectProperty>
     
 
@@ -319,8 +270,8 @@
         <rdfs:domain rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity"/>
         <rdfs:range rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity"/>
         <rdfs:label>information content entity directly derived from</rdfs:label>
-        <AnnotationVocabulary:explanatoryNote>A directly derived from B means that there exist no intermediary information content entity C such that C is derived from B and A is derived from C</AnnotationVocabulary:explanatoryNote>
-        <AnnotationVocabulary:naturalLanguageDefinition>relation from an information content entity to an information content entity it was generated from directly</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:explanatoryNote>A directly derived from B means that there exist no intermediary information content entity C such that C is derived from B and A is derived from C</iof-av:explanatoryNote>
+        <iof-av:naturalLanguageDefinition>relation from an information content entity to an information content entity it was generated from directly</iof-av:naturalLanguageDefinition>
     </owl:ObjectProperty>
     
 
@@ -336,7 +287,7 @@
             <rdf:Description rdf:about="http://www.semanticweb.org/mnd14/ml/isTheIndexOf"/>
         </owl:propertyChainAxiom>
         <rdfs:label>is composed of</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>relation between an entity x and entity y which holds when y is a part of x and y has an ordering relation with the other entities that are a part of x</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>relation between an entity x and entity y which holds when y is a part of x and y has an ordering relation with the other entities that are a part of x</iof-av:naturalLanguageDefinition>
     </owl:ObjectProperty>
     
 
@@ -346,7 +297,7 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mnd14/ml/isConfigurationSettingOfAtSomeTime">
         <rdfs:subPropertyOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/describes"/>
         <rdfs:label>is configuration setting of at some time</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>inverse of has configuration setting at some time</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>inverse of has configuration setting at some time</iof-av:naturalLanguageDefinition>
     </owl:ObjectProperty>
     
 
@@ -356,7 +307,7 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mnd14/ml/isConfigurationSettingSetOfAtSomeTime">
         <rdfs:subPropertyOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/describes"/>
         <rdfs:label>is configuration setting set of at some time</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>inverse of has configuration variable setting set</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>inverse of has configuration variable setting set</iof-av:naturalLanguageDefinition>
     </owl:ObjectProperty>
     
 
@@ -366,7 +317,7 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mnd14/ml/isDefaultSettingOf">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mnd14/ml/isConfigurationSettingOfAtSomeTime"/>
         <rdfs:label>is default setting of</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>inverse of has default setting</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>inverse of has default setting</iof-av:naturalLanguageDefinition>
     </owl:ObjectProperty>
     
 
@@ -377,8 +328,8 @@
         <rdfs:subPropertyOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/isAbout"/>
         <rdfs:domain rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/EncodedAlgorithm"/>
         <rdfs:label>is encoded in</rdfs:label>
-        <AnnotationVocabulary:adaptedFrom>http://www.ebi.ac.uk/efo/swo/SWO_0000741</AnnotationVocabulary:adaptedFrom>
-        <AnnotationVocabulary:naturalLanguageDefinition>relation between an encoded algorithm and a programming language or framework the encoded algorithm was written in</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:adaptedFrom>http://www.ebi.ac.uk/efo/swo/SWO_0000741</iof-av:adaptedFrom>
+        <iof-av:naturalLanguageDefinition>relation between an encoded algorithm and a programming language or framework the encoded algorithm was written in</iof-av:naturalLanguageDefinition>
     </owl:ObjectProperty>
     
 
@@ -388,7 +339,7 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mnd14/ml/isExecutedIn">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000058"/>
         <rdfs:label>is executed in</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>inverse of executes</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>inverse of executes</iof-av:naturalLanguageDefinition>
     </owl:ObjectProperty>
     
 
@@ -400,7 +351,7 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/mnd14/ml/Index"/>
         <rdfs:range rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity"/>
         <rdfs:label>is the index associated with</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>relationship between a index and an information content entity indicating that the index determines the position of the ice it is the index of within the ice the index is associated with</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>relationship between a index and an information content entity indicating that the index determines the position of the ice it is the index of within the ice the index is associated with</iof-av:naturalLanguageDefinition>
     </owl:ObjectProperty>
     
 
@@ -412,7 +363,7 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/mnd14/ml/Index"/>
         <rdfs:range rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity"/>
         <rdfs:label>is the index of</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>relation between a index and an information content entity indicating that the index determines the position of the ice within the ice it is a part of</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>relation between a index and an information content entity indicating that the index determines the position of the ice within the ice it is a part of</iof-av:naturalLanguageDefinition>
     </owl:ObjectProperty>
     
 
@@ -437,7 +388,7 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/mnd14/ml/TargetVariable"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/mnd14/ml/FeatureVector"/>
         <rdfs:label>target variable of</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>inverse of has target variable</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>inverse of has target variable</iof-av:naturalLanguageDefinition>
     </owl:ObjectProperty>
     
 
@@ -586,7 +537,7 @@
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/PlannedProcess"/>
         <rdfs:label xml:lang="en">model selection</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">planned process in which model that has the best performance is selected among a number of machine learning models</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition xml:lang="en">planned process in which model that has the best performance is selected among a number of machine learning models</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -596,7 +547,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000025">
         <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity"/>
         <rdfs:label>programming language</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>A language in which source code is written, intended to executed/run by a software interpreter. Programming languages are ways to write instructions that specify what to do, and sometimes, how to do it.</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>A language in which source code is written, intended to executed/run by a software interpreter. Programming languages are ways to write instructions that specify what to do, and sometimes, how to do it.</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -607,8 +558,8 @@
         <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity"/>
         <rdfs:label xml:lang="en">data item</rdfs:label>
         <skos:example xml:lang="en">Data items include counts of things, analyte concentrations, and statistical summaries.</skos:example>
-        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.</AnnotationVocabulary:naturalLanguageDefinition>
-        <AnnotationVocabulary:synonym xml:lang="en">data</AnnotationVocabulary:synonym>
+        <iof-av:naturalLanguageDefinition xml:lang="en">An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.</iof-av:naturalLanguageDefinition>
+        <iof-av:synonym xml:lang="en">data</iof-av:synonym>
     </owl:Class>
     
 
@@ -618,9 +569,9 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000098">
         <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity"/>
         <rdfs:label xml:lang="en">data format specification</rdfs:label>
-        <AnnotationVocabulary:directSource xml:lang="en">OBI_0000187</AnnotationVocabulary:directSource>
-        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">A data format specification is the information content borne by the document published defining the specification.
-Example: The ISO document specifying what encompasses an XML document; The instructions in a XSD file</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:directSource xml:lang="en">OBI_0000187</iof-av:directSource>
+        <iof-av:naturalLanguageDefinition xml:lang="en">A data format specification is the information content borne by the document published defining the specification.
+Example: The ISO document specifying what encompasses an XML document; The instructions in a XSD file</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -631,10 +582,10 @@ Example: The ISO document specifying what encompasses an XML document; The instr
         <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity"/>
         <rdfs:label xml:lang="en">data set</rdfs:label>
         <skos:example xml:lang="en">Intensity values in a CEL file or from multiple CEL files comprise a data set (as opposed to the CEL files themselves).</skos:example>
-        <AnnotationVocabulary:directSource xml:lang="en">OBI_0000042</AnnotationVocabulary:directSource>
-        <AnnotationVocabulary:explanatoryNote xml:lang="en">1.The intention is that this term represent collections of like data. So this isn&apos;t for, e.g. the whole contents of a cel file, which includes parameters, metadata etc. This is more like java arrays of a certain rather specific type
-2. Data sets are aggregates and thus must include two or more data items. We have chosen not to add logical axioms to make this restriction.</AnnotationVocabulary:explanatoryNote>
-        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">Information content entity that is an aggregate of data items of the same type that have something in common. Averages and distributions can be determined for data sets.</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:directSource xml:lang="en">OBI_0000042</iof-av:directSource>
+        <iof-av:explanatoryNote xml:lang="en">1.The intention is that this term represent collections of like data. So this isn&apos;t for, e.g. the whole contents of a cel file, which includes parameters, metadata etc. This is more like java arrays of a certain rather specific type
+2. Data sets are aggregates and thus must include two or more data items. We have chosen not to add logical axioms to make this restriction.</iof-av:explanatoryNote>
+        <iof-av:naturalLanguageDefinition xml:lang="en">Information content entity that is an aggregate of data items of the same type that have something in common. Averages and distributions can be determined for data sets.</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -644,11 +595,11 @@ Example: The ISO document specifying what encompasses an XML document; The instr
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000225">
         <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity"/>
         <rdfs:label xml:lang="en">probability distribution</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">A probability distribution is an information content entity that specifies the probability of the value of a random variable.
+        <iof-av:naturalLanguageDefinition xml:lang="en">A probability distribution is an information content entity that specifies the probability of the value of a random variable.
 
 For a discrete random variable, a mathematical formula that gives the probability of each value of the variable.
 
-For a continuous random variable, a curve described by a mathematical formula which specifies, by way of areas under the curve, the probability that the variable falls within a particular interval.</AnnotationVocabulary:naturalLanguageDefinition>
+For a continuous random variable, a curve described by a mathematical formula which specifies, by way of areas under the curve, the probability that the variable falls within a particular interval.</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -658,8 +609,8 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000531">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000225"/>
         <rdfs:label>prior probability distribution</rdfs:label>
-        <AnnotationVocabulary:adaptedFrom>Oxford Dictionary of Statistics: 10.1093/acref/9780199541454.001.0001</AnnotationVocabulary:adaptedFrom>
-        <AnnotationVocabulary:naturalLanguageDefinition>a prior probability distribution is a probability distribution used as input to a Bayesian model to represent a priori knowledge about a model parameter. Along with the acquired/observed data, it is used to compute a posterior distribution according to the Bayes theorem.</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:adaptedFrom>Oxford Dictionary of Statistics: 10.1093/acref/9780199541454.001.0001</iof-av:adaptedFrom>
+        <iof-av:naturalLanguageDefinition>a prior probability distribution is a probability distribution used as input to a Bayesian model to represent a priori knowledge about a model parameter. Along with the acquired/observed data, it is used to compute a posterior distribution according to the Bayes theorem.</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -670,7 +621,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelExecutionObjective"/>
         <rdfs:label xml:lang="en">action selection objective</rdfs:label>
         <skos:example>an RNN is used for selecting the next control action in a bioreactor co-culture growth based on the state of the environment (e.g. nutrient availability, population of each cell type)</skos:example>
-        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">model execution objective to output an optimal action within a given environment</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition xml:lang="en">model execution objective to output an optimal action within a given environment</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -680,8 +631,8 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/ActivationFunction">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/MathematicalFunction"/>
         <rdfs:label>activation function</rdfs:label>
-        <AnnotationVocabulary:explanatoryNote>an activation function is typically a non-linear transformation of the output of the neural network layer</AnnotationVocabulary:explanatoryNote>
-        <AnnotationVocabulary:naturalLanguageDefinition>function that prescribes how an output of a neural network layer is modified</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:explanatoryNote>an activation function is typically a non-linear transformation of the output of the neural network layer</iof-av:explanatoryNote>
+        <iof-av:naturalLanguageDefinition>function that prescribes how an output of a neural network layer is modified</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -691,7 +642,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/AdamOptimizer">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/OptimizationAlgorithm"/>
         <rdfs:label>adam optimizer</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>optimization algorithm that prescribes how to find a minimum or a maximum by adaptive moment estimation</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>optimization algorithm that prescribes how to find a minimum or a maximum by adaptive moment estimation</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -707,7 +658,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/InformationContentEntityCharacteristic"/>
         <rdfs:label>algorithm characteristic</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>information content entity characteristic of an algorithm</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>information content entity characteristic of an algorithm</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -736,7 +687,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:label>artificial neural network</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>machine learning model which consists of a collection of connected units or nodes called artificial neurons, which loosely model the neurons in a biological brain</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>machine learning model which consists of a collection of connected units or nodes called artificial neurons, which loosely model the neurons in a biological brain</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -772,7 +723,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">artificial neural network training algorithm</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>machine learning algorithm that prescribes the training of an artificial neural network</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>machine learning algorithm that prescribes the training of an artificial neural network</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -808,7 +759,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">association rule learning algorithm</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>machine learning algorithm that prescribes how an association rule model is trained</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>machine learning algorithm that prescribes how an association rule model is trained</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -818,7 +769,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/AssociationRuleModel">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningModel"/>
         <rdfs:label>association rule model</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>machine learning model that finds the relations between features and determines the reliability of those associations</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>machine learning model that finds the relations between features and determines the reliability of those associations</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -828,7 +779,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/AveragePoolingLayer">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/PoolingLayer"/>
         <rdfs:label>average pooling layer</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>pooling layer that reduces input data dimensions by computing the average value of elements within a defined region</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>pooling layer that reduces input data dimensions by computing the average value of elements within a defined region</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -838,8 +789,8 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/Backpropagation">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/ArtificialNeuralNetworkTrainingAlgorithm"/>
         <rdfs:label>backpropagation</rdfs:label>
-        <AnnotationVocabulary:explanatoryNote>the gradients are calculated during an optimization process</AnnotationVocabulary:explanatoryNote>
-        <AnnotationVocabulary:naturalLanguageDefinition>artificial neural network training algorithm that prescribes how the weights of neurons should be updated based on their gradients</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:explanatoryNote>the gradients are calculated during an optimization process</iof-av:explanatoryNote>
+        <iof-av:naturalLanguageDefinition>artificial neural network training algorithm that prescribes how the weights of neurons should be updated based on their gradients</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -849,9 +800,9 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/BatchSize">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/Hyperparameter"/>
         <rdfs:label>batch size</rdfs:label>
-        <AnnotationVocabulary:directSource>https://medium.com/geekculture/how-does-batch-size-impact-your-model-learning-2dd34d9fb1fa</AnnotationVocabulary:directSource>
-        <AnnotationVocabulary:explanatoryNote>sample in the case of supervised learning consists of the input feature vector as well as the target variable</AnnotationVocabulary:explanatoryNote>
-        <AnnotationVocabulary:naturalLanguageDefinition>parameter that defines the number of samples to work through before updating the internal model parameters</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:directSource>https://medium.com/geekculture/how-does-batch-size-impact-your-model-learning-2dd34d9fb1fa</iof-av:directSource>
+        <iof-av:explanatoryNote>sample in the case of supervised learning consists of the input feature vector as well as the target variable</iof-av:explanatoryNote>
+        <iof-av:naturalLanguageDefinition>parameter that defines the number of samples to work through before updating the internal model parameters</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -862,7 +813,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningTrainingAlgorithm"/>
         <rdfs:label xml:lang="en">bayesian algorithm</rdfs:label>
         <skos:example>training a neural network with a prior probability distribution for neural network weights; utilization of prior distribution for loss regularization</skos:example>
-        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">machine learning algorithm that prescribes how bayesian statistics is used in training a machine learning model</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition xml:lang="en">machine learning algorithm that prescribes how bayesian statistics is used in training a machine learning model</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -884,7 +835,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/Feature"/>
         <rdfs:label xml:lang="en">categorical feature</rdfs:label>
         <skos:example>&quot;low risk&quot; value of a process parameter that is prescribed by a risk analysis classification scheme</skos:example>
-        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">feature that can only have limited, and usually fixed, number of possible values which are prescribed by some classification scheme</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition xml:lang="en">feature that can only have limited, and usually fixed, number of possible values which are prescribed by some classification scheme</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -904,7 +855,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/PredictionObjective"/>
         <rdfs:label xml:lang="en">classification objective</rdfs:label>
         <skos:example>A CNN model has the objective to classify the input images into categories that represent if the object on the picture is an animal or not</skos:example>
-        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">prediction objective to categorize the input</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition xml:lang="en">prediction objective to categorize the input</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -921,7 +872,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         </rdfs:subClassOf>
         <rdfs:label>classification scheme</rdfs:label>
         <skos:example>binary classification scheme of &quot;true&quot; &quot;false&quot; that has no implicit ordering meaning, the classification scheme of &quot;low&quot; &quot;medium&quot; &quot;high&quot; that has explicit ordering whereby &quot;low&quot;&lt;&quot;medium&quot;&lt;&quot;high&quot;</skos:example>
-        <AnnotationVocabulary:naturalLanguageDefinition>information content entity which prescribes the values that a categorical value expression can have</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>information content entity which prescribes the values that a categorical value expression can have</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -931,7 +882,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/Cluster">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningModelComponent"/>
         <rdfs:label>cluster</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>machine learning model component that consists of a number of samples used in model input that are grouped together</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>machine learning model component that consists of a number of samples used in model input that are grouped together</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -968,7 +919,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">clustering algorithm</rdfs:label>
         <skos:example>hierarchical clustering algorithm</skos:example>
-        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">machine learning algorithm that prescribes how a clustering model is generated</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition xml:lang="en">machine learning algorithm that prescribes how a clustering model is generated</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -993,7 +944,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         </owl:equivalentClass>
         <rdfs:label>clustering model</rdfs:label>
         <skos:example>hierarchical clustering model, k means clustering model</skos:example>
-        <AnnotationVocabulary:naturalLanguageDefinition>machine learning model which consists of clusters that are determined by some underlying similarity between a subset of features in the training set that was used to train the model</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>machine learning model which consists of clusters that are determined by some underlying similarity between a subset of features in the training set that was used to train the model</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -1003,7 +954,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/ComplexNumberFeature">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/NumericalFeature"/>
         <rdfs:label xml:lang="en">complex number feature</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">numeric feature that has complex numbers as value</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition xml:lang="en">numeric feature that has complex numbers as value</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -1025,7 +976,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity"/>
         <rdfs:label>configuration variable setting</rdfs:label>
         <skos:example>&quot;4&quot; is the value of a batch size hyperparameter that is set for a particular training of a CNN model</skos:example>
-        <AnnotationVocabulary:naturalLanguageDefinition>information content entity that specifies the value of a configuration variable</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>information content entity that specifies the value of a configuration variable</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -1036,7 +987,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity"/>
         <rdfs:label xml:lang="en">configuration variable</rdfs:label>
         <skos:example>batch size for machine learning training, number of neighbors for KNN model generation, weight of a neuron, intercept of a linear regression model</skos:example>
-        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">information content entity whose value influences the output or behavior of an encoded algorithm it is a part of</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition xml:lang="en">information content entity whose value influences the output or behavior of an encoded algorithm it is a part of</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -1052,7 +1003,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>configuration variable set</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>collection of configuration variables that belong to a particular encoded algorithm</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>collection of configuration variables that belong to a particular encoded algorithm</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -1085,7 +1036,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>configuration variable setting set</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>information content entity that consists of configuration settings belonging to a configuration variable set</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>information content entity that consists of configuration settings belonging to a configuration variable set</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -1095,7 +1046,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/ContinuousNumericFeature">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/NumericalFeature"/>
         <rdfs:label xml:lang="en">continuous numeric feature</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">numeric feature that has real numbers as values</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition xml:lang="en">numeric feature that has real numbers as values</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -1105,7 +1056,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/ConvolutionalLayer">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/NeuralNetworkLayer"/>
         <rdfs:label>convolutional layer</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>neural network layer that applies learnable filters to its input and that outputs  feature maps that capture spatial hierarchies and patterns</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>neural network layer that applies learnable filters to its input and that outputs  feature maps that capture spatial hierarchies and patterns</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -1149,7 +1100,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/ArtificialNeuralNetwork"/>
         <rdfs:label>convolutional neural network</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>artificial neural network that is composed primairly of convolutional  layers and that requires input that have dimensions of at least two</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>artificial neural network that is composed primairly of convolutional  layers and that requires input that have dimensions of at least two</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -1176,7 +1127,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         </rdfs:subClassOf>
         <rdfs:label>data cleaning algorithm</rdfs:label>
         <skos:example>Multiple Imputation by Chained Equations algorithm used to impute the missing values</skos:example>
-        <AnnotationVocabulary:naturalLanguageDefinition>algorithm that prescribes how the missing or corrupted entries in a dataset should be corrected</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>algorithm that prescribes how the missing or corrupted entries in a dataset should be corrected</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -1199,7 +1150,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>data cleaning objective</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>objective specification that prescribes the outcome of a data cleaning operation or pipeline</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>objective specification that prescribes the outcome of a data cleaning operation or pipeline</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -1228,7 +1179,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/DataProcessingOperation"/>
         <rdfs:label xml:lang="en">data cleaning operation</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>data processing operation that detects and corrects a set of corrupt, missing or inaccurate records from a data set</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>data processing operation that detects and corrects a set of corrupt, missing or inaccurate records from a data set</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -1257,7 +1208,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/DataProcessingPipeline"/>
         <rdfs:label>data cleaning pipeline</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">planned process that consists of a number of data cleaning operations through which the input dataset is processed to impute missing and/or remove corrupted values</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition xml:lang="en">planned process that consists of a number of data cleaning operations through which the input dataset is processed to impute missing and/or remove corrupted values</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -1268,7 +1219,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelExecutionObjective"/>
         <rdfs:label xml:lang="en">data description objective</rdfs:label>
         <skos:example>use of PCA to identify which tumor types share a similar RNA expression pattern</skos:example>
-        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">model execution objective to describe some underlying characteristic of the input data items</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition xml:lang="en">model execution objective to describe some underlying characteristic of the input data items</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -1278,7 +1229,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/DataImputationAlgorithm">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/DataCleaningAlgorithm"/>
         <rdfs:label>data imputation algorithm</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>data cleaning algorithm that prescribes how missing values within some dataset should be replaced</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>data cleaning algorithm that prescribes how missing values within some dataset should be replaced</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -1309,7 +1260,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/DataCleaningOperation"/>
         <rdfs:label>data imputation operation</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>computing process in which missing values are replaced by some encoded data imputation algorithm</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>computing process in which missing values are replaced by some encoded data imputation algorithm</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -1325,7 +1276,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/InformationContentEntityCharacteristic"/>
         <rdfs:label>data item characteristic</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>information content entity characteristic of a data item</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>information content entity characteristic of a data item</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -1357,7 +1308,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>data processing operation</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>computing process that transforms or modifies input data</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>computing process that transforms or modifies input data</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -1385,7 +1336,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>data processing pipeline</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>computing process that consists of an ordered set of data processing operations through which an input data set is transformed</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>computing process that consists of an ordered set of data processing operations through which an input data set is transformed</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -1395,7 +1346,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/DataReshapingOperation">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/DataProcessingOperation"/>
         <rdfs:label>data reshaping operation</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>data processing operation that changes the dimensions of one or more datasets or data items</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>data processing operation that changes the dimensions of one or more datasets or data items</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -1411,7 +1362,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/InformationContentEntityCharacteristic"/>
         <rdfs:label>data set characteristic</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>data item characteristic of a data set</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>data item characteristic of a data set</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -1435,7 +1386,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:label>data set ordering scheme</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>information content entity ordering scheme that prescribes the ordering of data items within a data set</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>information content entity ordering scheme that prescribes the ordering of data items within a data set</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -1456,7 +1407,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/Feature"/>
         <rdfs:label xml:lang="en">date-time feature</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">feature that has only date or time as values</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition xml:lang="en">feature that has only date or time as values</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -1493,7 +1444,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">decision tree algorithm</rdfs:label>
         <skos:example>ID3, M5, Stump</skos:example>
-        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">machine learning algorithm that prescribes how a decision tree model is generated</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition xml:lang="en">machine learning algorithm that prescribes how a decision tree model is generated</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -1509,7 +1460,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>decision tree model</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>machine learning model that is a tree-like graph where each branching present is dependent on a value of some feature present in the training set that was used to train the model</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>machine learning model that is a tree-like graph where each branching present is dependent on a value of some feature present in the training set that was used to train the model</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -1526,7 +1477,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/ConfigurationSetting"/>
         <rdfs:label>default setting</rdfs:label>
         <skos:example>5 neighbors is the default setting for sklearn KNN training algorithm implementation</skos:example>
-        <AnnotationVocabulary:naturalLanguageDefinition>configuration variable setting that specifies the default value (value that is used if user does not provide a value) of a configuration variable</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>configuration variable setting that specifies the default value (value that is used if user does not provide a value) of a configuration variable</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -1560,7 +1511,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>deployed state</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>process during which a machine learning model is deployed on a particular engineered system</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>process during which a machine learning model is deployed on a particular engineered system</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -1588,7 +1539,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/Feature"/>
         <rdfs:label xml:lang="en">derived feature</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">feature that was created by a set of feature engineering operations</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition xml:lang="en">feature that was created by a set of feature engineering operations</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -1614,7 +1565,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>derived feature column</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>feature column that only has derived features as parts</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>feature column that only has derived features as parts</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -1624,7 +1575,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/DigitalImage">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <rdfs:label xml:lang="en">digital image</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">data item that is a rectangular or cuboid grid of elements (pixels or voxels respectively), whose values are finite, discrete quantities derived from measurements of some quality of a number of entities repeated at regular intervals across a spatial range</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition xml:lang="en">data item that is a rectangular or cuboid grid of elements (pixels or voxels respectively), whose values are finite, discrete quantities derived from measurements of some quality of a number of entities repeated at regular intervals across a spatial range</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -1661,7 +1612,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         </rdfs:subClassOf>
         <rdfs:label>dimensionality reduction algorithm</rdfs:label>
         <skos:example>randomized SVD solver used to generate a principal component model</skos:example>
-        <AnnotationVocabulary:naturalLanguageDefinition>machine learning algorithm that prescribes how a dimensionality reduction model is trained</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>machine learning algorithm that prescribes how a dimensionality reduction model is trained</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -1677,7 +1628,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>dimensionality reduction model</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>machine learning model that prescribes how to map data sets to a space of lower dimension</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>machine learning model that prescribes how to map data sets to a space of lower dimension</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -1687,8 +1638,8 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/DiscreteNumericFeature">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/NumericalFeature"/>
         <rdfs:label xml:lang="en">discrete numeric feature</rdfs:label>
-        <AnnotationVocabulary:explanatoryNote>discrete numerical values are values from a set that consists of a countable number of equally spaced values between a certain range of numbers (e.g Integers)</AnnotationVocabulary:explanatoryNote>
-        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">numeric feature that has discrete numerical values</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:explanatoryNote>discrete numerical values are values from a set that consists of a countable number of equally spaced values between a certain range of numbers (e.g Integers)</iof-av:explanatoryNote>
+        <iof-av:naturalLanguageDefinition xml:lang="en">numeric feature that has discrete numerical values</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -1699,7 +1650,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/MathematicalFunction"/>
         <rdfs:label xml:lang="en">distance metric</rdfs:label>
         <skos:example>the euclidean distance between two samples in a dataset</skos:example>
-        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">mathematical function that prescribes how a distance between each pair of point elements of a set is calculated</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition xml:lang="en">mathematical function that prescribes how a distance between each pair of point elements of a set is calculated</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -1715,7 +1666,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/InformationContentEntityCharacteristic"/>
         <rdfs:label>encoded algorithm characteristic</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>information content entity characteristic that is the distinguishing quality or property of an encoded algorithm</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>information content entity characteristic that is the distinguishing quality or property of an encoded algorithm</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -1736,7 +1687,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/EncodedAlgorithm"/>
         <rdfs:label>encoded data cleaning algorithm</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>encoded algorithm that is the implementation of a data cleaning algorithm</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>encoded algorithm that is the implementation of a data cleaning algorithm</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -1757,7 +1708,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/EncodedAlgorithm"/>
         <rdfs:label>encoded feature engineering algorithm</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>encoded algorithm that is the implementation of a feature engineering algorithm</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>encoded algorithm that is the implementation of a feature engineering algorithm</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -1778,7 +1729,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/EncodedAlgorithm"/>
         <rdfs:label>encoded initialization algorithm</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>encoded algorithm that is the implementation of an initialization algorithm</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>encoded algorithm that is the implementation of an initialization algorithm</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -1799,8 +1750,8 @@ For a continuous random variable, a curve described by a mathematical formula wh
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/EncodedAlgorithm"/>
         <rdfs:label>encoded machine learning training algorithm</rdfs:label>
-        <AnnotationVocabulary:explanatoryNote>typically a encoded machine learning algorithm is a part of a larger machine learning framework</AnnotationVocabulary:explanatoryNote>
-        <AnnotationVocabulary:naturalLanguageDefinition>encoded algorithm that is the implementation of a machine learning training algorithm</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:explanatoryNote>typically a encoded machine learning algorithm is a part of a larger machine learning framework</iof-av:explanatoryNote>
+        <iof-av:naturalLanguageDefinition>encoded algorithm that is the implementation of a machine learning training algorithm</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -1821,7 +1772,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/EncodedAlgorithm"/>
         <rdfs:label>encoded optimization algorithm</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>encoded algorithm that is the implementation of an optimization algorithm</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>encoded algorithm that is the implementation of an optimization algorithm</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -1842,7 +1793,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/EncodedAlgorithm"/>
         <rdfs:label>encoded regularization method</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>encoded algorithm that is the implementation of a regularization method</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>encoded algorithm that is the implementation of a regularization method</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -1852,7 +1803,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/EnsembleAlgorithm">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningTrainingAlgorithm"/>
         <rdfs:label xml:lang="en">ensemble algorithm</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>machine learning algorithm that prescribes how to combine elements of multiple machine learning models trained on the same task in order to achieve better performance</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>machine learning algorithm that prescribes how to combine elements of multiple machine learning models trained on the same task in order to achieve better performance</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -1877,7 +1828,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>epoch</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>time interval during which a whole machine learning input dataset is processed in a machine learning training</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>time interval during which a whole machine learning input dataset is processed in a machine learning training</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -1887,7 +1838,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/EpochNumber">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/Hyperparameter"/>
         <rdfs:label>epoch number</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>hyperparameter that specifies the number of epochs a machine learning model will be trained for</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>hyperparameter that specifies the number of epochs a machine learning model will be trained for</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -1917,8 +1868,8 @@ For a continuous random variable, a curve described by a mathematical formula wh
         </rdfs:subClassOf>
         <rdfs:label>exploratory data analysis</rdfs:label>
         <skos:example>determining the correlation between feature vectors, determining the skewness of the distribution of a particular feature</skos:example>
-        <AnnotationVocabulary:explanatoryNote>typically precedes machine learning data preparation</AnnotationVocabulary:explanatoryNote>
-        <AnnotationVocabulary:naturalLanguageDefinition>planned process in which one or more characteristics of a data set or its parts are determined</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:explanatoryNote>typically precedes machine learning data preparation</iof-av:explanatoryNote>
+        <iof-av:naturalLanguageDefinition>planned process in which one or more characteristics of a data set or its parts are determined</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -1962,12 +1913,12 @@ For a continuous random variable, a curve described by a mathematical formula wh
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <rdfs:label xml:lang="en">feature</rdfs:label>
         <skos:example>petal width value of an iris flower; digital image of a number</skos:example>
-        <AnnotationVocabulary:explanatoryNote>1. the data item considered as feature can be used directly in machine learning training or can first undergo a series of machine learning data preparation operations (e.g., feature engineering or data cleaning)
+        <iof-av:explanatoryNote>1. the data item considered as feature can be used directly in machine learning training or can first undergo a series of machine learning data preparation operations (e.g., feature engineering or data cleaning)
 
 2. association here can be interpreted as the feature being about some aspect or characteristic of the entity
 
-3. Feature can also in some cases be interpreted as a single item (entry) within a machine learning dataset</AnnotationVocabulary:explanatoryNote>
-        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">data item associated with an entity that is intended to be used as an input of a machine learning model execution or machine learning training</AnnotationVocabulary:naturalLanguageDefinition>
+3. Feature can also in some cases be interpreted as a single item (entry) within a machine learning dataset</iof-av:explanatoryNote>
+        <iof-av:naturalLanguageDefinition xml:lang="en">data item associated with an entity that is intended to be used as an input of a machine learning model execution or machine learning training</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -1983,7 +1934,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/DataItemCharacteristic"/>
         <rdfs:label>feature characteristic</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>data item characteristic of a feature</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>data item characteristic of a feature</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -2006,7 +1957,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         </rdfs:subClassOf>
         <rdfs:label>feature column</rdfs:label>
         <skos:example>petal length value of 50 different iris flowers</skos:example>
-        <AnnotationVocabulary:naturalLanguageDefinition>data set that is composed of a number of features of the same type that are associated with different entities</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>data set that is composed of a number of features of the same type that are associated with different entities</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -2016,7 +1967,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/FeatureDecomposition">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/FeatureEngineeringOperation"/>
         <rdfs:label xml:lang="en">feature decomposition</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">feature engineering operation that creates multiple features from one feature</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition xml:lang="en">feature engineering operation that creates multiple features from one feature</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -2043,7 +1994,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         </rdfs:subClassOf>
         <rdfs:label>feature engineering algorithm</rdfs:label>
         <skos:example>min-max normalization algorithm that scales all the features in a feature vector to a specific range</skos:example>
-        <AnnotationVocabulary:naturalLanguageDefinition>algorithm that prescribes how to generate a feature of a particular type from a set of inputs</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>algorithm that prescribes how to generate a feature of a particular type from a set of inputs</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -2065,7 +2016,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/DataProcessingOperation"/>
         <rdfs:label xml:lang="en">feature engineering operation</rdfs:label>
         <skos:example>min-max normalization of a numerical feature vector; bagging transformation of a textual feature</skos:example>
-        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">planned process in which one or more input features are used to create derived features</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition xml:lang="en">planned process in which one or more input features are used to create derived features</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -2097,7 +2048,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">feature engineering pipeline</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>planned process that consists of a number of feature engineering operations and that outputs a data set that has at least one derived feature column as part</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>planned process that consists of a number of feature engineering operations and that outputs a data set that has at least one derived feature column as part</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -2107,7 +2058,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/FeatureEngineeringTransformation">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/FeatureEngineeringOperation"/>
         <rdfs:label>feature engineering transformation</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>feature engineering operation that changes the representation or value of a feature</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>feature engineering operation that changes the representation or value of a feature</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -2117,7 +2068,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/FeatureGeneration">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/FeatureEngineeringOperation"/>
         <rdfs:label xml:lang="en">feature generation</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">feature engineering operation that generates one or more features by combining multiple features</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition xml:lang="en">feature engineering operation that generates one or more features by combining multiple features</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -2157,7 +2108,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>feature scaling operation</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>feature engineering transformation that produced scaled features as its output</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>feature engineering transformation that produced scaled features as its output</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -2191,7 +2142,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">feature selection</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">planned process in which a subset of initial features is selected such that the associated machine learning model has a more optimal performance</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition xml:lang="en">planned process in which a subset of initial features is selected such that the associated machine learning model has a more optimal performance</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -2221,7 +2172,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         </rdfs:subClassOf>
         <rdfs:label>feature vector</rdfs:label>
         <skos:example>petal length value, petal width value, sepal length value and sepal width value associated with a single iris flower</skos:example>
-        <AnnotationVocabulary:naturalLanguageDefinition>data set composed of a set of features that belong to a single entity</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>data set composed of a set of features that belong to a single entity</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -2237,7 +2188,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/DataSetCharacteristic"/>
         <rdfs:label>feature vector characteristic</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>data set characteristic of a feature vector</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>data set characteristic of a feature vector</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -2247,7 +2198,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/FlatteningLayer">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/NeuralNetworkLayer"/>
         <rdfs:label>flattening layer</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>neural network layer that transforms multidimensional input data into a one-dimensional array to prepare the data for input to fully connected layers</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>neural network layer that transforms multidimensional input data into a one-dimensional array to prepare the data for input to fully connected layers</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -2257,8 +2208,8 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/FullyConnectedLayer">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/NeuralNetworkLayer"/>
         <rdfs:label>fully connected layer</rdfs:label>
-        <AnnotationVocabulary:explanatoryNote>in case the FC layer is the input layer, then each node directly takes as inputs all the entries of an individual feature vector</AnnotationVocabulary:explanatoryNote>
-        <AnnotationVocabulary:naturalLanguageDefinition>neural network layer in which each node connects directly to all nodes from a previous layer</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:explanatoryNote>in case the FC layer is the input layer, then each node directly takes as inputs all the entries of an individual feature vector</iof-av:explanatoryNote>
+        <iof-av:naturalLanguageDefinition>neural network layer in which each node connects directly to all nodes from a previous layer</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -2268,7 +2219,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/GaussianNoise">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/Noise"/>
         <rdfs:label>gaussian noise</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>noise whose values follow a gaussian distribution</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>noise whose values follow a gaussian distribution</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -2286,7 +2237,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
             </owl:Class>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">graph</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">data item or data set that consists of a set of nodes that are connected with edges</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition xml:lang="en">data item or data set that consists of a set of nodes that are connected with edges</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -2302,7 +2253,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>graph feature</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>feature of a graph</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>feature of a graph</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -2318,7 +2269,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>group of machine learning models</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>collection of machine learning models</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>collection of machine learning models</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -2350,7 +2301,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningParameter"/>
         <rdfs:label>hyperparameter</rdfs:label>
         <skos:example>number of epochs for training a neural network model</skos:example>
-        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">configuration variable of an encoded machine learning algorithm whose value is not influenced directly by data during machine learning training</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition xml:lang="en">configuration variable of an encoded machine learning algorithm whose value is not influenced directly by data during machine learning training</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -2360,7 +2311,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/HyperparameterSet">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/ConfigurationVariableSet"/>
         <rdfs:label>hyperparameter set</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>collection of hyperparameters that belong to a particular machine learning training implementation</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>collection of hyperparameters that belong to a particular machine learning training implementation</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -2376,7 +2327,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>image feature</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>feature of a digital image</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>feature of a digital image</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -2386,7 +2337,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/Index">
         <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity"/>
         <rdfs:label>index</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>information content entity that is the position of an information content entity within another information content entity</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>information content entity that is the position of an information content entity within another information content entity</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -2403,7 +2354,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity"/>
         <rdfs:label>information content entity characteristic</rdfs:label>
         <skos:example>skewness in the distribution of a feature, colinearity between different feature vectors, capability of a model to handle non-linear data, depth of a machine learning model, class entropy of a categorical data set</skos:example>
-        <AnnotationVocabulary:naturalLanguageDefinition>distinguishing quality or property of an information content entity</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>distinguishing quality or property of an information content entity</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -2413,7 +2364,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/InformationContentEntityOrderingScheme">
         <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity"/>
         <rdfs:label>information content entity ordering scheme</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>information content entity that prescribes the ordering between elements of which an information content entity is composed of</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>information content entity that prescribes the ordering between elements of which an information content entity is composed of</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -2435,7 +2386,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningParameterSetting"/>
         <rdfs:label>initial machine learning parameter setting</rdfs:label>
         <skos:example>value of a neuron weight that is the output of machine learning parameter initialization and the input of training of the neural network the neuron is a part of</skos:example>
-        <AnnotationVocabulary:naturalLanguageDefinition>machine learning parameter setting at the beginning of some machine learning training</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>machine learning parameter setting at the beginning of some machine learning training</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -2455,7 +2406,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:label>initial machine learning parameter setting set</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>machine learning parameter setting set that contains all the values of a machine learning parameter set at the beginning of machine learning training</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>machine learning parameter setting set that contains all the values of a machine learning parameter set at the beginning of machine learning training</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -2482,7 +2433,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">initialization algorithm</rdfs:label>
         <skos:example>Xe initialization used to initialize weights of neurons in an ANN</skos:example>
-        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">algorithm that prescribes how machine learning parameter values will be set at the beginning of machine learning training</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition xml:lang="en">algorithm that prescribes how machine learning parameter values will be set at the beginning of machine learning training</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -2519,7 +2470,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">instance-based algorithm</rdfs:label>
         <skos:example>coordinate descent algorithm that creates a support vector machine model</skos:example>
-        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">machine learning algorithm that prescribes how to generate an instance-based model</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition xml:lang="en">machine learning algorithm that prescribes how to generate an instance-based model</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -2545,7 +2496,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>instance-based model</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>machine learning model that consists of a subset of feature vectors present in the training dataset that was used to train the model</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>machine learning model that consists of a subset of feature vectors present in the training dataset that was used to train the model</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -2565,7 +2516,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/MathematicalFunction"/>
         <rdfs:label xml:lang="en">loss function</rdfs:label>
         <skos:example>Mean absolute error that is used as part of an optimization procedure to measure the absolute difference between the prediction value of the model and the absolute value.</skos:example>
-        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">mathematical function that prescribes how the difference between a target variable and the output of a machine learning model is calculated</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition xml:lang="en">mathematical function that prescribes how the difference between a target variable and the output of a machine learning model is calculated</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -2590,7 +2541,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/DataProcessingPipeline"/>
         <rdfs:label>machine learning data preparation pipeline</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>planned process that consists of a set of data processing operations and/or data cleaning operations through which a raw data set is converted into a machine learning data set</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>planned process that consists of a set of data processing operations and/or data cleaning operations through which a raw data set is converted into a machine learning data set</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -2621,7 +2572,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         </rdfs:subClassOf>
         <rdfs:label>machine learning data set</rdfs:label>
         <skos:example>data set that consists of patient PET images used as an input into cGAN execution; cNIST data set used for input in an ANN classification; data set that consists of values of several CPPs measured over a certain period of time that is used as an input for a deep learning model that predicts a particular CQA</skos:example>
-        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">data set that consists of a number of feature vectors and is intended to be an input of machine learning model execution or machine learning training</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition xml:lang="en">data set that consists of a number of feature vectors and is intended to be an input of machine learning model execution or machine learning training</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -2657,7 +2608,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/PlannedProcess"/>
         <rdfs:label>machine learning data set partitioning</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>planned process that splits the input dataset into subsets for machine learning training and model evaluation</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>planned process that splits the input dataset into subsets for machine learning training and model evaluation</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -2673,7 +2624,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">machine learning framework</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>collection of a number of encoded algorithms necessary for machine learning training, model assessment and model execution encoded in some programming language</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>collection of a number of encoded algorithms necessary for machine learning training, model assessment and model execution encoded in some programming language</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -2690,8 +2641,8 @@ For a continuous random variable, a curve described by a mathematical formula wh
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">machine learning model</rdfs:label>
         <skos:example>a convolutional neural network, a decision tree</skos:example>
-        <AnnotationVocabulary:explanatoryNote>the internal parameters of a machine learning model are determined by some machine learning training</AnnotationVocabulary:explanatoryNote>
-        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">encoded algorithm that is executed to find patterns, make decisions or make predictions from a previously unseen dataset</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:explanatoryNote>the internal parameters of a machine learning model are determined by some machine learning training</iof-av:explanatoryNote>
+        <iof-av:naturalLanguageDefinition xml:lang="en">encoded algorithm that is executed to find patterns, make decisions or make predictions from a previously unseen dataset</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -2702,7 +2653,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/Algorithm"/>
         <rdfs:label>machine learning model algorithm</rdfs:label>
         <skos:example>the structure of a neural network that is implementation independent</skos:example>
-        <AnnotationVocabulary:naturalLanguageDefinition>algorithm that prescribes a machine learning model</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>algorithm that prescribes a machine learning model</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -2735,8 +2686,8 @@ For a continuous random variable, a curve described by a mathematical formula wh
         <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity"/>
         <rdfs:label>machine learning model component</rdfs:label>
         <skos:example>support vector within a SVM, neuron within a neural network, cluster within a clustering model</skos:example>
-        <AnnotationVocabulary:explanatoryNote>since machine learning model components can either be algorithmic in nature (e.g., neural network layer) or a data item (e.g., a cluster) this class was put directly under ICE</AnnotationVocabulary:explanatoryNote>
-        <AnnotationVocabulary:naturalLanguageDefinition>information content entity that is a proper part of a machine learning model or machine learning model algorithm</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:explanatoryNote>since machine learning model components can either be algorithmic in nature (e.g., neural network layer) or a data item (e.g., a cluster) this class was put directly under ICE</iof-av:explanatoryNote>
+        <iof-av:naturalLanguageDefinition>information content entity that is a proper part of a machine learning model or machine learning model algorithm</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -2774,7 +2725,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>machine learning model deployment process</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>planned process in which a machine learning model is deployed in an engineered system</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>planned process in which a machine learning model is deployed in an engineered system</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -2841,7 +2792,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/PlannedProcess"/>
         <rdfs:label>machine learning model development pipeline</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>planned process that consists of a set of processes that are required to develop a machine learning model</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>planned process that consists of a set of processes that are required to develop a machine learning model</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -2880,7 +2831,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningTraining"/>
         <rdfs:label>machine learning model update</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>planned process in which the machine learning parameters of a previously trained model are updated</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>planned process in which the machine learning parameters of a previously trained model are updated</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -2904,7 +2855,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">machine learning parameter</rdfs:label>
         <skos:example>coefficients in a regression model; weights of a neuron</skos:example>
-        <AnnotationVocabulary:naturalLanguageDefinition>configuration variable internal to a machine learning model whose value is influenced by (updated on the basis of) input data during machine learning training</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>configuration variable internal to a machine learning model whose value is influenced by (updated on the basis of) input data during machine learning training</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -2937,7 +2888,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/ComputingProcess"/>
         <rdfs:label>machine learning parameter initialization</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>computing process that executes an encoded initialization algorithm to create initial machine learning parameter setting set</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>computing process that executes an encoded initialization algorithm to create initial machine learning parameter setting set</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -2947,7 +2898,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/MachineLearningParameterSet">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/ConfigurationVariableSet"/>
         <rdfs:label>machine learning parameter set</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>collection of machine learning parameters that belong to a particular machine learning model or model component</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>collection of machine learning parameters that belong to a particular machine learning model or model component</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -2969,7 +2920,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/ConfigurationSetting"/>
         <rdfs:label>machine learning parameter setting</rdfs:label>
         <skos:example>value of a machine learning parameter after machine learning training</skos:example>
-        <AnnotationVocabulary:naturalLanguageDefinition>configuration variable setting of a machine learning parameter</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>configuration variable setting of a machine learning parameter</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -3002,7 +2953,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>machine learning parameter setting set</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>configuration variable setting set that contains all the values of a machine learning parameter set</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>configuration variable setting set that contains all the values of a machine learning parameter set</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -3022,7 +2973,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:label>feature vector identifier</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>identifier that identifies a feature vector within a dataset</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>identifier that identifies a feature vector within a dataset</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -3075,8 +3026,8 @@ For a continuous random variable, a curve described by a mathematical formula wh
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/ComputingProcess"/>
         <rdfs:label>machine learning training</rdfs:label>
-        <AnnotationVocabulary:explanatoryNote>Learning is defined in this case as progressively improving performance of the underlying model on a predefined task.</AnnotationVocabulary:explanatoryNote>
-        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">computing process in which an encoded machine learning algorithm is executed to generate or update a machine learning model</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:explanatoryNote>Learning is defined in this case as progressively improving performance of the underlying model on a predefined task.</iof-av:explanatoryNote>
+        <iof-av:naturalLanguageDefinition xml:lang="en">computing process in which an encoded machine learning algorithm is executed to generate or update a machine learning model</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -3103,8 +3054,8 @@ For a continuous random variable, a curve described by a mathematical formula wh
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">machine learning training algorithm</rdfs:label>
         <skos:example>backpropagation algorithm used to train a neural network; M5 algorithm used to generate a decision tree model</skos:example>
-        <AnnotationVocabulary:explanatoryNote>machine learning training algorithms determine how the patterns and rules from the input machine learning dataset will be stored in and used to create or update a machine learning model</AnnotationVocabulary:explanatoryNote>
-        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">algorithm that prescribes how a machine learning model will be updated or generated</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:explanatoryNote>machine learning training algorithms determine how the patterns and rules from the input machine learning dataset will be stored in and used to create or update a machine learning model</iof-av:explanatoryNote>
+        <iof-av:naturalLanguageDefinition xml:lang="en">algorithm that prescribes how a machine learning model will be updated or generated</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -3115,7 +3066,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity"/>
         <rdfs:label xml:lang="en">mathematical function</rdfs:label>
         <skos:example>y=x+2, any polynomial, y=sin(x)</skos:example>
-        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">an expression, rule, or law that defines a relationship between one or more variables (the independent variables) and another set of variables (the dependent variables)</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition xml:lang="en">an expression, rule, or law that defines a relationship between one or more variables (the independent variables) and another set of variables (the dependent variables)</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -3125,9 +3076,9 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/ModelAssumptions">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelInputRequirementSpecification"/>
         <rdfs:label xml:lang="en">model assumptions</rdfs:label>
-        <AnnotationVocabulary:explanatoryNote>These conditions are typically checkable.</AnnotationVocabulary:explanatoryNote>
-        <AnnotationVocabulary:explanatoryNote>to be a valid input in this context means that it is an input of a computing process which executes an encoding of the model or algorithm</AnnotationVocabulary:explanatoryNote>
-        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">model input requirement specification that specifies the data item characteristics that features,feature vectors or feature vector set must have</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:explanatoryNote>These conditions are typically checkable.</iof-av:explanatoryNote>
+        <iof-av:explanatoryNote>to be a valid input in this context means that it is an input of a computing process which executes an encoding of the model or algorithm</iof-av:explanatoryNote>
+        <iof-av:naturalLanguageDefinition xml:lang="en">model input requirement specification that specifies the data item characteristics that features,feature vectors or feature vector set must have</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -3143,7 +3094,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/EncodedAlgorithmCharacteristic"/>
         <rdfs:label>model characteristic</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>encoded algorithm characteristic of a machine learning model</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>encoded algorithm characteristic of a machine learning model</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -3181,8 +3132,8 @@ For a continuous random variable, a curve described by a mathematical formula wh
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelPerformanceAssessment"/>
         <rdfs:label xml:lang="en">model evaluation</rdfs:label>
-        <AnnotationVocabulary:explanatoryNote>an independent dataset means that the dataset has not been used for model training</AnnotationVocabulary:explanatoryNote>
-        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">model performance assessment that evaluates the quality of a model output that was derived from an independent dataset</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:explanatoryNote>an independent dataset means that the dataset has not been used for model training</iof-av:explanatoryNote>
+        <iof-av:naturalLanguageDefinition xml:lang="en">model performance assessment that evaluates the quality of a model output that was derived from an independent dataset</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -3235,7 +3186,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/ComputingProcess"/>
         <rdfs:label xml:lang="en">model execution</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">planned process in which some machine learning model is executed on a machine learning data set or on a feature vector</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition xml:lang="en">planned process in which some machine learning model is executed on a machine learning data set or on a feature vector</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -3252,7 +3203,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         </rdfs:subClassOf>
         <rdfs:label>model execution objective</rdfs:label>
         <skos:example>predicting a patient therapy dose based on pre-therapy images, predicting a CQA based parameter inputs, detecting common patterns of gene expression within a pancreatic cancer patient cohort</skos:example>
-        <AnnotationVocabulary:naturalLanguageDefinition>objective specification that prescribes what the outcome of a model execution should be</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>objective specification that prescribes what the outcome of a model execution should be</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -3262,7 +3213,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/ModelInputRequirementSpecification">
         <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/RequirementSpecification"/>
         <rdfs:label>model input requirements</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>requirement specification that specifies the conditions to which an input to machine learning training or execution must conform to for a particular machine learning model</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>requirement specification that specifies the conditions to which an input to machine learning training or execution must conform to for a particular machine learning model</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -3297,7 +3248,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/PlannedProcess"/>
         <rdfs:label>hyperparameter tuning</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>planned process in which an optimal hyperparameter value set is found by a set of model validations, whereby machine learning training in each model validation has different hyperparameter values as inputs</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>planned process in which an optimal hyperparameter value set is found by a set of model validations, whereby machine learning training in each model validation has different hyperparameter values as inputs</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -3322,7 +3273,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <rdfs:label>model output</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>data item that is created as an output of a model execution that corresponds to a single feature vector</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>data item that is created as an output of a model execution that corresponds to a single feature vector</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -3348,7 +3299,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/mnd14/ml/PreProcessedDataSet"/>
         <rdfs:label xml:lang="en">model output data set</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">data set that consists of model outputs</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition xml:lang="en">data set that consists of model outputs</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -3358,7 +3309,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/ModelOutputTransformationAlgorithm">
         <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/Algorithm"/>
         <rdfs:label>model output transformation algorithm</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>algorithm that prescribes how to transform model output data into a specific representation</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>algorithm that prescribes how to transform model output data into a specific representation</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -3400,7 +3351,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/DataProcessingOperation"/>
         <rdfs:label>model output transformation operation</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>data processing operation which transforms the model output to a particular representation</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>data processing operation which transforms the model output to a particular representation</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -3430,7 +3381,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/PlannedProcess"/>
         <rdfs:label>model performance assessment</rdfs:label>
         <skos:example>estimating the performance of a CNN on an image classification task</skos:example>
-        <AnnotationVocabulary:naturalLanguageDefinition>planned process in which the quality of a model output is assessed with respect to some performance metric</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>planned process in which the quality of a model output is assessed with respect to some performance metric</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -3460,7 +3411,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity"/>
         <rdfs:label xml:lang="en">model performance result</rdfs:label>
         <skos:example>the result of determining the mean absolute error between predictions and the target variable on a particular dataset</skos:example>
-        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">information content entity that is the result of assessing the performance of a machine learning model with a particular dataset</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition xml:lang="en">information content entity that is the result of assessing the performance of a machine learning model with a particular dataset</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -3509,8 +3460,8 @@ For a continuous random variable, a curve described by a mathematical formula wh
         </rdfs:subClassOf>
         <rdfs:label>model validation</rdfs:label>
         <skos:example>Leave one out cross validation</skos:example>
-        <AnnotationVocabulary:explanatoryNote>iterations are typically performed until each feature vector is used for model evaluation</AnnotationVocabulary:explanatoryNote>
-        <AnnotationVocabulary:naturalLanguageDefinition>planned process in which a machine learning model is evaluated through successive iterations of data set partitioning, machine learning training and model evaluation</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:explanatoryNote>iterations are typically performed until each feature vector is used for model evaluation</iof-av:explanatoryNote>
+        <iof-av:naturalLanguageDefinition>planned process in which a machine learning model is evaluated through successive iterations of data set partitioning, machine learning training and model evaluation</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -3526,7 +3477,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>multi layer perceptron</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>artificial neural network composed of only fully connected layers</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>artificial neural network composed of only fully connected layers</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -3550,7 +3501,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:label>neural network layer</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>machine learning model component that consists of neurons operating together at a specific depth within a neural network</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>machine learning model component that consists of neurons operating together at a specific depth within a neural network</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -3566,7 +3517,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>neural network layer bias</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>neural network parameter of a neural network layer that is added to the product of the layer input and neural network layer weights</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>neural network parameter of a neural network layer that is added to the product of the layer input and neural network layer weights</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -3601,7 +3552,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:label>neural network parameter</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>machine learning parameter of a neural network model or its component</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>machine learning parameter of a neural network model or its component</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -3611,8 +3562,8 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/Neuron">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningModelComponent"/>
         <rdfs:label>neuron</rdfs:label>
-        <AnnotationVocabulary:explanatoryNote>input in the definition is here serving as a shorthand for the execution of a neuron and the input to the &quot;part of the process&quot; during which the execution of the neuron occurs</AnnotationVocabulary:explanatoryNote>
-        <AnnotationVocabulary:naturalLanguageDefinition>machine learning model component that is a part of a neural network layer and that has a set of scalar values which modify the input through multiplication</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:explanatoryNote>input in the definition is here serving as a shorthand for the execution of a neuron and the input to the &quot;part of the process&quot; during which the execution of the neuron occurs</iof-av:explanatoryNote>
+        <iof-av:naturalLanguageDefinition>machine learning model component that is a part of a neural network layer and that has a set of scalar values which modify the input through multiplication</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -3628,7 +3579,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>neuron weight</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>neural network parameter of a neuron</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>neural network parameter of a neuron</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -3638,8 +3589,8 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/Noise">
         <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity"/>
         <rdfs:label>noise</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>random or unpredictable fluctuations in data that disrupt the ability to identify target patterns or relationships</AnnotationVocabulary:naturalLanguageDefinition>
-        <AnnotationVocabulary1:directSource>https://dataheroes.ai/glossary/noise-in-machine-learning/</AnnotationVocabulary1:directSource>
+        <iof-av:naturalLanguageDefinition>random or unpredictable fluctuations in data that disrupt the ability to identify target patterns or relationships</iof-av:naturalLanguageDefinition>
+        <iof-av:directSource>https://dataheroes.ai/glossary/noise-in-machine-learning/</iof-av:directSource>
     </owl:Class>
     
 
@@ -3670,7 +3621,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/CategoricalFeature"/>
         <rdfs:label xml:lang="en">nominal feature</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">categoric feature where the possible values have no implicit ordering</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition xml:lang="en">categoric feature where the possible values have no implicit ordering</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -3680,7 +3631,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/NumericalFeature">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/Feature"/>
         <rdfs:label xml:lang="en">numerical feature</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">feature that has quantitative numeric values</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition xml:lang="en">feature that has quantitative numeric values</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -3691,7 +3642,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/Algorithm"/>
         <rdfs:label>optimization algorithm</rdfs:label>
         <skos:example>adam optimizer, stochastic gradient descent</skos:example>
-        <AnnotationVocabulary:naturalLanguageDefinition>algorithm that prescribes how to find the minimum or maximum of an objective function</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>algorithm that prescribes how to find the minimum or maximum of an objective function</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -3722,7 +3673,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/CategoricalFeature"/>
         <rdfs:label xml:lang="en">ordinal feature</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">categoric feature where the possible values have an implicit ordering</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition xml:lang="en">categoric feature where the possible values have an implicit ordering</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -3733,7 +3684,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/MathematicalFunction"/>
         <rdfs:label xml:lang="en">performance metric</rdfs:label>
         <skos:example>classification accuracy used to estimate the performance of a CNN on image classification task</skos:example>
-        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">function that prescribes how to assess the performance of a machine learning model</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition xml:lang="en">function that prescribes how to assess the performance of a machine learning model</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -3743,7 +3694,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/PoissonNoise">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/Noise"/>
         <rdfs:label>poisson noise</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>noise whose values follow a poisson distribution</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>noise whose values follow a poisson distribution</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -3759,7 +3710,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>polynomial feature</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>derived feature that was created by raising a numerical feature by some exponent</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>derived feature that was created by raising a numerical feature by some exponent</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -3769,7 +3720,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/PolynomialFunction">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/MathematicalFunction"/>
         <rdfs:label>polynomial function</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>mathematical function that consists of coefficients, variables, constants, operators, and non-negative integers as exponents</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>mathematical function that consists of coefficients, variables, constants, operators, and non-negative integers as exponents</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -3779,7 +3730,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/PoolingLayer">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/NeuralNetworkLayer"/>
         <rdfs:label>pooling layer</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>neural network layer that reduces the spatial dimensions of input data by applying a downsampling operation</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>neural network layer that reduces the spatial dimensions of input data by applying a downsampling operation</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -3790,7 +3741,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/mnd14/ml/RawDataSet"/>
         <rdfs:label xml:lang="en">preprocessed data set</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>data set that is the result of a data cleaning pipeline</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>data set that is the result of a data cleaning pipeline</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -3804,7 +3755,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
             <rdf:Description rdf:about="http://www.semanticweb.org/mnd14/ml/RegressionObjective"/>
         </owl:disjointUnionOf>
         <rdfs:label xml:lang="en">prediction objective</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">model execution objective to predict some classification or a numeric value of an entity</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition xml:lang="en">model execution objective to predict some classification or a numeric value of an entity</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -3840,7 +3791,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>production machine learning data set</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>machine learning data set that is used as input to the execution of a deployed model</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>machine learning data set that is used as input to the execution of a deployed model</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -3851,7 +3802,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
         <rdfs:label xml:lang="en">raw data set</rdfs:label>
         <skos:example>data set that consists of unprocessed outputs from a series of measurement processes</skos:example>
-        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">data set collected from a domain of interest, that has not undergone any data processing</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition xml:lang="en">data set collected from a domain of interest, that has not undergone any data processing</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -3861,7 +3812,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/RectifiedLinearUnit">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/ActivationFunction"/>
         <rdfs:label>rectified linear unit</rdfs:label>
-        <AnnotationVocabulary1:abbreviation>ReLU</AnnotationVocabulary1:abbreviation>
+        <iof-av:abbreviation>ReLU</iof-av:abbreviation>
     </owl:Class>
     
 
@@ -3898,7 +3849,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         </rdfs:subClassOf>
         <rdfs:label>regression algorithm</rdfs:label>
         <skos:example>ordinary least squares</skos:example>
-        <AnnotationVocabulary:naturalLanguageDefinition>machine learning algorithm that prescribes the training of a regression model</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>machine learning algorithm that prescribes the training of a regression model</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -3908,7 +3859,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/RegressionCoefficient">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/RegressionParameter"/>
         <rdfs:label>regression coefficient</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">regression parameter that has a scalar value which modifies a particular input feature by multiplying it</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition xml:lang="en">regression parameter that has a scalar value which modifies a particular input feature by multiplying it</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -3918,7 +3869,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/RegressionIntercept">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/RegressionParameter"/>
         <rdfs:label>regression intercept</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>regression parameter whose value is the mean of the target variables used to train the regression model and that is added to the output of regression model execution</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>regression parameter whose value is the mean of the target variables used to train the regression model and that is added to the output of regression model execution</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -3942,7 +3893,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:label>regression model</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>machine learning model that is an explicitly parameterized mathematical function</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>machine learning model that is an explicitly parameterized mathematical function</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -3953,7 +3904,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/PredictionObjective"/>
         <rdfs:label xml:lang="en">regression objective</rdfs:label>
         <skos:example>A GAN model has the objective to predict the post-therapy dose value in each voxel based on the pre-therapy scans of a patient</skos:example>
-        <AnnotationVocabulary:naturalLanguageDefinition>prediction objective to output a numeric prediction of an attribute of an entity</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>prediction objective to output a numeric prediction of an attribute of an entity</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -3974,7 +3925,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningParameter"/>
         <rdfs:label>regression parameter</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>machine learning parameter of a regression model</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>machine learning parameter of a regression model</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -3985,8 +3936,8 @@ For a continuous random variable, a curve described by a mathematical formula wh
         <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/Algorithm"/>
         <rdfs:label xml:lang="en">regularization method</rdfs:label>
         <skos:example>L1 regularization, L2 regularization, dropout regularization</skos:example>
-        <AnnotationVocabulary:explanatoryNote>Regularization is typically introduced to avoid model overfitting</AnnotationVocabulary:explanatoryNote>
-        <AnnotationVocabulary:naturalLanguageDefinition>algorithm that prescribes how to constrain the set of possible machine learning parameter values during machine learning training</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:explanatoryNote>Regularization is typically introduced to avoid model overfitting</iof-av:explanatoryNote>
+        <iof-av:naturalLanguageDefinition>algorithm that prescribes how to constrain the set of possible machine learning parameter values during machine learning training</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -4012,7 +3963,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">reinforcement learning</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">machine learning training used for learning an action selection model and that is based on a feedback interaction with an environment</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition xml:lang="en">machine learning training used for learning an action selection model and that is based on a feedback interaction with an environment</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -4032,7 +3983,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:label>scaled feature</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>derived feature that is a result of a feature scaling operation</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>derived feature that is a result of a feature scaling operation</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -4095,8 +4046,8 @@ For a continuous random variable, a curve described by a mathematical formula wh
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningTraining"/>
         <rdfs:label xml:lang="en">semi supervised learning</rdfs:label>
-        <AnnotationVocabulary:explanatoryNote>semi supervised learning is typically used when only a subset of the training samples have a target variable available.</AnnotationVocabulary:explanatoryNote>
-        <AnnotationVocabulary:naturalLanguageDefinition>machine learning training procedure based on a combination of supervised and unsupervised learning</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:explanatoryNote>semi supervised learning is typically used when only a subset of the training samples have a target variable available.</iof-av:explanatoryNote>
+        <iof-av:naturalLanguageDefinition>machine learning training procedure based on a combination of supervised and unsupervised learning</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -4121,7 +4072,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         </owl:equivalentClass>
         <rdfs:label>sequential feature</rdfs:label>
         <skos:example>time series, textual features</skos:example>
-        <AnnotationVocabulary:naturalLanguageDefinition>feature that consists of data items that has an explicit ordering along one dimension</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>feature that consists of data items that has an explicit ordering along one dimension</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -4150,7 +4101,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>sequential feature ordering scheme</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>information content entity ordering scheme that dictates the ordering of a sequential feature</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>information content entity ordering scheme that dictates the ordering of a sequential feature</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -4161,7 +4112,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/ValueExpression"/>
         <owl:disjointWith rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/MeasuredValueExpression"/>
         <rdfs:label>simulated value expression</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>value expression that was generated by a predictive model</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>value expression that was generated by a predictive model</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -4186,7 +4137,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>specified value expression</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>value expression that is part of a specification and that prescribes the value that the attribute should have</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>value expression that is part of a specification and that prescribes the value that the attribute should have</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -4196,7 +4147,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/StatisticalSignificanceCriteria">
         <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/RequirementSpecification"/>
         <rdfs:label>statistical significance criteria</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>requirement specification that prescribes the range of values that the result of a statistical hypothesis test should have to be statistically significant</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>requirement specification that prescribes the range of values that the result of a statistical hypothesis test should have to be statistically significant</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -4218,7 +4169,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningParameter"/>
         <rdfs:label>statistically significant parameter</rdfs:label>
         <skos:example>a regression coefficient that has a p value less then the required significance level</skos:example>
-        <AnnotationVocabulary:naturalLanguageDefinition>machine learning parameter that has been estimated as statistically significant by some statistical significance criteria</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>machine learning parameter that has been estimated as statistically significant by some statistical significance criteria</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -4235,7 +4186,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/mnd14/ml/UnsupervisedLearning"/>
         <rdfs:label xml:lang="en">supervised learning</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">machine learning training based on comparing the model outputs to known target variables, which are available for each sample in the training set</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition xml:lang="en">machine learning training based on comparing the model outputs to known target variables, which are available for each sample in the training set</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -4257,7 +4208,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <rdfs:label>target variable</rdfs:label>
         <skos:example>the measured value of the intended prediction of a ML model execution (e.g., dose prediction, CQA prediction)</skos:example>
-        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">data item which a machine learning model execution should output if given a particular feature vector as input</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition xml:lang="en">data item which a machine learning model execution should output if given a particular feature vector as input</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -4273,7 +4224,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>target variable vector</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>data set that is composed a set of target variables of different samples as parts</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>data set that is composed a set of target variables of different samples as parts</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -4292,7 +4243,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/TestDataSet">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningDataSet"/>
         <rdfs:label xml:lang="en">test data set</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">machine learning data set that is used as an input for machine learning model evaluation of a final model</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition xml:lang="en">machine learning data set that is used as an input for machine learning model evaluation of a final model</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -4302,7 +4253,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/TextualFeature">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/SequentialFeature"/>
         <rdfs:label xml:lang="en">textual feature</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">feature that consists of a sequence of words whose order conveys a meaning</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition xml:lang="en">feature that consists of a sequence of words whose order conveys a meaning</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -4348,7 +4299,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/SequentialFeature"/>
         <rdfs:label xml:lang="en">time series</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">feature that consists of a sequence of observations taken sequentially in time</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition xml:lang="en">feature that consists of a sequence of observations taken sequentially in time</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -4358,7 +4309,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/TrainingDataSet">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningDataSet"/>
         <rdfs:label xml:lang="en">training data set</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">machine learning data set which is used as an input of some machine learning training</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition xml:lang="en">machine learning data set which is used as an input of some machine learning training</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -4368,7 +4319,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/TypeCastingOperation">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/DataProcessingOperation"/>
         <rdfs:label>type casting operation</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>data processing operation that casts the values of all the inputs to a particular datatype</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>data processing operation that casts the values of all the inputs to a particular datatype</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -4404,7 +4355,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">unsupervised learning</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition xml:lang="en">machine learning training that is independent from any target variables</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition xml:lang="en">machine learning training that is independent from any target variables</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -4420,7 +4371,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>validation data set</rdfs:label>
-        <AnnotationVocabulary:naturalLanguageDefinition>machine learning data set which was created in some data partitioning process and is used as an input for machine learning model evaluation that is a part of hyperparameter tuning</AnnotationVocabulary:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>machine learning data set which was created in some data partitioning process and is used as an input for machine learning model evaluation that is a part of hyperparameter tuning</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
