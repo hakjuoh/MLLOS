@@ -3218,9 +3218,9 @@ For a continuous random variable, a curve described by a mathematical formula wh
     
 
 
-    <!-- http://www.semanticweb.org/mnd14/ml/ModelOptimization -->
+    <!-- http://www.semanticweb.org/mnd14/ml/HyperparameterTuning -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/ModelOptimization">
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/HyperparameterTuning">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
