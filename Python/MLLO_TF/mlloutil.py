@@ -50,7 +50,7 @@ def to_str(config_value):
 
 def load_model(model_path):
     model = tf.keras.models.load_model(model_path)
-    return model
+    return model, tf.__version__
 
 def dict_to_hashable(d):
     """

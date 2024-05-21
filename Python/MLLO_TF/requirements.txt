@@ -1,3 +1,7 @@
 jsonschema~=4.22.0
 keras==2.15.0
 tensorflow~=2.15, < 2.16
+
+# Dash
+dash~=2.17.0
+pandas~=2.2
