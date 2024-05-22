@@ -135,12 +135,15 @@ def get_parameters_layer(model):
             dimensions = get_layer_dimension(layer)
             if dimensions:
                 layers_dimensions[layer_name] = dimensions
+            try:
+                layer_input_dimension = str([i for i in model_layers[layer_uid].input_shape if i is not None])
+            except:
+                layer_input_dimension = str([i for i in model_layers[layer_uid].input.shape if i is not None])
 
             parameter_layer["parameter_layer"]["uid"] = f"ParameterLayer{layer_uid}"
             parameter_layer["parameter_layer"]["layer_index"] = layer_uid
             parameter_layer["parameter_layer"]["layer_dimension"] = str(dimensions)
-            parameter_layer["parameter_layer"]["layer_input_dimension"] = str(
-                [i for i in model_layers[layer_uid].input_shape if i is not None])
+            parameter_layer["parameter_layer"]["layer_input_dimension"] = layer_input_dimension
             parameter_layer["parameter_layer"]["layer_type "] = f"{layer_type}"
             parameter_layer["parameter_layer"]["layer_configuration"] = layer_config_setting
 
@@ -325,6 +328,11 @@ def get_initializer(model):
                 init_uid += 1
     return initializer_dict_list
 
+def get_input_layer_parameters(model):
+    input_layer_parameters = model.get_config()["layers"][0]["config"]
+    shape = input_layer_parameters.get('batch_input_shape') or input_layer_parameters.get('batch_shape')
+
+    return input_layer_parameters, shape
 
 class KerasTensorFlowMetadataLoader(object):
 
@@ -343,8 +351,8 @@ class KerasTensorFlowMetadataLoader(object):
         regularizer = get_regularizer(model)
         manual_inputs = get_manual_input(inputs)
         parameters_layers = get_parameters_layer(model)
-        input_parameters_layers = model.get_config()["layers"][0]["config"]
-        input_dimension = [i for i in input_parameters_layers["batch_input_shape"] if i is not None]
+        input_layer_parameters, shape = get_input_layer_parameters(model)
+        input_dimension = [i for i in shape if i is not None]
         initializer = get_initializer(model)
 
         return {
@@ -362,7 +370,7 @@ class KerasTensorFlowMetadataLoader(object):
             "model_input_requirements": {
                 "uid": "InputRequirements0",
                 "input_dimension": to_str(input_dimension),
-                "input_datatype": to_pascal_case(input_parameters_layers["dtype"]),
+                "input_datatype": to_pascal_case(input_layer_parameters["dtype"]),
             },
             "model_architecture": {
                 "uid": "ModelArchitecture0",
