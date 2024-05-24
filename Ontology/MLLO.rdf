@@ -13,13 +13,31 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:iof-av="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
-     xmlns:iof-av="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/">
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/mnd14/ml/">
         <owl:imports rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/"/>
     </owl:Ontology>
     
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#qualifiedCardinality -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#qualifiedCardinality"/>
+    
+
 
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -845,6 +863,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/ClassificationAccuracy">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/PerformanceMetric"/>
         <rdfs:label>classification accuracy</rdfs:label>
+        <iof-av:naturalLanguageDefinition>performance metric that prescribes how to asses the percentage of correctly classified inputs</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -1993,7 +2012,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>feature engineering algorithm</rdfs:label>
-        <skos:example>min-max normalization algorithm that scales all the features in a feature vector to a specific range</skos:example>
+        <skos:example>min-max normalization algorithm that scales all the features to a specific range</skos:example>
         <iof-av:naturalLanguageDefinition>algorithm that prescribes how to generate a feature of a particular type from a set of inputs</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
@@ -2078,6 +2097,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/FeatureScalingAlgorithm">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/FeatureEngineeringAlgorithm"/>
         <rdfs:label>feature scaling algorithm</rdfs:label>
+        <iof-av:naturalLanguageDefinition>feature engineering algorithm that prescribes how to scale a feature vector or feature to be within a particular value range</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -2316,6 +2336,41 @@ For a continuous random variable, a curve described by a mathematical formula wh
     
 
 
+    <!-- http://www.semanticweb.org/mnd14/ml/HyperparameterTuning -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/HyperparameterTuning">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://spec.industrialontologies.org/ontology/core/Core/PlannedProcess"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelValidation"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/hasSpecifiedOutput"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/mnd14/ml/ConfigurationVariableSettingSet"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mnd14/ml/isConfigurationSettingSetOfAtSomeTime"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/HyperparameterSet"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/PlannedProcess"/>
+        <rdfs:label>hyperparameter tuning</rdfs:label>
+        <iof-av:naturalLanguageDefinition>planned process in which an optimal hyperparameter value set is found by a set of model validations, whereby machine learning training in each model validation has different hyperparameter values as inputs</iof-av:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/mnd14/ml/ImageFeature -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/ImageFeature">
@@ -2506,6 +2561,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/Keras">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningFramework"/>
         <rdfs:label>keras</rdfs:label>
+        <iof-av:directSource>https://keras.io/</iof-av:directSource>
     </owl:Class>
     
 
@@ -3218,41 +3274,6 @@ For a continuous random variable, a curve described by a mathematical formula wh
     
 
 
-    <!-- http://www.semanticweb.org/mnd14/ml/HyperparameterTuning -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/HyperparameterTuning">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://spec.industrialontologies.org/ontology/core/Core/PlannedProcess"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelValidation"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/hasSpecifiedOutput"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://www.semanticweb.org/mnd14/ml/ConfigurationVariableSettingSet"/>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mnd14/ml/isConfigurationSettingSetOfAtSomeTime"/>
-                                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/HyperparameterSet"/>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/PlannedProcess"/>
-        <rdfs:label>hyperparameter tuning</rdfs:label>
-        <iof-av:naturalLanguageDefinition>planned process in which an optimal hyperparameter value set is found by a set of model validations, whereby machine learning training in each model validation has different hyperparameter values as inputs</iof-av:naturalLanguageDefinition>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/mnd14/ml/ModelOutput -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/ModelOutput">
@@ -3589,8 +3610,8 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/Noise">
         <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/InformationContentEntity"/>
         <rdfs:label>noise</rdfs:label>
-        <iof-av:naturalLanguageDefinition>random or unpredictable fluctuations in data that disrupt the ability to identify target patterns or relationships</iof-av:naturalLanguageDefinition>
         <iof-av:directSource>https://dataheroes.ai/glossary/noise-in-machine-learning/</iof-av:directSource>
+        <iof-av:naturalLanguageDefinition>random or unpredictable fluctuations in data that disrupt the ability to identify target patterns or relationships</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -3813,6 +3834,8 @@ For a continuous random variable, a curve described by a mathematical formula wh
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/ActivationFunction"/>
         <rdfs:label>rectified linear unit</rdfs:label>
         <iof-av:abbreviation>ReLU</iof-av:abbreviation>
+        <iof-av:adaptedFrom>https://www.kaggle.com/code/dansbecker/rectified-linear-units-relu-in-deep-learning</iof-av:adaptedFrom>
+        <iof-av:naturalLanguageDefinition>activation function that sets all negative output values to 0 and does not modify non-negative output values</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -4122,6 +4145,9 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/Softmax">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/ActivationFunction"/>
         <rdfs:label>softmax</rdfs:label>
+        <iof-av:adaptedFrom>https://en.wikipedia.org/wiki/Softmax_function</iof-av:adaptedFrom>
+        <iof-av:explanatoryNote>the exponential function has been applied to all output values prior to the sum</iof-av:explanatoryNote>
+        <iof-av:naturalLanguageDefinition>activation function that transform all outputs values to a probability value by applying a standard exponential function to each individual output value and then normalizing the value by dividing it with the sum of all the exponentials</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -4234,6 +4260,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/Tensorflow">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningFramework"/>
         <rdfs:label>tensorflow</rdfs:label>
+        <iof-av:directSource>https://www.tensorflow.org/</iof-av:directSource>
     </owl:Class>
     
 
