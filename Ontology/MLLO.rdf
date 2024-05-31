@@ -1360,6 +1360,79 @@ For a continuous random variable, a curve described by a mathematical formula wh
     
 
 
+    <!-- http://www.semanticweb.org/mnd14/ml/DataQualityAssesment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/DataQualityAssesment">
+        <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/PlannedProcess"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000059"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/DataQualityMetric"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mnd14/ml/hasDataInput"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>data quality assesment</rdfs:label>
+        <iof-av:naturalLanguageDefinition>planned process in which the data quality of a dataset is assesed with respect to one or more quality metrics</iof-av:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/DataQualityMetric -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/DataQualityMetric">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/MathematicalFunction"/>
+        <rdfs:label>data quality metric</rdfs:label>
+        <iof-av:explanatoryNote>1) data quality metrics include metrics for accuracy, data completeness, consistency, and timeliness
+2) data quality metrics can be qualitative, quantitative and semi-quantitative</iof-av:explanatoryNote>
+        <iof-av:naturalLanguageDefinition>mathematical function that prescribes how to asses the suitability of a dataset for a particular applicaton</iof-av:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/DataQualityMonitoring -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/DataQualityMonitoring">
+        <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/PlannedProcess"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000132"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/DeployedMachineLearningModelState"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/occursSimultaneouslyWith"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/DeployedMachineLearningModelState"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/temporallyFinishes"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/DeployedMachineLearningModelState"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/temporallyStarts"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/DeployedMachineLearningModelState"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/DataQualityAssesment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>data quality monitoring</rdfs:label>
+        <iof-av:explanatoryNote>prior to utilization in this includes either raw or pre-processed datasets</iof-av:explanatoryNote>
+        <iof-av:naturalLanguageDefinition>planned process during which data quality is assesed for data sets prior to being utilized for a deployed machine learning model</iof-av:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/mnd14/ml/DataReshapingOperation -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/DataReshapingOperation">
@@ -1501,9 +1574,9 @@ For a continuous random variable, a curve described by a mathematical formula wh
     
 
 
-    <!-- http://www.semanticweb.org/mnd14/ml/DeployedState -->
+    <!-- http://www.semanticweb.org/mnd14/ml/DeployedMachineLearningModelState -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/DeployedState">
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/DeployedMachineLearningModelState">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1529,7 +1602,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningModelDeploymentProcess"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label>deployed state</rdfs:label>
+        <rdfs:label>deployed machine learning model state</rdfs:label>
         <iof-av:naturalLanguageDefinition>process during which a machine learning model is deployed on a particular engineered system</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
@@ -3407,6 +3480,44 @@ For a continuous random variable, a curve described by a mathematical formula wh
     
 
 
+    <!-- http://www.semanticweb.org/mnd14/ml/ModelPerformanceMonitoring -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/ModelPerformanceMonitoring">
+        <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/PlannedProcess"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000132"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/DeployedMachineLearningModelState"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/occursSimultaneouslyWith"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/DeployedMachineLearningModelState"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/temporallyFinishes"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/DeployedMachineLearningModelState"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/temporallyStarts"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/DeployedMachineLearningModelState"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelPerformanceAssessment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>model performance monitoring</rdfs:label>
+        <iof-av:naturalLanguageDefinition>planned process during which model performance of a deployed model is assesed</iof-av:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/mnd14/ml/ModelPerformanceResult -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/ModelPerformanceResult">
@@ -3800,7 +3911,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
                                             <rdf:Description rdf:about="http://www.semanticweb.org/mnd14/ml/MachineLearningModel"/>
                                             <owl:Restriction>
                                                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000166"/>
-                                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/DeployedState"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mnd14/ml/DeployedMachineLearningModelState"/>
                                             </owl:Restriction>
                                         </owl:intersectionOf>
                                     </owl:Class>
