@@ -87,6 +87,32 @@
     
 
 
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#DataCharacteristic1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#DataCharacteristic1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/GaussianNoise"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#DataCharacteristic2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#DataCharacteristic2"/>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#DataCharacteristic3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#DataCharacteristic3"/>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#DataCharacteristic4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#DataCharacteristic4"/>
+    
+
+
     <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#DataReshapingOperation1 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#DataReshapingOperation1">
@@ -151,6 +177,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#FirstInstant2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#FirstInstant2">
+        <Core:hasValueExpressionAtAllTimes rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#InstantValueExpression2"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#Hyperparameters1 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#Hyperparameters1">
@@ -165,6 +199,14 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#InstantValueExpression1">
         <Core:hasDateTimeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08-13T07:56:00-04:00</Core:hasDateTimeValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#InstantValueExpression2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#InstantValueExpression2">
+        <Core:hasDateTimeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08-13T06:56:00-04:00</Core:hasDateTimeValue>
     </owl:NamedIndividual>
     
 
@@ -188,6 +230,10 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#MachineLearningDataSet1">
         <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/TrainingDataSet"/>
+        <ml:hasInformationContentEntityCharacteristic rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#DataCharacteristic2"/>
+        <ml:hasInformationContentEntityCharacteristic rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#DataCharacteristic3"/>
+        <ml:informationContentEntityDerivedFrom rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#RawDataSet1"/>
+        <ml:specifiesDimensionShape>[5000,28,28,1]</ml:specifiesDimensionShape>
     </owl:NamedIndividual>
     
 
@@ -232,6 +278,7 @@
         <obo:BFO_0000057 rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#MachineLearningModel1"/>
         <obo:BFO_0000059 rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#Hyperparameters1"/>
         <obo:BFO_0000063 rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#ModelExecution1"/>
+        <obo:BFO_0000222 rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#FirstInstant2"/>
         <ml:hasDataInput rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#MachineLearningDataSet1"/>
     </owl:NamedIndividual>
     
@@ -282,6 +329,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#RawDataSet1">
         <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/RawDataSet"/>
+        <ml:hasInformationContentEntityCharacteristic rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#DataCharacteristic2"/>
+        <ml:hasInformationContentEntityCharacteristic rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#DataCharacteristic4"/>
     </owl:NamedIndividual>
     
 
@@ -298,6 +347,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#TestDataSet1">
         <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/TestDataSet"/>
+        <ml:hasInformationContentEntityCharacteristic rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#DataCharacteristic1"/>
+        <ml:specifiesDimensionShape>[1000,28,28,1]</ml:specifiesDimensionShape>
     </owl:NamedIndividual>
     
 
