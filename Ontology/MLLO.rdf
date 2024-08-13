@@ -704,6 +704,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningModel"/>
         <rdfs:label>artificial neural network</rdfs:label>
         <iof-av:naturalLanguageDefinition>machine learning model which consists of a collection of connected units or nodes called artificial neurons, which loosely model the neurons in a biological brain</iof-av:naturalLanguageDefinition>
     </owl:Class>
