@@ -8,10 +8,10 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:Core="https://spec.industrialontologies.org/ontology/core/Core/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:iof-core="https://spec.industrialontologies.org/ontology/core/Core/"
      xmlns:AnnotationVocabulary="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/"
      xmlns:untitled-ontology-707="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707">
@@ -148,12 +148,182 @@
     
 
 
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#EvaluationResult0 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#EvaluationResult0">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelPerformanceResult"/>
+        <iof-core:isValueExpressionOfAtSomeTime rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#MachineLearningModel1"/>
+        <iof-core:hasSimpleExpressionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">87.3</iof-core:hasSimpleExpressionValue>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#EvaluationResult1 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#EvaluationResult1">
         <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelPerformanceResult"/>
-        <Core:isValueExpressionOfAtSomeTime rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#MachineLearningModel1"/>
-        <Core:hasSimpleExpressionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">95.2</Core:hasSimpleExpressionValue>
+        <iof-core:isValueExpressionOfAtSomeTime rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#MachineLearningModel1"/>
+        <iof-core:hasSimpleExpressionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">95.2</iof-core:hasSimpleExpressionValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#EvaluationResult10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#EvaluationResult10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelPerformanceResult"/>
+        <iof-core:isValueExpressionOfAtSomeTime rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#MachineLearningModel1"/>
+        <iof-core:hasSimpleExpressionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.15</iof-core:hasSimpleExpressionValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#EvaluationResult11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#EvaluationResult11">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelPerformanceResult"/>
+        <iof-core:isValueExpressionOfAtSomeTime rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#MachineLearningModel1"/>
+        <iof-core:hasSimpleExpressionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.08</iof-core:hasSimpleExpressionValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#EvaluationResult12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#EvaluationResult12">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelPerformanceResult"/>
+        <iof-core:isValueExpressionOfAtSomeTime rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#MachineLearningModel1"/>
+        <iof-core:hasSimpleExpressionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.12</iof-core:hasSimpleExpressionValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#EvaluationResult13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#EvaluationResult13">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelPerformanceResult"/>
+        <iof-core:isValueExpressionOfAtSomeTime rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#MachineLearningModel1"/>
+        <iof-core:hasSimpleExpressionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.1</iof-core:hasSimpleExpressionValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#EvaluationResult14 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#EvaluationResult14">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelPerformanceResult"/>
+        <iof-core:isValueExpressionOfAtSomeTime rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#MachineLearningModel1"/>
+        <iof-core:hasSimpleExpressionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.18</iof-core:hasSimpleExpressionValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#EvaluationResult15 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#EvaluationResult15">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelPerformanceResult"/>
+        <iof-core:isValueExpressionOfAtSomeTime rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#MachineLearningModel1"/>
+        <iof-core:hasSimpleExpressionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.07</iof-core:hasSimpleExpressionValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#EvaluationResult16 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#EvaluationResult16">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelPerformanceResult"/>
+        <iof-core:isValueExpressionOfAtSomeTime rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#MachineLearningModel1"/>
+        <iof-core:hasSimpleExpressionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.14</iof-core:hasSimpleExpressionValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#EvaluationResult17 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#EvaluationResult17">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelPerformanceResult"/>
+        <iof-core:isValueExpressionOfAtSomeTime rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#MachineLearningModel1"/>
+        <iof-core:hasSimpleExpressionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.11</iof-core:hasSimpleExpressionValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#EvaluationResult18 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#EvaluationResult18">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelPerformanceResult"/>
+        <iof-core:isValueExpressionOfAtSomeTime rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#MachineLearningModel1"/>
+        <iof-core:hasSimpleExpressionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.05</iof-core:hasSimpleExpressionValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#EvaluationResult2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#EvaluationResult2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelPerformanceResult"/>
+        <iof-core:isValueExpressionOfAtSomeTime rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#MachineLearningModel1"/>
+        <iof-core:hasSimpleExpressionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">89.7</iof-core:hasSimpleExpressionValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#EvaluationResult3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#EvaluationResult3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelPerformanceResult"/>
+        <iof-core:isValueExpressionOfAtSomeTime rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#MachineLearningModel1"/>
+        <iof-core:hasSimpleExpressionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">91.2</iof-core:hasSimpleExpressionValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#EvaluationResult4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#EvaluationResult4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelPerformanceResult"/>
+        <iof-core:isValueExpressionOfAtSomeTime rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#MachineLearningModel1"/>
+        <iof-core:hasSimpleExpressionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">85.6</iof-core:hasSimpleExpressionValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#EvaluationResult5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#EvaluationResult5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelPerformanceResult"/>
+        <iof-core:isValueExpressionOfAtSomeTime rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#MachineLearningModel1"/>
+        <iof-core:hasSimpleExpressionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">93.8</iof-core:hasSimpleExpressionValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#EvaluationResult6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#EvaluationResult6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelPerformanceResult"/>
+        <iof-core:isValueExpressionOfAtSomeTime rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#MachineLearningModel1"/>
+        <iof-core:hasSimpleExpressionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">88.9</iof-core:hasSimpleExpressionValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#EvaluationResult7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#EvaluationResult7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelPerformanceResult"/>
+        <iof-core:isValueExpressionOfAtSomeTime rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#MachineLearningModel1"/>
+        <iof-core:hasSimpleExpressionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">90.4</iof-core:hasSimpleExpressionValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#EvaluationResult8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#EvaluationResult8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelPerformanceResult"/>
+        <iof-core:isValueExpressionOfAtSomeTime rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#MachineLearningModel1"/>
+        <iof-core:hasSimpleExpressionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">95.0</iof-core:hasSimpleExpressionValue>
     </owl:NamedIndividual>
     
 
@@ -172,7 +342,7 @@
     <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#FirstInstant1 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#FirstInstant1">
-        <Core:hasValueExpressionAtAllTimes rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#InstantValueExpression1"/>
+        <iof-core:hasValueExpressionAtAllTimes rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#InstantValueExpression1"/>
     </owl:NamedIndividual>
     
 
@@ -180,7 +350,15 @@
     <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#FirstInstant2 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#FirstInstant2">
-        <Core:hasValueExpressionAtAllTimes rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#InstantValueExpression2"/>
+        <iof-core:hasValueExpressionAtAllTimes rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#InstantValueExpression2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#HammingLoss1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#HammingLoss1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/HammingLoss"/>
     </owl:NamedIndividual>
     
 
@@ -195,10 +373,91 @@
     
 
 
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#InputDataset10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#InputDataset10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ValidationDataSet"/>
+        <ml:specifiesDimensionShape>[2000,28,28,1]</ml:specifiesDimensionShape>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#InputDataset2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#InputDataset2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ValidationDataSet"/>
+        <ml:specifiesDimensionShape>[3400,28,28,1]</ml:specifiesDimensionShape>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#InputDataset3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#InputDataset3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/TestDataSet"/>
+        <ml:specifiesDimensionShape>[1250,28,28,1]</ml:specifiesDimensionShape>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#InputDataset4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#InputDataset4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ValidationDataSet"/>
+        <ml:specifiesDimensionShape>[3432,28,28,1]</ml:specifiesDimensionShape>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#InputDataset5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#InputDataset5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/TestDataSet"/>
+        <ml:specifiesDimensionShape>[5000,28,28,1]</ml:specifiesDimensionShape>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#InputDataset6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#InputDataset6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ValidationDataSet"/>
+        <ml:specifiesDimensionShape>[3000,28,28,1]</ml:specifiesDimensionShape>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#InputDataset7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#InputDataset7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/TestDataSet"/>
+        <ml:specifiesDimensionShape>[1000,28,28,1]</ml:specifiesDimensionShape>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#InputDataset8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#InputDataset8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ValidationDataSet"/>
+        <ml:specifiesDimensionShape>[2000,28,28,1]</ml:specifiesDimensionShape>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#InputDataset9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#InputDataset9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/TestDataSet"/>
+        <ml:specifiesDimensionShape>[4500,28,28,1]</ml:specifiesDimensionShape>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#InstantValueExpression1 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#InstantValueExpression1">
-        <Core:hasDateTimeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08-13T07:56:00-04:00</Core:hasDateTimeValue>
+        <iof-core:hasDateTimeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08-13T07:56:00-04:00</iof-core:hasDateTimeValue>
     </owl:NamedIndividual>
     
 
@@ -206,7 +465,7 @@
     <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#InstantValueExpression2 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#InstantValueExpression2">
-        <Core:hasDateTimeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08-13T06:56:00-04:00</Core:hasDateTimeValue>
+        <iof-core:hasDateTimeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08-13T06:56:00-04:00</iof-core:hasDateTimeValue>
     </owl:NamedIndividual>
     
 
@@ -295,6 +554,204 @@
     
 
 
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#ModelEvaluation10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#ModelEvaluation10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelEvaluation"/>
+        <obo:BFO_0000059 rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#Accuracy1"/>
+        <ml:hasDataInput rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#OutputDataset10"/>
+        <ml:hasDataOutput rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#EvaluationResult8"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#ModelEvaluation2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#ModelEvaluation2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelEvaluation"/>
+        <obo:BFO_0000059 rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#Accuracy1"/>
+        <ml:hasDataInput rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#OutputDataset2"/>
+        <ml:hasDataOutput rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#EvaluationResult0"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#ModelEvaluation21 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#ModelEvaluation21">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelEvaluation"/>
+        <obo:BFO_0000059 rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#HammingLoss1"/>
+        <ml:hasDataInput rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#OutputDataset2"/>
+        <ml:hasDataOutput rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#EvaluationResult10"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#ModelEvaluation22 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#ModelEvaluation22">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelEvaluation"/>
+        <obo:BFO_0000059 rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#HammingLoss1"/>
+        <ml:hasDataInput rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#OutputDataset3"/>
+        <ml:hasDataOutput rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#EvaluationResult11"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#ModelEvaluation23 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#ModelEvaluation23">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelEvaluation"/>
+        <obo:BFO_0000059 rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#HammingLoss1"/>
+        <ml:hasDataInput rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#OutputDataset4"/>
+        <ml:hasDataOutput rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#EvaluationResult12"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#ModelEvaluation24 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#ModelEvaluation24">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelEvaluation"/>
+        <obo:BFO_0000059 rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#HammingLoss1"/>
+        <ml:hasDataInput rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#OutputDataset5"/>
+        <ml:hasDataOutput rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#EvaluationResult13"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#ModelEvaluation25 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#ModelEvaluation25">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelEvaluation"/>
+        <obo:BFO_0000059 rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#HammingLoss1"/>
+        <ml:hasDataInput rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#OutputDataset6"/>
+        <ml:hasDataOutput rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#EvaluationResult14"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#ModelEvaluation26 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#ModelEvaluation26">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelEvaluation"/>
+        <obo:BFO_0000059 rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#HammingLoss1"/>
+        <ml:hasDataInput rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#OutputDataset7"/>
+        <ml:hasDataOutput rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#EvaluationResult15"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#ModelEvaluation27 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#ModelEvaluation27">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelEvaluation"/>
+        <obo:BFO_0000059 rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#HammingLoss1"/>
+        <ml:hasDataInput rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#OutputDataset8"/>
+        <ml:hasDataOutput rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#EvaluationResult16"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#ModelEvaluation28 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#ModelEvaluation28">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelEvaluation"/>
+        <obo:BFO_0000059 rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#HammingLoss1"/>
+        <ml:hasDataInput rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#OutputDataset9"/>
+        <ml:hasDataOutput rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#EvaluationResult17"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#ModelEvaluation29 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#ModelEvaluation29">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelEvaluation"/>
+        <obo:BFO_0000059 rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#HammingLoss1"/>
+        <ml:hasDataInput rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#OutputDataset10"/>
+        <ml:hasDataOutput rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#EvaluationResult18"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#ModelEvaluation3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#ModelEvaluation3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelEvaluation"/>
+        <obo:BFO_0000059 rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#Accuracy1"/>
+        <ml:hasDataInput rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#OutputDataset3"/>
+        <ml:hasDataOutput rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#EvaluationResult1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#ModelEvaluation4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#ModelEvaluation4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelEvaluation"/>
+        <obo:BFO_0000059 rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#Accuracy1"/>
+        <ml:hasDataInput rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#OutputDataset4"/>
+        <ml:hasDataOutput rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#EvaluationResult2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#ModelEvaluation5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#ModelEvaluation5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelEvaluation"/>
+        <obo:BFO_0000059 rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#Accuracy1"/>
+        <ml:hasDataInput rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#OutputDataset5"/>
+        <ml:hasDataOutput rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#EvaluationResult3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#ModelEvaluation6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#ModelEvaluation6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelEvaluation"/>
+        <obo:BFO_0000059 rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#Accuracy1"/>
+        <ml:hasDataInput rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#OutputDataset6"/>
+        <ml:hasDataOutput rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#EvaluationResult4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#ModelEvaluation7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#ModelEvaluation7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelEvaluation"/>
+        <obo:BFO_0000059 rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#Accuracy1"/>
+        <ml:hasDataInput rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#OutputDataset7"/>
+        <ml:hasDataOutput rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#EvaluationResult5"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#ModelEvaluation8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#ModelEvaluation8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelEvaluation"/>
+        <obo:BFO_0000059 rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#Accuracy1"/>
+        <ml:hasDataInput rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#OutputDataset8"/>
+        <ml:hasDataOutput rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#EvaluationResult6"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#ModelEvaluation9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#ModelEvaluation9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelEvaluation"/>
+        <obo:BFO_0000059 rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#Accuracy1"/>
+        <ml:hasDataInput rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#OutputDataset9"/>
+        <ml:hasDataOutput rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#EvaluationResult7"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#ModelExecution1 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#ModelExecution1">
@@ -305,6 +762,105 @@
         <ml:executes rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#MachineLearningModel1"/>
         <ml:hasDataInput rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#TestDataSet1"/>
         <ml:hasDataOutput rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#ModelOutputDataSet1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#ModelExecution10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#ModelExecution10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelExecution"/>
+        <ml:executes rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#MachineLearningModel1"/>
+        <ml:hasDataInput rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#InputDataset10"/>
+        <ml:hasDataOutput rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#OutputDataset10"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#ModelExecution2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#ModelExecution2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelExecution"/>
+        <ml:executes rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#MachineLearningModel1"/>
+        <ml:hasDataInput rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#InputDataset2"/>
+        <ml:hasDataOutput rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#OutputDataset2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#ModelExecution3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#ModelExecution3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelExecution"/>
+        <ml:executes rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#MachineLearningModel1"/>
+        <ml:hasDataInput rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#InputDataset3"/>
+        <ml:hasDataOutput rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#OutputDataset3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#ModelExecution4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#ModelExecution4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelExecution"/>
+        <ml:executes rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#MachineLearningModel1"/>
+        <ml:hasDataInput rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#InputDataset4"/>
+        <ml:hasDataOutput rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#OutputDataset4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#ModelExecution5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#ModelExecution5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelExecution"/>
+        <ml:executes rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#MachineLearningModel1"/>
+        <ml:hasDataInput rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#InputDataset5"/>
+        <ml:hasDataOutput rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#OutputDataset5"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#ModelExecution6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#ModelExecution6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelExecution"/>
+        <ml:executes rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#MachineLearningModel1"/>
+        <ml:hasDataInput rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#InputDataset6"/>
+        <ml:hasDataOutput rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#OutputDataset6"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#ModelExecution7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#ModelExecution7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelExecution"/>
+        <ml:executes rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#MachineLearningModel1"/>
+        <ml:hasDataInput rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#InputDataset7"/>
+        <ml:hasDataOutput rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#OutputDataset7"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#ModelExecution8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#ModelExecution8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelExecution"/>
+        <ml:executes rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#MachineLearningModel1"/>
+        <ml:hasDataInput rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#InputDataset8"/>
+        <ml:hasDataOutput rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#OutputDataset8"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#ModelExecution9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#ModelExecution9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelExecution"/>
+        <ml:executes rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#MachineLearningModel1"/>
+        <ml:hasDataInput rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#InputDataset9"/>
+        <ml:hasDataOutput rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#OutputDataset9"/>
     </owl:NamedIndividual>
     
 
@@ -320,6 +876,78 @@
     <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#ModelOutputDataSet1 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#ModelOutputDataSet1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelOutputDataSet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#OutputDataset10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#OutputDataset10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelOutputDataSet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#OutputDataset2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#OutputDataset2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelOutputDataSet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#OutputDataset3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#OutputDataset3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelOutputDataSet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#OutputDataset4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#OutputDataset4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelOutputDataSet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#OutputDataset5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#OutputDataset5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelOutputDataSet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#OutputDataset6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#OutputDataset6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelOutputDataSet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#OutputDataset7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#OutputDataset7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelOutputDataSet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#OutputDataset8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#OutputDataset8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelOutputDataSet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#OutputDataset9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#OutputDataset9">
         <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelOutputDataSet"/>
     </owl:NamedIndividual>
     

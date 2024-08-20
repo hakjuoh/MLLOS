@@ -2368,6 +2368,16 @@ For a continuous random variable, a curve described by a mathematical formula wh
     
 
 
+    <!-- http://www.semanticweb.org/mnd14/ml/HammingLoss -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/HammingLoss">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/PerformanceMetric"/>
+        <rdfs:label>hamming loss</rdfs:label>
+        <iof-av:naturalLanguageDefinition>performance metric that prescribes how to quantify the fraction of incorrect labels assigned to a set of machine learning inputs</iof-av:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/mnd14/ml/Hyperparameter -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/Hyperparameter">
