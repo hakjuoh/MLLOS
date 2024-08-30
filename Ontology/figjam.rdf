@@ -87,10 +87,21 @@
     
 
 
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#ComputingCluster1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#ComputingCluster1">
+        <rdf:type rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/EngineeredSystem"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#DataCharacteristic1 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#DataCharacteristic1">
         <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/GaussianNoise"/>
+        <ml:hasStandardDeviationValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">36</ml:hasStandardDeviationValue>
+        <terms:creator>Milos Drobnjakovic</terms:creator>
+        <rdfs:label>data characteristic 1</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -136,6 +147,49 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#DataType1">
         <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ConfigurationVariable"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#DeployedExecutionLastInstant1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#DeployedExecutionLastInstant1">
+        <iof-core:hasValueExpressionAtAllTimes rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#TimeValueExpressionDeployed1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#DeployedInputDataSet1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#DeployedInputDataSet1"/>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#DeployedModelExecution1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#DeployedModelExecution1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelExecution"/>
+        <obo:BFO_0000224 rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#DeployedExecutionLastInstant1"/>
+        <ml:executes rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#MachineLearningModel1"/>
+        <ml:hasDataInput rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#DeployedInputDataSet1"/>
+        <ml:hasDataOutput rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#DeployedOutputDataSet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#DeployedOutputDataSet -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#DeployedOutputDataSet"/>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#DeployedState1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#DeployedState1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/DeployedMachineLearningModelState"/>
+        <obo:BFO_0000117 rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#DeployedModelExecution1"/>
+        <obo:BFO_0000167 rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#ComputingCluster1"/>
+        <obo:BFO_0000167 rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#MachineLearningModel1"/>
     </owl:NamedIndividual>
     
 
@@ -470,6 +524,22 @@
     
 
 
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#LastInstant1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#LastInstant1">
+        <iof-core:hasValueExpressionAtAllTimes rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#LastInstantValueExpression"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#LastInstantValueExpression -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#LastInstantValueExpression">
+        <iof-core:hasDateTimeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08-13T10:56:00-04:00</iof-core:hasDateTimeValue>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#MachineLearningDataPreparationPipeline1 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#MachineLearningDataPreparationPipeline1">
@@ -510,6 +580,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#MachineLearningModelDevelopmentPipeline1">
         <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningModelDevelopmentPipeline"/>
+        <obo:BFO_0000063 rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#DeployedModelExecution1"/>
+        <obo:BFO_0000063 rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#DeployedState1"/>
         <obo:BFO_0000117 rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#MachineLearningDataPreparationPipeline1"/>
         <obo:BFO_0000117 rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#MachineLearningParameterInitialization1"/>
         <obo:BFO_0000117 rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#MachineLearningTraining1"/>
@@ -538,6 +610,7 @@
         <obo:BFO_0000059 rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#Hyperparameters1"/>
         <obo:BFO_0000063 rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#ModelExecution1"/>
         <obo:BFO_0000222 rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#FirstInstant2"/>
+        <obo:BFO_0000224 rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#LastInstant1"/>
         <ml:hasDataInput rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#MachineLearningDataSet1"/>
     </owl:NamedIndividual>
     
@@ -953,6 +1026,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#PostalCodeVerificationProcess1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#PostalCodeVerificationProcess1">
+        <rdf:type rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/ComputingProcess"/>
+        <ml:hasDataInput rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#DeployedOutputDataSet"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#RawDataSet1 -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#RawDataSet1">
@@ -977,6 +1059,14 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/TestDataSet"/>
         <ml:hasInformationContentEntityCharacteristic rdf:resource="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#DataCharacteristic1"/>
         <ml:specifiesDimensionShape>[1000,28,28,1]</ml:specifiesDimensionShape>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#TimeValueExpressionDeployed1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/milos/ontologies/2024/6/untitled-ontology-707#TimeValueExpressionDeployed1">
+        <iof-core:hasDateTimeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-08-30T07:56:00-04:00</iof-core:hasDateTimeValue>
     </owl:NamedIndividual>
     
 
