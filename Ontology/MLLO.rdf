@@ -33,6 +33,16 @@
     
 
 
+    <!-- http://www.semanticweb.org/mnd14/ml/InformationContentEntityLocation -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/mnd14/ml/InformationContentEntityLocation">
+        <rdfs:label>information content entity location</rdfs:label>
+        <iof-av:explanatoryNote>this annotation property serves the purpose of identifying where an ICE which is not fully stored in a knowledge graph (e.g., only its metadata is present) is located for the purpose of retrieving it to conduct any non-knowledge graph analysis (e.g., PCA). In case of a file system the data should be stored as a relative path</iof-av:explanatoryNote>
+        <iof-av:naturalLanguageDefinition>the location of an information content entity within a database, file system or online</iof-av:naturalLanguageDefinition>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://www.w3.org/2002/07/owl#qualifiedCardinality -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#qualifiedCardinality"/>
