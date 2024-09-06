@@ -1138,7 +1138,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <!-- http://www.semanticweb.org/mnd14/ml/DataCleaningAlgorithm -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/DataCleaningAlgorithm">
-        <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/Algorithm"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/DataProcessingAlgorithm"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/prescribes"/>
@@ -1157,7 +1157,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         </rdfs:subClassOf>
         <rdfs:label>data cleaning algorithm</rdfs:label>
         <skos:example>Multiple Imputation by Chained Equations algorithm used to impute the missing values</skos:example>
-        <iof-av:naturalLanguageDefinition>algorithm that prescribes how the missing or corrupted entries in a dataset should be corrected</iof-av:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>data processing algorithm that prescribes how the missing or corrupted entries in a dataset should be corrected</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -1307,6 +1307,16 @@ For a continuous random variable, a curve described by a mathematical formula wh
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/InformationContentEntityCharacteristic"/>
         <rdfs:label>data item characteristic</rdfs:label>
         <iof-av:naturalLanguageDefinition>information content entity characteristic of a data item</iof-av:naturalLanguageDefinition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mnd14/ml/DataProcessingAlgorithm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/DataProcessingAlgorithm">
+        <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/Algorithm"/>
+        <rdfs:label>data processing algorithm</rdfs:label>
+        <iof-av:naturalLanguageDefinition>algorithm that prescribes how to transform or modify pieces of data</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
@@ -2078,7 +2088,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
     <!-- http://www.semanticweb.org/mnd14/ml/FeatureEngineeringAlgorithm -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/mnd14/ml/FeatureEngineeringAlgorithm">
-        <rdfs:subClassOf rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/Algorithm"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mnd14/ml/DataProcessingAlgorithm"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://spec.industrialontologies.org/ontology/core/Core/prescribes"/>
@@ -2097,7 +2107,7 @@ For a continuous random variable, a curve described by a mathematical formula wh
         </rdfs:subClassOf>
         <rdfs:label>feature engineering algorithm</rdfs:label>
         <skos:example>min-max normalization algorithm that scales all the features to a specific range</skos:example>
-        <iof-av:naturalLanguageDefinition>algorithm that prescribes how to generate a feature of a particular type from a set of inputs</iof-av:naturalLanguageDefinition>
+        <iof-av:naturalLanguageDefinition>data processing algorithm that prescribes how to generate a feature of a particular type from a set of inputs</iof-av:naturalLanguageDefinition>
     </owl:Class>
     
 
