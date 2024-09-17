@@ -1,0 +1,1614 @@
+@prefix : <http://example.com/MNIST#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+@prefix ml: <http://www.semanticweb.org/mnd14/ml/> .
+@prefix bfo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix base: <http://example.com/MNIST#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf4j: <http://rdf4j.org/schema/rdf4j#> .
+@prefix dcterm: <http://purl.org/dc/terms/> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix iof-core: <https://spec.industrialontologies.org/ontology/core/Core/> .
+@base <http://example.com/MNIST#> .
+
+<http://example.com/MNIST#> rdf:type owl:Ontology ;
+                             owl:imports ml: .
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://example.com/MNIST#BatchSize1
+base:BatchSize1 rdf:type owl:NamedIndividual ,
+                         ml:BatchSize ;
+                ml:hasConfigurationSettingAtSomeTime base:BatchSizeSetting1 .
+
+
+###  http://example.com/MNIST#BatchSizeSetting1
+base:BatchSizeSetting1 rdf:type owl:NamedIndividual ;
+                       ml:hasConfigurationSettingValue 128 .
+
+
+###  http://example.com/MNIST#DataReshapingAlgorithm1
+base:DataReshapingAlgorithm1 rdf:type owl:NamedIndividual ,
+                                      ml:DataProcessingAlgorithm ;
+                             ml:hasConfigurationVariable base:DataShape1 .
+
+
+###  http://example.com/MNIST#DataReshapingOperation1
+base:DataReshapingOperation1 rdf:type owl:NamedIndividual ,
+                                      ml:DataReshapingOperation ;
+                             bfo:BFO_0000059 base:DataShapeSetting1 ,
+                                             base:DataShapeSetting2 ;
+                             ml:executes base:DataReshapingAlgorithm1 .
+
+
+###  http://example.com/MNIST#DataReshapingOperation10
+base:DataReshapingOperation10 rdf:type owl:NamedIndividual ,
+                                       ml:DataReshapingOperation ;
+                              bfo:BFO_0000059 base:DataShapeSetting1 ,
+                                              base:DataShapeSetting2 ;
+                              ml:executes base:DataReshapingAlgorithm1 .
+
+
+###  http://example.com/MNIST#DataReshapingOperation11
+base:DataReshapingOperation11 rdf:type owl:NamedIndividual ,
+                                       ml:DataReshapingOperation ;
+                              bfo:BFO_0000059 base:DataShapeSetting1 ,
+                                              base:DataShapeSetting2 ;
+                              ml:executes base:DataReshapingAlgorithm1 .
+
+
+###  http://example.com/MNIST#DataReshapingOperation12
+base:DataReshapingOperation12 rdf:type owl:NamedIndividual ,
+                                       ml:DataReshapingOperation ;
+                              bfo:BFO_0000059 base:DataShapeSetting1 ,
+                                              base:DataShapeSetting2 ;
+                              ml:executes base:DataReshapingAlgorithm1 .
+
+
+###  http://example.com/MNIST#DataReshapingOperation13
+base:DataReshapingOperation13 rdf:type owl:NamedIndividual ,
+                                       ml:DataReshapingOperation ;
+                              bfo:BFO_0000059 base:DataShapeSetting1 ,
+                                              base:DataShapeSetting2 ;
+                              ml:executes base:DataReshapingAlgorithm1 .
+
+
+###  http://example.com/MNIST#DataReshapingOperation14
+base:DataReshapingOperation14 rdf:type owl:NamedIndividual ,
+                                       ml:DataReshapingOperation ;
+                              bfo:BFO_0000059 base:DataShapeSetting1 ,
+                                              base:DataShapeSetting2 ;
+                              ml:executes base:DataReshapingAlgorithm1 .
+
+
+###  http://example.com/MNIST#DataReshapingOperation15
+base:DataReshapingOperation15 rdf:type owl:NamedIndividual ,
+                                       ml:DataReshapingOperation ;
+                              bfo:BFO_0000059 base:DataShapeSetting1 ,
+                                              base:DataShapeSetting2 ;
+                              ml:executes base:DataReshapingAlgorithm1 .
+
+
+###  http://example.com/MNIST#DataReshapingOperation2
+base:DataReshapingOperation2 rdf:type owl:NamedIndividual ,
+                                      ml:DataReshapingOperation ;
+                             bfo:BFO_0000059 base:DataShapeSetting1 ,
+                                             base:DataShapeSetting2 ;
+                             ml:executes base:DataReshapingAlgorithm1 .
+
+
+###  http://example.com/MNIST#DataReshapingOperation3
+base:DataReshapingOperation3 rdf:type owl:NamedIndividual ,
+                                      ml:DataReshapingOperation ;
+                             bfo:BFO_0000059 base:DataShapeSetting1 ,
+                                             base:DataShapeSetting2 ;
+                             ml:executes base:DataReshapingAlgorithm1 .
+
+
+###  http://example.com/MNIST#DataReshapingOperation4
+base:DataReshapingOperation4 rdf:type owl:NamedIndividual ,
+                                      ml:DataReshapingOperation ;
+                             bfo:BFO_0000059 base:DataShapeSetting1 ,
+                                             base:DataShapeSetting2 ;
+                             ml:executes base:DataReshapingAlgorithm1 .
+
+
+###  http://example.com/MNIST#DataReshapingOperation5
+base:DataReshapingOperation5 rdf:type owl:NamedIndividual ,
+                                      ml:DataReshapingOperation ;
+                             bfo:BFO_0000059 base:DataShapeSetting1 ,
+                                             base:DataShapeSetting2 ;
+                             ml:executes base:DataReshapingAlgorithm1 .
+
+
+###  http://example.com/MNIST#DataReshapingOperation6
+base:DataReshapingOperation6 rdf:type owl:NamedIndividual ,
+                                      ml:DataReshapingOperation ;
+                             bfo:BFO_0000059 base:DataShapeSetting1 ,
+                                             base:DataShapeSetting2 ;
+                             ml:executes base:DataReshapingAlgorithm1 .
+
+
+###  http://example.com/MNIST#DataShape1
+base:DataShape1 rdf:type owl:NamedIndividual ;
+                ml:hasConfigurationSettingAtSomeTime base:DataShapeSetting1 ,
+                                                     base:DataShapeSetting2 .
+
+
+###  http://example.com/MNIST#DataShapeSetting1
+base:DataShapeSetting1 rdf:type owl:NamedIndividual ;
+                       ml:hasConfigurationSettingValue "[x,28,28,1]" .
+
+
+###  http://example.com/MNIST#DataShapeSetting2
+base:DataShapeSetting2 rdf:type owl:NamedIndividual ;
+                       ml:hasConfigurationSettingValue "[x,784,1]" .
+
+
+###  http://example.com/MNIST#DataType1
+base:DataType1 rdf:type owl:NamedIndividual ;
+               ml:hasConfigurationSettingAtSomeTime base:DataTypeSetting1 .
+
+
+###  http://example.com/MNIST#DataTypeSetting1
+base:DataTypeSetting1 rdf:type owl:NamedIndividual ;
+                      ml:hasConfigurationSettingValue "float32" .
+
+
+###  http://example.com/MNIST#DatasetCharacteristic1
+base:DatasetCharacteristic1 rdf:type owl:NamedIndividual ,
+                                     ml:GaussianNoise ;
+                            ml:hasStandardDeviationValue 16 .
+
+
+###  http://example.com/MNIST#DatasetCharacteristic2
+base:DatasetCharacteristic2 rdf:type owl:NamedIndividual ,
+                                     ml:GaussianNoise ;
+                            ml:hasStandardDeviationValue 48 .
+
+
+###  http://example.com/MNIST#DatasetCharacteristic3
+base:DatasetCharacteristic3 rdf:type owl:NamedIndividual ,
+                                     ml:GaussianNoise ;
+                            ml:hasStandardDeviationValue 96 .
+
+
+###  http://example.com/MNIST#DatasetCharacteristic5
+base:DatasetCharacteristic5 rdf:type owl:NamedIndividual ,
+                                     ml:PoissonNoise .
+
+
+###  http://example.com/MNIST#DatasetCharacteristic6
+base:DatasetCharacteristic6 rdf:type owl:NamedIndividual ,
+                                     ml:PoissonNoise .
+
+
+###  http://example.com/MNIST#DatasetCharacteristic7
+base:DatasetCharacteristic7 rdf:type owl:NamedIndividual ,
+                                     ml:GaussianNoise ;
+                            ml:hasStandardDeviationValue 48 .
+
+
+###  http://example.com/MNIST#EpochNumber1
+base:EpochNumber1 rdf:type owl:NamedIndividual ,
+                           ml:EpochNumber ;
+                  ml:hasConfigurationSettingAtSomeTime base:EpochNumberSetting1 .
+
+
+###  http://example.com/MNIST#EpochNumberSetting1
+base:EpochNumberSetting1 rdf:type owl:NamedIndividual ;
+                         ml:hasConfigurationSettingValue 10 .
+
+
+###  http://example.com/MNIST#EvaluationResult1
+base:EvaluationResult1 rdf:type owl:NamedIndividual ,
+                                ml:ModelPerformanceResult ;
+                       ml:informationContentEntityDerivedFrom base:ModelOutputDataset1 ;
+                       iof-core:isValueExpressionOfAtSomeTime base:MLModel1 ;
+                       iof-core:hasSimpleExpressionValue "0.9789" .
+
+
+###  http://example.com/MNIST#EvaluationResult10
+base:EvaluationResult10 rdf:type owl:NamedIndividual ,
+                                 ml:ModelPerformanceResult ;
+                        ml:informationContentEntityDerivedFrom base:ModelOutputDataset10 ;
+                        iof-core:isValueExpressionOfAtSomeTime base:MLModel2 ;
+                        iof-core:hasSimpleExpressionValue "0.7550" .
+
+
+###  http://example.com/MNIST#EvaluationResult11
+base:EvaluationResult11 rdf:type owl:NamedIndividual ,
+                                 ml:ModelPerformanceResult ;
+                        ml:informationContentEntityDerivedFrom base:ModelOutputDataset11 ;
+                        iof-core:isValueExpressionOfAtSomeTime base:MLModel2 ;
+                        iof-core:hasSimpleExpressionValue "0.6508" .
+
+
+###  http://example.com/MNIST#EvaluationResult12
+base:EvaluationResult12 rdf:type owl:NamedIndividual ,
+                                 ml:ModelPerformanceResult ;
+                        ml:informationContentEntityDerivedFrom base:ModelOutputDataset12 ;
+                        iof-core:isValueExpressionOfAtSomeTime base:MLModel2 ;
+                        iof-core:hasSimpleExpressionValue "0.4511" .
+
+
+###  http://example.com/MNIST#EvaluationResult13
+base:EvaluationResult13 rdf:type owl:NamedIndividual ,
+                                 ml:ModelPerformanceResult ;
+                        ml:informationContentEntityDerivedFrom base:ModelOutputDataset13 ;
+                        iof-core:isValueExpressionOfAtSomeTime base:MLModel2 ;
+                        iof-core:hasSimpleExpressionValue "0.9671" .
+
+
+###  http://example.com/MNIST#EvaluationResult14
+base:EvaluationResult14 rdf:type owl:NamedIndividual ,
+                                 ml:ModelPerformanceResult ;
+                        ml:informationContentEntityDerivedFrom base:ModelOutputDataset14 ;
+                        iof-core:isValueExpressionOfAtSomeTime base:MLModel2 ;
+                        iof-core:hasSimpleExpressionValue "0.4962" .
+
+
+###  http://example.com/MNIST#EvaluationResult15
+base:EvaluationResult15 rdf:type owl:NamedIndividual ,
+                                 ml:ModelPerformanceResult ;
+                        ml:informationContentEntityDerivedFrom base:ModelOutputDataset15 ;
+                        iof-core:isValueExpressionOfAtSomeTime base:MLModel2 ;
+                        iof-core:hasSimpleExpressionValue "0.5954" .
+
+
+###  http://example.com/MNIST#EvaluationResult2
+base:EvaluationResult2 rdf:type owl:NamedIndividual ,
+                                ml:ModelPerformanceResult ;
+                       ml:informationContentEntityDerivedFrom base:ModelOutputDataset2 ;
+                       iof-core:isValueExpressionOfAtSomeTime base:MLModel1 ;
+                       iof-core:hasSimpleExpressionValue "0.9671" .
+
+
+###  http://example.com/MNIST#EvaluationResult20
+base:EvaluationResult20 rdf:type owl:NamedIndividual ,
+                                 ml:ModelPerformanceResult ;
+                        ml:informationContentEntityDerivedFrom base:ModelOutputDataset20 ;
+                        iof-core:isValueExpressionOfAtSomeTime base:MLModel3 ;
+                        iof-core:hasSimpleExpressionValue "0.8667" .
+
+
+###  http://example.com/MNIST#EvaluationResult21
+base:EvaluationResult21 rdf:type owl:NamedIndividual ,
+                                 ml:ModelPerformanceResult ;
+                        ml:informationContentEntityDerivedFrom base:ModelOutputDataset21 ;
+                        iof-core:isValueExpressionOfAtSomeTime base:MLModel3 ;
+                        iof-core:hasSimpleExpressionValue "0.4691" .
+
+
+###  http://example.com/MNIST#EvaluationResult22
+base:EvaluationResult22 rdf:type owl:NamedIndividual ,
+                                 ml:ModelPerformanceResult ;
+                        ml:informationContentEntityDerivedFrom base:ModelOutputDataset22 ;
+                        iof-core:isValueExpressionOfAtSomeTime base:MLModel3 ;
+                        iof-core:hasSimpleExpressionValue "0.2323" .
+
+
+###  http://example.com/MNIST#EvaluationResult23
+base:EvaluationResult23 rdf:type owl:NamedIndividual ,
+                                 ml:ModelPerformanceResult ;
+                        ml:informationContentEntityDerivedFrom base:ModelOutputDataset23 ;
+                        iof-core:isValueExpressionOfAtSomeTime base:MLModel3 ;
+                        iof-core:hasSimpleExpressionValue "0.9236" .
+
+
+###  http://example.com/MNIST#EvaluationResult24
+base:EvaluationResult24 rdf:type owl:NamedIndividual ,
+                                 ml:ModelPerformanceResult ;
+                        ml:informationContentEntityDerivedFrom base:ModelOutputDataset24 ;
+                        iof-core:isValueExpressionOfAtSomeTime base:MLModel3 ;
+                        iof-core:hasSimpleExpressionValue "0.466" .
+
+
+###  http://example.com/MNIST#EvaluationResult25
+base:EvaluationResult25 rdf:type owl:NamedIndividual ,
+                                 ml:ModelPerformanceResult ;
+                        ml:informationContentEntityDerivedFrom base:ModelOutputDataset25 ;
+                        iof-core:isValueExpressionOfAtSomeTime base:MLModel3 ;
+                        iof-core:hasSimpleExpressionValue "0.9234" .
+
+
+###  http://example.com/MNIST#EvaluationResult3
+base:EvaluationResult3 rdf:type owl:NamedIndividual ,
+                                ml:ModelPerformanceResult ;
+                       ml:informationContentEntityDerivedFrom base:ModelOutputDataset3 ;
+                       iof-core:isValueExpressionOfAtSomeTime base:MLModel1 ;
+                       iof-core:hasSimpleExpressionValue "0.8118" .
+
+
+###  http://example.com/MNIST#EvaluationResult4
+base:EvaluationResult4 rdf:type owl:NamedIndividual ,
+                                ml:ModelPerformanceResult ;
+                       ml:informationContentEntityDerivedFrom base:ModelOutputDataset4 ;
+                       iof-core:isValueExpressionOfAtSomeTime base:MLModel1 ;
+                       iof-core:hasSimpleExpressionValue "0.9807" .
+
+
+###  http://example.com/MNIST#EvaluationResult5
+base:EvaluationResult5 rdf:type owl:NamedIndividual ,
+                                ml:ModelPerformanceResult ;
+                       ml:informationContentEntityDerivedFrom base:ModelOutputDataset5 ;
+                       iof-core:isValueExpressionOfAtSomeTime base:MLModel1 ;
+                       iof-core:hasSimpleExpressionValue "0.9803" .
+
+
+###  http://example.com/MNIST#EvaluationResult6
+base:EvaluationResult6 rdf:type owl:NamedIndividual ,
+                                ml:ModelPerformanceResult ;
+                       ml:informationContentEntityDerivedFrom base:ModelOutputDataset6 ;
+                       iof-core:isValueExpressionOfAtSomeTime base:MLModel1 ;
+                       iof-core:hasSimpleExpressionValue "0.9675" .
+
+
+###  http://example.com/MNIST#FeatureScalingAlgorithm1
+base:FeatureScalingAlgorithm1 rdf:type owl:NamedIndividual ,
+                                       ml:FeatureScalingAlgorithm ;
+                              ml:hasConfigurationVariable base:ScaleFactor1 .
+
+
+###  http://example.com/MNIST#FeatureScalingOperation1
+base:FeatureScalingOperation1 rdf:type owl:NamedIndividual ,
+                                       ml:FeatureScalingOperation ;
+                              bfo:BFO_0000059 base:ScaleFactorSetting1 ;
+                              bfo:BFO_0000063 base:DataReshapingOperation1 ;
+                              ml:executes base:FeatureScalingAlgorithm1 .
+
+
+###  http://example.com/MNIST#FeatureScalingOperation10
+base:FeatureScalingOperation10 rdf:type owl:NamedIndividual ,
+                                        ml:FeatureScalingOperation ;
+                               bfo:BFO_0000059 base:ScaleFactorSetting1 ;
+                               bfo:BFO_0000063 base:DataReshapingOperation10 ;
+                               ml:executes base:FeatureScalingAlgorithm1 .
+
+
+###  http://example.com/MNIST#FeatureScalingOperation11
+base:FeatureScalingOperation11 rdf:type owl:NamedIndividual ,
+                                        ml:FeatureScalingOperation ;
+                               bfo:BFO_0000059 base:ScaleFactorSetting1 ;
+                               bfo:BFO_0000063 base:DataReshapingOperation11 ;
+                               ml:executes base:FeatureScalingAlgorithm1 .
+
+
+###  http://example.com/MNIST#FeatureScalingOperation12
+base:FeatureScalingOperation12 rdf:type owl:NamedIndividual ,
+                                        ml:FeatureScalingOperation ;
+                               bfo:BFO_0000059 base:ScaleFactorSetting1 ;
+                               bfo:BFO_0000063 base:DataReshapingOperation12 ;
+                               ml:executes base:FeatureScalingAlgorithm1 .
+
+
+###  http://example.com/MNIST#FeatureScalingOperation13
+base:FeatureScalingOperation13 rdf:type owl:NamedIndividual ,
+                                        ml:FeatureScalingOperation ;
+                               bfo:BFO_0000059 base:ScaleFactorSetting1 ;
+                               bfo:BFO_0000063 base:DataReshapingOperation13 ;
+                               ml:executes base:FeatureScalingAlgorithm1 .
+
+
+###  http://example.com/MNIST#FeatureScalingOperation14
+base:FeatureScalingOperation14 rdf:type owl:NamedIndividual ,
+                                        ml:FeatureScalingOperation ;
+                               bfo:BFO_0000059 base:ScaleFactorSetting1 ;
+                               bfo:BFO_0000063 base:DataReshapingOperation14 ;
+                               ml:executes base:FeatureScalingAlgorithm1 .
+
+
+###  http://example.com/MNIST#FeatureScalingOperation15
+base:FeatureScalingOperation15 rdf:type owl:NamedIndividual ,
+                                        ml:FeatureScalingOperation ;
+                               bfo:BFO_0000059 base:ScaleFactorSetting1 ;
+                               bfo:BFO_0000063 base:DataReshapingOperation15 ;
+                               ml:executes base:FeatureScalingAlgorithm1 .
+
+
+###  http://example.com/MNIST#FeatureScalingOperation2
+base:FeatureScalingOperation2 rdf:type owl:NamedIndividual ,
+                                       ml:FeatureScalingOperation ;
+                              bfo:BFO_0000059 base:ScaleFactorSetting1 ;
+                              bfo:BFO_0000063 base:DataReshapingOperation2 ;
+                              ml:executes base:FeatureScalingAlgorithm1 .
+
+
+###  http://example.com/MNIST#FeatureScalingOperation20
+base:FeatureScalingOperation20 rdf:type owl:NamedIndividual ,
+                                        ml:FeatureScalingOperation ;
+                               bfo:BFO_0000059 base:ScaleFactorSetting1 ;
+                               ml:executes base:FeatureScalingAlgorithm1 .
+
+
+###  http://example.com/MNIST#FeatureScalingOperation21
+base:FeatureScalingOperation21 rdf:type owl:NamedIndividual ,
+                                        ml:FeatureScalingOperation ;
+                               bfo:BFO_0000059 base:ScaleFactorSetting1 ;
+                               ml:executes base:FeatureScalingAlgorithm1 .
+
+
+###  http://example.com/MNIST#FeatureScalingOperation22
+base:FeatureScalingOperation22 rdf:type owl:NamedIndividual ,
+                                        ml:FeatureScalingOperation ;
+                               bfo:BFO_0000059 base:ScaleFactorSetting1 ;
+                               ml:executes base:FeatureScalingAlgorithm1 .
+
+
+###  http://example.com/MNIST#FeatureScalingOperation23
+base:FeatureScalingOperation23 rdf:type owl:NamedIndividual ,
+                                        ml:FeatureScalingOperation ;
+                               bfo:BFO_0000059 base:ScaleFactorSetting1 ;
+                               ml:executes base:FeatureScalingAlgorithm1 .
+
+
+###  http://example.com/MNIST#FeatureScalingOperation24
+base:FeatureScalingOperation24 rdf:type owl:NamedIndividual ,
+                                        ml:FeatureScalingOperation ;
+                               bfo:BFO_0000059 base:ScaleFactorSetting1 ;
+                               ml:executes base:FeatureScalingAlgorithm1 .
+
+
+###  http://example.com/MNIST#FeatureScalingOperation25
+base:FeatureScalingOperation25 rdf:type owl:NamedIndividual ,
+                                        ml:FeatureScalingOperation ;
+                               bfo:BFO_0000059 base:ScaleFactorSetting1 ;
+                               ml:executes base:FeatureScalingAlgorithm1 .
+
+
+###  http://example.com/MNIST#FeatureScalingOperation3
+base:FeatureScalingOperation3 rdf:type owl:NamedIndividual ,
+                                       ml:FeatureScalingOperation ;
+                              bfo:BFO_0000059 base:ScaleFactorSetting1 ;
+                              bfo:BFO_0000063 base:DataReshapingOperation3 ;
+                              ml:executes base:FeatureScalingAlgorithm1 .
+
+
+###  http://example.com/MNIST#FeatureScalingOperation4
+base:FeatureScalingOperation4 rdf:type owl:NamedIndividual ,
+                                       ml:FeatureScalingOperation ;
+                              bfo:BFO_0000059 base:ScaleFactorSetting1 ;
+                              bfo:BFO_0000063 base:DataReshapingOperation4 ;
+                              ml:executes base:FeatureScalingAlgorithm1 .
+
+
+###  http://example.com/MNIST#FeatureScalingOperation5
+base:FeatureScalingOperation5 rdf:type owl:NamedIndividual ,
+                                       ml:FeatureScalingOperation ;
+                              bfo:BFO_0000059 base:ScaleFactorSetting1 ;
+                              bfo:BFO_0000063 base:DataReshapingOperation5 ;
+                              ml:executes base:FeatureScalingAlgorithm1 .
+
+
+###  http://example.com/MNIST#FeatureScalingOperation6
+base:FeatureScalingOperation6 rdf:type owl:NamedIndividual ,
+                                       ml:FeatureScalingOperation ;
+                              bfo:BFO_0000059 base:ScaleFactorSetting1 ;
+                              bfo:BFO_0000063 base:DataReshapingOperation6 ;
+                              ml:executes base:FeatureScalingAlgorithm1 .
+
+
+###  http://example.com/MNIST#MLModel1
+base:MLModel1 rdf:type owl:NamedIndividual ,
+                       ml:ConvolutionalNeuralNetwork ;
+              bfo:BFO_0000178 base:ModelObjective1 .
+
+
+###  http://example.com/MNIST#MLModel2
+base:MLModel2 rdf:type owl:NamedIndividual ,
+                       ml:MultiLayerPerceptron ;
+              bfo:BFO_0000178 base:ModelObjective1 .
+
+
+###  http://example.com/MNIST#MLModel3
+base:MLModel3 rdf:type owl:NamedIndividual ,
+                       ml:LogisticRegression ;
+              bfo:BFO_0000178 base:ModelObjective1 .
+
+
+###  http://example.com/MNIST#Metric1
+base:Metric1 rdf:type owl:NamedIndividual ,
+                      ml:ClassificationAccuracy .
+
+
+###  http://example.com/MNIST#MnistG16
+base:MnistG16 rdf:type owl:NamedIndividual ,
+                       ml:RawDataSet ;
+              ml:hasInformationContentEntityCharacteristic base:DatasetCharacteristic1 ;
+              ml:specifiesDimensionShape "[10000,28,28]" ;
+              ml:InformationContentEntityLocation "./datasets/input_datasets/mnist_g16.npy" .
+
+
+###  http://example.com/MNIST#MnistG48
+base:MnistG48 rdf:type owl:NamedIndividual ,
+                       ml:RawDataSet ;
+              ml:hasInformationContentEntityCharacteristic base:DatasetCharacteristic2 ;
+              ml:specifiesDimensionShape "[10000,28,28]" ;
+              ml:InformationContentEntityLocation "./datasets/input_datasets/mnist_g48.npy" .
+
+
+###  http://example.com/MNIST#MnistG48P
+base:MnistG48P rdf:type owl:NamedIndividual ,
+                        ml:RawDataSet ;
+               ml:hasInformationContentEntityCharacteristic base:DatasetCharacteristic6 ,
+                                                            base:DatasetCharacteristic7 ;
+               ml:specifiesDimensionShape "[10000,28,28]" ;
+               ml:InformationContentEntityLocation "./datasets/input_datasets/mnist_g48p.npy" .
+
+
+###  http://example.com/MNIST#MnistG96
+base:MnistG96 rdf:type owl:NamedIndividual ,
+                       ml:RawDataSet ;
+              ml:hasInformationContentEntityCharacteristic base:DatasetCharacteristic3 ;
+              ml:specifiesDimensionShape "[10000,28,28]" ;
+              ml:InformationContentEntityLocation "./datasets/input_datasets/mnist_g96.npy" .
+
+
+###  http://example.com/MNIST#MnistNoNoise
+base:MnistNoNoise rdf:type owl:NamedIndividual ,
+                           ml:RawDataSet ;
+                  ml:specifiesDimensionShape "[10000,28,28]" ;
+                  ml:InformationContentEntityLocation "./datasets/input_datasets/mnist_nonoise.npy" .
+
+
+###  http://example.com/MNIST#MnistP
+base:MnistP rdf:type owl:NamedIndividual ,
+                     ml:RawDataSet ;
+            ml:hasInformationContentEntityCharacteristic base:DatasetCharacteristic5 ;
+            ml:specifiesDimensionShape "[10000,28,28]" ;
+            ml:InformationContentEntityLocation "./datasets/input_datasets/mnist_p.npy" .
+
+
+###  http://example.com/MNIST#ModelEvaluation1
+base:ModelEvaluation1 rdf:type owl:NamedIndividual ,
+                               ml:ModelEvaluation ;
+                      bfo:BFO_0000059 base:Metric1 ;
+                      ml:hasDataInput base:ModelOutputDataset1 ;
+                      ml:hasDataOutput base:EvaluationResult1 .
+
+
+###  http://example.com/MNIST#ModelEvaluation10
+base:ModelEvaluation10 rdf:type owl:NamedIndividual ,
+                                ml:ModelEvaluation ;
+                       bfo:BFO_0000059 base:Metric1 ;
+                       ml:hasDataInput base:ModelOutputDataset10 ;
+                       ml:hasDataOutput base:EvaluationResult10 .
+
+
+###  http://example.com/MNIST#ModelEvaluation11
+base:ModelEvaluation11 rdf:type owl:NamedIndividual ,
+                                ml:ModelEvaluation ;
+                       bfo:BFO_0000059 base:Metric1 ;
+                       ml:hasDataInput base:ModelOutputDataset11 ;
+                       ml:hasDataOutput base:EvaluationResult11 .
+
+
+###  http://example.com/MNIST#ModelEvaluation12
+base:ModelEvaluation12 rdf:type owl:NamedIndividual ,
+                                ml:ModelEvaluation ;
+                       bfo:BFO_0000059 base:Metric1 ;
+                       ml:hasDataInput base:ModelOutputDataset12 ;
+                       ml:hasDataOutput base:EvaluationResult12 .
+
+
+###  http://example.com/MNIST#ModelEvaluation13
+base:ModelEvaluation13 rdf:type owl:NamedIndividual ,
+                                ml:ModelEvaluation ;
+                       bfo:BFO_0000059 base:Metric1 ;
+                       ml:hasDataInput base:ModelOutputDataset13 ;
+                       ml:hasDataOutput base:EvaluationResult13 .
+
+
+###  http://example.com/MNIST#ModelEvaluation14
+base:ModelEvaluation14 rdf:type owl:NamedIndividual ,
+                                ml:ModelEvaluation ;
+                       bfo:BFO_0000059 base:Metric1 ;
+                       ml:hasDataInput base:ModelOutputDataset14 ;
+                       ml:hasDataOutput base:EvaluationResult14 .
+
+
+###  http://example.com/MNIST#ModelEvaluation15
+base:ModelEvaluation15 rdf:type owl:NamedIndividual ,
+                                ml:ModelEvaluation ;
+                       bfo:BFO_0000059 base:Metric1 ;
+                       ml:hasDataInput base:ModelOutputDataset15 ;
+                       ml:hasDataOutput base:EvaluationResult15 .
+
+
+###  http://example.com/MNIST#ModelEvaluation2
+base:ModelEvaluation2 rdf:type owl:NamedIndividual ,
+                               ml:ModelEvaluation ;
+                      bfo:BFO_0000059 base:Metric1 ;
+                      ml:hasDataInput base:ModelOutputDataset2 ;
+                      ml:hasDataOutput base:EvaluationResult2 .
+
+
+###  http://example.com/MNIST#ModelEvaluation20
+base:ModelEvaluation20 rdf:type owl:NamedIndividual ,
+                                ml:ModelEvaluation ;
+                       bfo:BFO_0000059 base:Metric1 ;
+                       ml:hasDataInput base:ModelOutputDataset20 ;
+                       ml:hasDataOutput base:EvaluationResult20 .
+
+
+###  http://example.com/MNIST#ModelEvaluation21
+base:ModelEvaluation21 rdf:type owl:NamedIndividual ,
+                                ml:ModelEvaluation ;
+                       bfo:BFO_0000059 base:Metric1 ;
+                       ml:hasDataInput base:ModelOutputDataset21 ;
+                       ml:hasDataOutput base:EvaluationResult21 .
+
+
+###  http://example.com/MNIST#ModelEvaluation22
+base:ModelEvaluation22 rdf:type owl:NamedIndividual ,
+                                ml:ModelEvaluation ;
+                       bfo:BFO_0000059 base:Metric1 ;
+                       ml:hasDataInput base:ModelOutputDataset22 ;
+                       ml:hasDataOutput base:EvaluationResult22 .
+
+
+###  http://example.com/MNIST#ModelEvaluation23
+base:ModelEvaluation23 rdf:type owl:NamedIndividual ,
+                                ml:ModelEvaluation ;
+                       bfo:BFO_0000059 base:Metric1 ;
+                       ml:hasDataInput base:ModelOutputDataset23 ;
+                       ml:hasDataOutput base:EvaluationResult23 .
+
+
+###  http://example.com/MNIST#ModelEvaluation24
+base:ModelEvaluation24 rdf:type owl:NamedIndividual ,
+                                ml:ModelEvaluation ;
+                       bfo:BFO_0000059 base:Metric1 ;
+                       ml:hasDataInput base:ModelOutputDataset24 ;
+                       ml:hasDataOutput base:EvaluationResult24 .
+
+
+###  http://example.com/MNIST#ModelEvaluation25
+base:ModelEvaluation25 rdf:type owl:NamedIndividual ,
+                                ml:ModelEvaluation ;
+                       bfo:BFO_0000059 base:Metric1 ;
+                       ml:hasDataInput base:ModelOutputDataset25 ;
+                       ml:hasDataOutput base:EvaluationResult25 .
+
+
+###  http://example.com/MNIST#ModelEvaluation3
+base:ModelEvaluation3 rdf:type owl:NamedIndividual ,
+                               ml:ModelEvaluation ;
+                      bfo:BFO_0000059 base:Metric1 ;
+                      ml:hasDataInput base:ModelOutputDataset3 ;
+                      ml:hasDataOutput base:EvaluationResult3 .
+
+
+###  http://example.com/MNIST#ModelEvaluation4
+base:ModelEvaluation4 rdf:type owl:NamedIndividual ,
+                               ml:ModelEvaluation ;
+                      bfo:BFO_0000059 base:Metric1 ;
+                      ml:hasDataInput base:ModelOutputDataset4 ;
+                      ml:hasDataOutput base:EvaluationResult4 .
+
+
+###  http://example.com/MNIST#ModelEvaluation5
+base:ModelEvaluation5 rdf:type owl:NamedIndividual ,
+                               ml:ModelEvaluation ;
+                      bfo:BFO_0000059 base:Metric1 ;
+                      ml:hasDataInput base:ModelOutputDataset5 ;
+                      ml:hasDataOutput base:EvaluationResult5 .
+
+
+###  http://example.com/MNIST#ModelEvaluation6
+base:ModelEvaluation6 rdf:type owl:NamedIndividual ,
+                               ml:ModelEvaluation ;
+                      bfo:BFO_0000059 base:Metric1 ;
+                      ml:hasDataInput base:ModelOutputDataset6 ;
+                      ml:hasDataOutput base:EvaluationResult6 .
+
+
+###  http://example.com/MNIST#ModelExecution1
+base:ModelExecution1 rdf:type owl:NamedIndividual ,
+                              ml:ModelExecution ;
+                     ml:executes base:MLModel1 ;
+                     ml:hasDataInput base:PreprocessedDataset1 ;
+                     ml:hasDataOutput base:ModelOutputDataset1 .
+
+
+###  http://example.com/MNIST#ModelExecution10
+base:ModelExecution10 rdf:type owl:NamedIndividual ,
+                               ml:ModelExecution ;
+                      ml:executes base:MLModel2 ;
+                      ml:hasDataInput base:PreprocessedDataset10 ;
+                      ml:hasDataOutput base:ModelOutputDataset10 .
+
+
+###  http://example.com/MNIST#ModelExecution11
+base:ModelExecution11 rdf:type owl:NamedIndividual ,
+                               ml:ModelExecution ;
+                      ml:executes base:MLModel2 ;
+                      ml:hasDataInput base:PreprocessedDataset11 ;
+                      ml:hasDataOutput base:ModelOutputDataset11 .
+
+
+###  http://example.com/MNIST#ModelExecution12
+base:ModelExecution12 rdf:type owl:NamedIndividual ,
+                               ml:ModelExecution ;
+                      ml:executes base:MLModel2 ;
+                      ml:hasDataInput base:PreprocessedDataset12 ;
+                      ml:hasDataOutput base:ModelOutputDataset12 .
+
+
+###  http://example.com/MNIST#ModelExecution13
+base:ModelExecution13 rdf:type owl:NamedIndividual ,
+                               ml:ModelExecution ;
+                      ml:executes base:MLModel2 ;
+                      ml:hasDataInput base:PreprocessedDataset13 ;
+                      ml:hasDataOutput base:ModelOutputDataset13 .
+
+
+###  http://example.com/MNIST#ModelExecution14
+base:ModelExecution14 rdf:type owl:NamedIndividual ,
+                               ml:ModelExecution ;
+                      ml:executes base:MLModel2 ;
+                      ml:hasDataInput base:PreprocessedDataset14 ;
+                      ml:hasDataOutput base:ModelOutputDataset14 .
+
+
+###  http://example.com/MNIST#ModelExecution15
+base:ModelExecution15 rdf:type owl:NamedIndividual ,
+                               ml:ModelExecution ;
+                      ml:executes base:MLModel2 ;
+                      ml:hasDataInput base:PreprocessedDataset15 ;
+                      ml:hasDataOutput base:ModelOutputDataset15 .
+
+
+###  http://example.com/MNIST#ModelExecution2
+base:ModelExecution2 rdf:type owl:NamedIndividual ,
+                              ml:ModelExecution ;
+                     ml:executes base:MLModel1 ;
+                     ml:hasDataInput base:PreprocessedDataset2 ;
+                     ml:hasDataOutput base:ModelOutputDataset2 .
+
+
+###  http://example.com/MNIST#ModelExecution20
+base:ModelExecution20 rdf:type owl:NamedIndividual ,
+                               ml:ModelExecution ;
+                      ml:executes base:MLModel3 ;
+                      ml:hasDataInput base:PreprocessedDataset20 ;
+                      ml:hasDataOutput base:ModelOutputDataset20 .
+
+
+###  http://example.com/MNIST#ModelExecution21
+base:ModelExecution21 rdf:type owl:NamedIndividual ,
+                               ml:ModelExecution ;
+                      ml:executes base:MLModel3 ;
+                      ml:hasDataInput base:PreprocessedDataset21 ;
+                      ml:hasDataOutput base:ModelOutputDataset21 .
+
+
+###  http://example.com/MNIST#ModelExecution22
+base:ModelExecution22 rdf:type owl:NamedIndividual ,
+                               ml:ModelExecution ;
+                      ml:executes base:MLModel3 ;
+                      ml:hasDataInput base:PreprocessedDataset22 ;
+                      ml:hasDataOutput base:ModelOutputDataset22 .
+
+
+###  http://example.com/MNIST#ModelExecution23
+base:ModelExecution23 rdf:type owl:NamedIndividual ,
+                               ml:ModelExecution ;
+                      ml:executes base:MLModel3 ;
+                      ml:hasDataInput base:PreprocessedDataset23 ;
+                      ml:hasDataOutput base:ModelOutputDataset23 .
+
+
+###  http://example.com/MNIST#ModelExecution24
+base:ModelExecution24 rdf:type owl:NamedIndividual ,
+                               ml:ModelExecution ;
+                      ml:executes base:MLModel3 ;
+                      ml:hasDataInput base:PreprocessedDataset24 ;
+                      ml:hasDataOutput base:ModelOutputDataset24 .
+
+
+###  http://example.com/MNIST#ModelExecution25
+base:ModelExecution25 rdf:type owl:NamedIndividual ,
+                               ml:ModelExecution ;
+                      ml:executes base:MLModel3 ;
+                      ml:hasDataInput base:PreprocessedDataset25 ;
+                      ml:hasDataOutput base:ModelOutputDataset25 .
+
+
+###  http://example.com/MNIST#ModelExecution3
+base:ModelExecution3 rdf:type owl:NamedIndividual ,
+                              ml:ModelExecution ;
+                     ml:executes base:MLModel1 ;
+                     ml:hasDataInput base:PreprocessedDataset3 ;
+                     ml:hasDataOutput base:ModelOutputDataset3 .
+
+
+###  http://example.com/MNIST#ModelExecution4
+base:ModelExecution4 rdf:type owl:NamedIndividual ,
+                              ml:ModelExecution ;
+                     ml:executes base:MLModel1 ;
+                     ml:hasDataInput base:PreprocessedDataset4 ;
+                     ml:hasDataOutput base:ModelOutputDataset4 .
+
+
+###  http://example.com/MNIST#ModelExecution5
+base:ModelExecution5 rdf:type owl:NamedIndividual ,
+                              ml:ModelExecution ;
+                     ml:executes base:MLModel1 ;
+                     ml:hasDataInput base:PreprocessedDataset5 ;
+                     ml:hasDataOutput base:ModelOutputDataset5 .
+
+
+###  http://example.com/MNIST#ModelExecution6
+base:ModelExecution6 rdf:type owl:NamedIndividual ,
+                              ml:ModelExecution ;
+                     ml:executes base:MLModel1 ;
+                     ml:hasDataInput base:PreprocessedDataset6 ;
+                     ml:hasDataOutput base:ModelOutputDataset6 .
+
+
+###  http://example.com/MNIST#ModelObjective1
+base:ModelObjective1 rdf:type owl:NamedIndividual ,
+                              ml:ClassificationObjective ;
+                     dcterm:description "classifying which number is displayed on images of handwritten digits ranging from 0 to 9" .
+
+
+###  http://example.com/MNIST#ModelOutputDataset1
+base:ModelOutputDataset1 rdf:type owl:NamedIndividual ,
+                                  ml:ModelOutputDataSet ;
+                         ml:informationContentEntityDerivedFrom base:PreprocessedDataset1 ;
+                         ml:InformationContentEntityLocation "./datasets/output_datasets/output_mnist1_g16.csv" .
+
+
+###  http://example.com/MNIST#ModelOutputDataset10
+base:ModelOutputDataset10 rdf:type owl:NamedIndividual ,
+                                   ml:ModelOutputDataSet ;
+                          ml:informationContentEntityDerivedFrom base:PreprocessedDataset10 ;
+                          ml:InformationContentEntityLocation "./datasets/output_datasets/output_mnist2_g16.csv" .
+
+
+###  http://example.com/MNIST#ModelOutputDataset11
+base:ModelOutputDataset11 rdf:type owl:NamedIndividual ,
+                                   ml:ModelOutputDataSet ;
+                          ml:informationContentEntityDerivedFrom base:PreprocessedDataset11 ;
+                          ml:InformationContentEntityLocation "./datasets/output_datasets/output_mnist2_g48.csv" .
+
+
+###  http://example.com/MNIST#ModelOutputDataset12
+base:ModelOutputDataset12 rdf:type owl:NamedIndividual ,
+                                   ml:ModelOutputDataSet ;
+                          ml:informationContentEntityDerivedFrom base:PreprocessedDataset12 ;
+                          ml:InformationContentEntityLocation "./datasets/output_datasets/output_minst2_g96.csv" .
+
+
+###  http://example.com/MNIST#ModelOutputDataset13
+base:ModelOutputDataset13 rdf:type owl:NamedIndividual ,
+                                   ml:ModelOutputDataSet ;
+                          ml:informationContentEntityDerivedFrom base:PreprocessedDataset13 ;
+                          ml:InformationContentEntityLocation "./datasets/output_datasets/output_mnist2_nonoise.csv" .
+
+
+###  http://example.com/MNIST#ModelOutputDataset14
+base:ModelOutputDataset14 rdf:type owl:NamedIndividual ,
+                                   ml:ModelOutputDataSet ;
+                          ml:informationContentEntityDerivedFrom base:PreprocessedDataset14 ;
+                          ml:InformationContentEntityLocation "./datasets/output_datasets/output_mnist2_p.csv" .
+
+
+###  http://example.com/MNIST#ModelOutputDataset15
+base:ModelOutputDataset15 rdf:type owl:NamedIndividual ,
+                                   ml:ModelOutputDataSet ;
+                          ml:informationContentEntityDerivedFrom base:PreprocessedDataset15 ;
+                          ml:InformationContentEntityLocation "./datasets/output_datasets/output_mnist2_g48p.csv" .
+
+
+###  http://example.com/MNIST#ModelOutputDataset2
+base:ModelOutputDataset2 rdf:type owl:NamedIndividual ,
+                                  ml:ModelOutputDataSet ;
+                         ml:informationContentEntityDerivedFrom base:PreprocessedDataset2 ;
+                         ml:InformationContentEntityLocation "./datasets/output_datasets/output_mnist1_g48.csv" .
+
+
+###  http://example.com/MNIST#ModelOutputDataset20
+base:ModelOutputDataset20 rdf:type owl:NamedIndividual ,
+                                   ml:ModelOutputDataSet ;
+                          ml:informationContentEntityDerivedFrom base:PreprocessedDataset20 ;
+                          ml:InformationContentEntityLocation "./datasets/output_datasets/output_mnist3_g16.csv" .
+
+
+###  http://example.com/MNIST#ModelOutputDataset21
+base:ModelOutputDataset21 rdf:type owl:NamedIndividual ,
+                                   ml:ModelOutputDataSet ;
+                          ml:informationContentEntityDerivedFrom base:PreprocessedDataset21 ;
+                          ml:InformationContentEntityLocation "./datasets/output_datasets/output_mnist3_g48.csv" .
+
+
+###  http://example.com/MNIST#ModelOutputDataset22
+base:ModelOutputDataset22 rdf:type owl:NamedIndividual ,
+                                   ml:ModelOutputDataSet ;
+                          ml:informationContentEntityDerivedFrom base:PreprocessedDataset22 ;
+                          ml:InformationContentEntityLocation "./datasets/output_datasets/output_mnist3_g96.csv" .
+
+
+###  http://example.com/MNIST#ModelOutputDataset23
+base:ModelOutputDataset23 rdf:type owl:NamedIndividual ,
+                                   ml:ModelOutputDataSet ;
+                          ml:informationContentEntityDerivedFrom base:PreprocessedDataset23 ;
+                          ml:InformationContentEntityLocation "./datasets/output_datasets/output_mnist3_p.csv" .
+
+
+###  http://example.com/MNIST#ModelOutputDataset24
+base:ModelOutputDataset24 rdf:type owl:NamedIndividual ,
+                                   ml:ModelOutputDataSet ;
+                          ml:informationContentEntityDerivedFrom base:PreprocessedDataset24 ;
+                          ml:InformationContentEntityLocation "./datasets/output_datasets/output_mnist3_g48p.csv" .
+
+
+###  http://example.com/MNIST#ModelOutputDataset25
+base:ModelOutputDataset25 rdf:type owl:NamedIndividual ,
+                                   ml:ModelOutputDataSet ;
+                          ml:informationContentEntityDerivedFrom base:PreprocessedDataset25 ;
+                          ml:InformationContentEntityLocation "./datasets/output_datasets/output_mnist3_nonoise.csv" .
+
+
+###  http://example.com/MNIST#ModelOutputDataset3
+base:ModelOutputDataset3 rdf:type owl:NamedIndividual ,
+                                  ml:ModelOutputDataSet ;
+                         ml:informationContentEntityDerivedFrom base:PreprocessedDataset3 ;
+                         ml:InformationContentEntityLocation "./datasets/output_datasets/output_minst1_g96.csv" .
+
+
+###  http://example.com/MNIST#ModelOutputDataset4
+base:ModelOutputDataset4 rdf:type owl:NamedIndividual ,
+                                  ml:ModelOutputDataSet ;
+                         ml:informationContentEntityDerivedFrom base:PreprocessedDataset4 ;
+                         ml:InformationContentEntityLocation "./datasets/output_datasets/output_mnist1_nonoise.csv" .
+
+
+###  http://example.com/MNIST#ModelOutputDataset5
+base:ModelOutputDataset5 rdf:type owl:NamedIndividual ,
+                                  ml:ModelOutputDataSet ;
+                         ml:informationContentEntityDerivedFrom base:PreprocessedDataset5 ;
+                         ml:InformationContentEntityLocation "./datasets/output_datasets/output_mnist1_p.csv" .
+
+
+###  http://example.com/MNIST#ModelOutputDataset6
+base:ModelOutputDataset6 rdf:type owl:NamedIndividual ,
+                                  ml:ModelOutputDataSet ;
+                         ml:informationContentEntityDerivedFrom base:PreprocessedDataset6 ;
+                         ml:InformationContentEntityLocation "./datasets/output_datasets/output_mnist1_g48p.csv" .
+
+
+###  http://example.com/MNIST#ModelTraining1
+base:ModelTraining1 rdf:type owl:NamedIndividual ,
+                             ml:SupervisedLearning ;
+                    bfo:BFO_0000057 base:MLModel1 ;
+                    bfo:BFO_0000059 base:BatchSizeSetting1 ,
+                                    base:EpochNumberSetting1 ;
+                    bfo:BFO_0000063 base:ModelExecution1 ,
+                                    base:ModelExecution2 ,
+                                    base:ModelExecution3 ,
+                                    base:ModelExecution4 ,
+                                    base:ModelExecution5 ,
+                                    base:ModelExecution6 ;
+                    ml:executes base:ModelTrainingAlgorithm1 .
+
+
+###  http://example.com/MNIST#ModelTraining2
+base:ModelTraining2 rdf:type owl:NamedIndividual ,
+                             ml:SupervisedLearning ;
+                    bfo:BFO_0000057 base:MLModel2 ;
+                    bfo:BFO_0000059 base:BatchSizeSetting1 ,
+                                    base:EpochNumberSetting1 ;
+                    bfo:BFO_0000063 base:ModelExecution10 ,
+                                    base:ModelExecution11 ,
+                                    base:ModelExecution12 ,
+                                    base:ModelExecution13 ,
+                                    base:ModelExecution14 ,
+                                    base:ModelExecution15 ;
+                    ml:executes base:ModelTrainingAlgorithm1 .
+
+
+###  http://example.com/MNIST#ModelTraining3
+base:ModelTraining3 rdf:type owl:NamedIndividual ,
+                             ml:SupervisedLearning ;
+                    bfo:BFO_0000057 base:MLModel3 ;
+                    bfo:BFO_0000063 base:ModelExecution20 ,
+                                    base:ModelExecution21 ,
+                                    base:ModelExecution22 ,
+                                    base:ModelExecution23 ,
+                                    base:ModelExecution24 ,
+                                    base:ModelExecution25 .
+
+
+###  http://example.com/MNIST#ModelTrainingAlgorithm1
+base:ModelTrainingAlgorithm1 rdf:type owl:NamedIndividual ,
+                                      ml:Backpropagation ;
+                             ml:hasConfigurationVariable base:BatchSize1 ,
+                                                         base:EpochNumber1 .
+
+
+###  http://example.com/MNIST#PreprocessedDataset1
+base:PreprocessedDataset1 rdf:type owl:NamedIndividual ,
+                                   ml:TestDataSet ;
+                          ml:hasInformationContentEntityCharacteristic base:DatasetCharacteristic1 ;
+                          ml:informationContentEntityDerivedFrom base:MnistG16 ;
+                          ml:specifiesDimensionShape "[10000,28,28,1]" .
+
+
+###  http://example.com/MNIST#PreprocessedDataset10
+base:PreprocessedDataset10 rdf:type owl:NamedIndividual ,
+                                    ml:TestDataSet ;
+                           ml:hasInformationContentEntityCharacteristic base:DatasetCharacteristic1 ;
+                           ml:informationContentEntityDerivedFrom base:MnistG16 ;
+                           ml:specifiesDimensionShape "[784,28,28,1]" .
+
+
+###  http://example.com/MNIST#PreprocessedDataset11
+base:PreprocessedDataset11 rdf:type owl:NamedIndividual ,
+                                    ml:TestDataSet ;
+                           ml:hasInformationContentEntityCharacteristic base:DatasetCharacteristic2 ;
+                           ml:informationContentEntityDerivedFrom base:MnistG48 ;
+                           ml:specifiesDimensionShape "[784,28,28,1]" .
+
+
+###  http://example.com/MNIST#PreprocessedDataset12
+base:PreprocessedDataset12 rdf:type owl:NamedIndividual ,
+                                    ml:TestDataSet ;
+                           ml:hasInformationContentEntityCharacteristic base:DatasetCharacteristic3 ;
+                           ml:informationContentEntityDerivedFrom base:MnistG96 ;
+                           ml:specifiesDimensionShape "[784,28,28,1]" .
+
+
+###  http://example.com/MNIST#PreprocessedDataset13
+base:PreprocessedDataset13 rdf:type owl:NamedIndividual ,
+                                    ml:TestDataSet ;
+                           ml:informationContentEntityDerivedFrom base:MnistNoNoise ;
+                           ml:specifiesDimensionShape "[784,28,28,1]" .
+
+
+###  http://example.com/MNIST#PreprocessedDataset14
+base:PreprocessedDataset14 rdf:type owl:NamedIndividual ,
+                                    ml:TestDataSet ;
+                           ml:hasInformationContentEntityCharacteristic base:DatasetCharacteristic5 ;
+                           ml:informationContentEntityDerivedFrom base:MnistP ;
+                           ml:specifiesDimensionShape "[784,28,28,1]" .
+
+
+###  http://example.com/MNIST#PreprocessedDataset15
+base:PreprocessedDataset15 rdf:type owl:NamedIndividual ,
+                                    ml:TestDataSet ;
+                           ml:hasInformationContentEntityCharacteristic base:DatasetCharacteristic6 ,
+                                                                        base:DatasetCharacteristic7 ;
+                           ml:informationContentEntityDerivedFrom base:MnistG48P ;
+                           ml:specifiesDimensionShape "[784,28,28,1]" .
+
+
+###  http://example.com/MNIST#PreprocessedDataset2
+base:PreprocessedDataset2 rdf:type owl:NamedIndividual ,
+                                   ml:TestDataSet ;
+                          ml:hasInformationContentEntityCharacteristic base:DatasetCharacteristic2 ;
+                          ml:informationContentEntityDerivedFrom base:MnistG48 ;
+                          ml:specifiesDimensionShape "[10000,28,28,1]" .
+
+
+###  http://example.com/MNIST#PreprocessedDataset20
+base:PreprocessedDataset20 rdf:type owl:NamedIndividual ,
+                                    ml:TestDataSet ;
+                           ml:hasInformationContentEntityCharacteristic base:DatasetCharacteristic1 ;
+                           ml:informationContentEntityDerivedFrom base:MnistG16 ;
+                           ml:specifiesDimensionShape "[10000,28,28]" .
+
+
+###  http://example.com/MNIST#PreprocessedDataset21
+base:PreprocessedDataset21 rdf:type owl:NamedIndividual ,
+                                    ml:TestDataSet ;
+                           ml:hasInformationContentEntityCharacteristic base:DatasetCharacteristic2 ;
+                           ml:informationContentEntityDerivedFrom base:MnistG48 ;
+                           ml:specifiesDimensionShape "[10000,28,28]" .
+
+
+###  http://example.com/MNIST#PreprocessedDataset22
+base:PreprocessedDataset22 rdf:type owl:NamedIndividual ,
+                                    ml:TestDataSet ;
+                           ml:hasInformationContentEntityCharacteristic base:DatasetCharacteristic3 ;
+                           ml:informationContentEntityDerivedFrom base:MnistG96 ;
+                           ml:specifiesDimensionShape "[10000,28,28]" .
+
+
+###  http://example.com/MNIST#PreprocessedDataset23
+base:PreprocessedDataset23 rdf:type owl:NamedIndividual ,
+                                    ml:TestDataSet ;
+                           ml:hasInformationContentEntityCharacteristic base:DatasetCharacteristic5 ;
+                           ml:informationContentEntityDerivedFrom base:MnistP ;
+                           ml:specifiesDimensionShape "[10000,28,28]" .
+
+
+###  http://example.com/MNIST#PreprocessedDataset24
+base:PreprocessedDataset24 rdf:type owl:NamedIndividual ,
+                                    ml:TestDataSet ;
+                           ml:hasInformationContentEntityCharacteristic base:DatasetCharacteristic6 ,
+                                                                        base:DatasetCharacteristic7 ;
+                           ml:informationContentEntityDerivedFrom base:MnistG48P ;
+                           ml:specifiesDimensionShape "[10000,28,28]" .
+
+
+###  http://example.com/MNIST#PreprocessedDataset25
+base:PreprocessedDataset25 rdf:type owl:NamedIndividual ,
+                                    ml:TestDataSet ;
+                           ml:informationContentEntityDerivedFrom base:MnistNoNoise ;
+                           ml:specifiesDimensionShape "[10000,28,28]" .
+
+
+###  http://example.com/MNIST#PreprocessedDataset3
+base:PreprocessedDataset3 rdf:type owl:NamedIndividual ,
+                                   ml:TestDataSet ;
+                          ml:hasInformationContentEntityCharacteristic base:DatasetCharacteristic3 ;
+                          ml:informationContentEntityDerivedFrom base:MnistG96 ;
+                          ml:specifiesDimensionShape "[10000,28,28,1]" .
+
+
+###  http://example.com/MNIST#PreprocessedDataset4
+base:PreprocessedDataset4 rdf:type owl:NamedIndividual ,
+                                   ml:TestDataSet ;
+                          ml:informationContentEntityDerivedFrom base:MnistNoNoise ;
+                          ml:specifiesDimensionShape "[10000,28,28,1]" .
+
+
+###  http://example.com/MNIST#PreprocessedDataset5
+base:PreprocessedDataset5 rdf:type owl:NamedIndividual ,
+                                   ml:TestDataSet ;
+                          ml:hasInformationContentEntityCharacteristic base:DatasetCharacteristic5 ;
+                          ml:informationContentEntityDerivedFrom base:MnistP ;
+                          ml:specifiesDimensionShape "[10000,28,28,1]" .
+
+
+###  http://example.com/MNIST#PreprocessedDataset6
+base:PreprocessedDataset6 rdf:type owl:NamedIndividual ,
+                                   ml:TestDataSet ;
+                          ml:hasInformationContentEntityCharacteristic base:DatasetCharacteristic6 ,
+                                                                       base:DatasetCharacteristic7 ;
+                          ml:informationContentEntityDerivedFrom base:MnistG48P ;
+                          ml:specifiesDimensionShape "[10000,28,28,1]" .
+
+
+###  http://example.com/MNIST#PreprocessingPipeline1
+base:PreprocessingPipeline1 rdf:type owl:NamedIndividual ,
+                                     ml:MachineLearningDataPreparationPipeline ;
+                            bfo:BFO_0000063 base:ModelExecution1 ;
+                            bfo:BFO_0000117 base:DataReshapingOperation1 ,
+                                            base:FeatureScalingOperation1 ,
+                                            base:TypeCastingOperation1 ;
+                            ml:hasDataInput base:MnistG16 ;
+                            ml:hasDataOutput base:PreprocessedDataset1 .
+
+
+###  http://example.com/MNIST#PreprocessingPipeline10
+base:PreprocessingPipeline10 rdf:type owl:NamedIndividual ,
+                                      ml:MachineLearningDataPreparationPipeline ;
+                             bfo:BFO_0000063 base:ModelExecution10 ;
+                             bfo:BFO_0000117 base:DataReshapingOperation10 ,
+                                             base:FeatureScalingOperation10 ,
+                                             base:TypeCastingOperation10 ;
+                             ml:hasDataInput base:MnistG16 ;
+                             ml:hasDataOutput base:PreprocessedDataset10 .
+
+
+###  http://example.com/MNIST#PreprocessingPipeline11
+base:PreprocessingPipeline11 rdf:type owl:NamedIndividual ,
+                                      ml:MachineLearningDataPreparationPipeline ;
+                             bfo:BFO_0000063 base:ModelExecution11 ;
+                             bfo:BFO_0000117 base:DataReshapingOperation11 ,
+                                             base:FeatureScalingOperation11 ,
+                                             base:TypeCastingOperation11 ;
+                             ml:hasDataInput base:MnistG48 ;
+                             ml:hasDataOutput base:PreprocessedDataset11 .
+
+
+###  http://example.com/MNIST#PreprocessingPipeline12
+base:PreprocessingPipeline12 rdf:type owl:NamedIndividual ,
+                                      ml:MachineLearningDataPreparationPipeline ;
+                             bfo:BFO_0000063 base:ModelExecution12 ;
+                             bfo:BFO_0000117 base:DataReshapingOperation12 ,
+                                             base:FeatureScalingOperation12 ,
+                                             base:TypeCastingOperation12 ;
+                             ml:hasDataInput base:MnistG96 ;
+                             ml:hasDataOutput base:PreprocessedDataset12 .
+
+
+###  http://example.com/MNIST#PreprocessingPipeline13
+base:PreprocessingPipeline13 rdf:type owl:NamedIndividual ,
+                                      ml:MachineLearningDataPreparationPipeline ;
+                             bfo:BFO_0000063 base:ModelExecution13 ;
+                             bfo:BFO_0000117 base:DataReshapingOperation13 ,
+                                             base:FeatureScalingOperation13 ,
+                                             base:TypeCastingOperation13 ;
+                             ml:hasDataInput base:MnistNoNoise ;
+                             ml:hasDataOutput base:PreprocessedDataset13 .
+
+
+###  http://example.com/MNIST#PreprocessingPipeline14
+base:PreprocessingPipeline14 rdf:type owl:NamedIndividual ,
+                                      ml:MachineLearningDataPreparationPipeline ;
+                             bfo:BFO_0000063 base:ModelExecution14 ;
+                             bfo:BFO_0000117 base:DataReshapingOperation14 ,
+                                             base:FeatureScalingOperation14 ,
+                                             base:TypeCastingOperation14 ;
+                             ml:hasDataInput base:MnistP ;
+                             ml:hasDataOutput base:PreprocessedDataset14 .
+
+
+###  http://example.com/MNIST#PreprocessingPipeline15
+base:PreprocessingPipeline15 rdf:type owl:NamedIndividual ,
+                                      ml:MachineLearningDataPreparationPipeline ;
+                             bfo:BFO_0000063 base:ModelExecution15 ;
+                             bfo:BFO_0000117 base:DataReshapingOperation15 ,
+                                             base:FeatureScalingOperation15 ,
+                                             base:TypeCastingOperation15 ;
+                             ml:hasDataInput base:MnistG48P ;
+                             ml:hasDataOutput base:PreprocessedDataset15 .
+
+
+###  http://example.com/MNIST#PreprocessingPipeline2
+base:PreprocessingPipeline2 rdf:type owl:NamedIndividual ,
+                                     ml:MachineLearningDataPreparationPipeline ;
+                            bfo:BFO_0000063 base:ModelExecution2 ;
+                            bfo:BFO_0000117 base:DataReshapingOperation2 ,
+                                            base:FeatureScalingOperation2 ,
+                                            base:TypeCastingOperation2 ;
+                            ml:hasDataInput base:MnistG48 ;
+                            ml:hasDataOutput base:PreprocessedDataset2 .
+
+
+###  http://example.com/MNIST#PreprocessingPipeline20
+base:PreprocessingPipeline20 rdf:type owl:NamedIndividual ,
+                                      ml:MachineLearningDataPreparationPipeline ;
+                             bfo:BFO_0000063 base:ModelExecution20 ;
+                             bfo:BFO_0000117 base:FeatureScalingOperation20 ;
+                             ml:hasDataInput base:MnistG16 ;
+                             ml:hasDataOutput base:PreprocessedDataset20 .
+
+
+###  http://example.com/MNIST#PreprocessingPipeline21
+base:PreprocessingPipeline21 rdf:type owl:NamedIndividual ,
+                                      ml:MachineLearningDataPreparationPipeline ;
+                             bfo:BFO_0000063 base:ModelExecution21 ;
+                             bfo:BFO_0000117 base:FeatureScalingOperation21 ;
+                             ml:hasDataInput base:MnistG48 ;
+                             ml:hasDataOutput base:PreprocessedDataset21 .
+
+
+###  http://example.com/MNIST#PreprocessingPipeline22
+base:PreprocessingPipeline22 rdf:type owl:NamedIndividual ,
+                                      ml:MachineLearningDataPreparationPipeline ;
+                             bfo:BFO_0000063 base:ModelExecution22 ;
+                             bfo:BFO_0000117 base:FeatureScalingOperation22 ;
+                             ml:hasDataInput base:MnistG96 ;
+                             ml:hasDataOutput base:PreprocessedDataset22 .
+
+
+###  http://example.com/MNIST#PreprocessingPipeline23
+base:PreprocessingPipeline23 rdf:type owl:NamedIndividual ,
+                                      ml:MachineLearningDataPreparationPipeline ;
+                             bfo:BFO_0000063 base:ModelExecution23 ;
+                             bfo:BFO_0000117 base:FeatureScalingOperation23 ;
+                             ml:hasDataInput base:MnistP ;
+                             ml:hasDataOutput base:PreprocessedDataset23 .
+
+
+###  http://example.com/MNIST#PreprocessingPipeline24
+base:PreprocessingPipeline24 rdf:type owl:NamedIndividual ,
+                                      ml:MachineLearningDataPreparationPipeline ;
+                             bfo:BFO_0000063 base:ModelExecution24 ;
+                             bfo:BFO_0000117 base:FeatureScalingOperation24 ;
+                             ml:hasDataInput base:MnistG48P ;
+                             ml:hasDataOutput base:PreprocessedDataset24 .
+
+
+###  http://example.com/MNIST#PreprocessingPipeline25
+base:PreprocessingPipeline25 rdf:type owl:NamedIndividual ,
+                                      ml:MachineLearningDataPreparationPipeline ;
+                             bfo:BFO_0000063 base:ModelExecution25 ;
+                             bfo:BFO_0000117 base:FeatureScalingOperation25 ;
+                             ml:hasDataInput base:MnistNoNoise ;
+                             ml:hasDataOutput base:PreprocessedDataset25 .
+
+
+###  http://example.com/MNIST#PreprocessingPipeline3
+base:PreprocessingPipeline3 rdf:type owl:NamedIndividual ,
+                                     ml:MachineLearningDataPreparationPipeline ;
+                            bfo:BFO_0000063 base:ModelExecution3 ;
+                            bfo:BFO_0000117 base:DataReshapingOperation3 ,
+                                            base:FeatureScalingOperation3 ,
+                                            base:TypeCastingOperation3 ;
+                            ml:hasDataInput base:MnistG96 ;
+                            ml:hasDataOutput base:PreprocessedDataset3 .
+
+
+###  http://example.com/MNIST#PreprocessingPipeline4
+base:PreprocessingPipeline4 rdf:type owl:NamedIndividual ,
+                                     ml:MachineLearningDataPreparationPipeline ;
+                            bfo:BFO_0000063 base:ModelExecution4 ;
+                            bfo:BFO_0000117 base:DataReshapingOperation4 ,
+                                            base:FeatureScalingOperation4 ,
+                                            base:TypeCastingOperation4 ;
+                            ml:hasDataInput base:MnistNoNoise ;
+                            ml:hasDataOutput base:PreprocessedDataset4 .
+
+
+###  http://example.com/MNIST#PreprocessingPipeline5
+base:PreprocessingPipeline5 rdf:type owl:NamedIndividual ,
+                                     ml:MachineLearningDataPreparationPipeline ;
+                            bfo:BFO_0000063 base:ModelExecution5 ;
+                            bfo:BFO_0000117 base:DataReshapingOperation5 ,
+                                            base:FeatureScalingOperation5 ,
+                                            base:TypeCastingOperation5 ;
+                            ml:hasDataInput base:MnistP ;
+                            ml:hasDataOutput base:PreprocessedDataset5 .
+
+
+###  http://example.com/MNIST#PreprocessingPipeline6
+base:PreprocessingPipeline6 rdf:type owl:NamedIndividual ,
+                                     ml:MachineLearningDataPreparationPipeline ;
+                            bfo:BFO_0000063 base:ModelExecution6 ;
+                            bfo:BFO_0000117 base:DataReshapingOperation6 ,
+                                            base:FeatureScalingOperation6 ,
+                                            base:TypeCastingOperation6 ;
+                            ml:hasDataInput base:MnistG48P ;
+                            ml:hasDataOutput base:PreprocessedDataset6 .
+
+
+###  http://example.com/MNIST#ScaleFactor1
+base:ScaleFactor1 rdf:type owl:NamedIndividual ;
+                  ml:hasConfigurationSettingAtSomeTime base:ScaleFactorSetting1 .
+
+
+###  http://example.com/MNIST#ScaleFactorSetting1
+base:ScaleFactorSetting1 rdf:type owl:NamedIndividual ;
+                         ml:hasConfigurationSettingValue "1/255" .
+
+
+###  http://example.com/MNIST#TypeCastingAlgorithm1
+base:TypeCastingAlgorithm1 rdf:type owl:NamedIndividual ,
+                                    ml:DataProcessingAlgorithm ;
+                           ml:hasConfigurationVariable base:DataType1 .
+
+
+###  http://example.com/MNIST#TypeCastingAlgorithm11
+base:TypeCastingAlgorithm11 rdf:type owl:NamedIndividual ,
+                                     ml:DataProcessingAlgorithm ;
+                            ml:hasConfigurationVariable base:DataType1 .
+
+
+###  http://example.com/MNIST#TypeCastingAlgorithm12
+base:TypeCastingAlgorithm12 rdf:type owl:NamedIndividual ,
+                                     ml:DataProcessingAlgorithm ;
+                            ml:hasConfigurationVariable base:DataType1 .
+
+
+###  http://example.com/MNIST#TypeCastingOperation1
+base:TypeCastingOperation1 rdf:type owl:NamedIndividual ,
+                                    ml:TypeCastingOperation ;
+                           bfo:BFO_0000059 base:DataTypeSetting1 ;
+                           bfo:BFO_0000063 base:FeatureScalingOperation1 ;
+                           ml:executes base:TypeCastingAlgorithm1 .
+
+
+###  http://example.com/MNIST#TypeCastingOperation10
+base:TypeCastingOperation10 rdf:type owl:NamedIndividual ,
+                                     ml:TypeCastingOperation ;
+                            bfo:BFO_0000059 base:DataTypeSetting1 ;
+                            bfo:BFO_0000063 base:FeatureScalingOperation10 ;
+                            ml:executes base:TypeCastingAlgorithm1 .
+
+
+###  http://example.com/MNIST#TypeCastingOperation11
+base:TypeCastingOperation11 rdf:type owl:NamedIndividual ,
+                                     ml:TypeCastingOperation ;
+                            bfo:BFO_0000059 base:DataTypeSetting1 ;
+                            bfo:BFO_0000063 base:FeatureScalingOperation11 ;
+                            ml:executes base:TypeCastingAlgorithm11 .
+
+
+###  http://example.com/MNIST#TypeCastingOperation12
+base:TypeCastingOperation12 rdf:type owl:NamedIndividual ,
+                                     ml:TypeCastingOperation ;
+                            bfo:BFO_0000059 base:DataTypeSetting1 ;
+                            bfo:BFO_0000063 base:FeatureScalingOperation12 ;
+                            ml:executes base:TypeCastingAlgorithm12 .
+
+
+###  http://example.com/MNIST#TypeCastingOperation13
+base:TypeCastingOperation13 rdf:type owl:NamedIndividual ,
+                                     ml:TypeCastingOperation ;
+                            bfo:BFO_0000059 base:DataTypeSetting1 ;
+                            bfo:BFO_0000063 base:FeatureScalingOperation13 ;
+                            ml:executes base:TypeCastingAlgorithm1 .
+
+
+###  http://example.com/MNIST#TypeCastingOperation14
+base:TypeCastingOperation14 rdf:type owl:NamedIndividual ,
+                                     ml:TypeCastingOperation ;
+                            bfo:BFO_0000059 base:DataTypeSetting1 ;
+                            bfo:BFO_0000063 base:FeatureScalingOperation14 ;
+                            ml:executes base:TypeCastingAlgorithm1 .
+
+
+###  http://example.com/MNIST#TypeCastingOperation15
+base:TypeCastingOperation15 rdf:type owl:NamedIndividual ,
+                                     ml:TypeCastingOperation ;
+                            bfo:BFO_0000059 base:DataTypeSetting1 ;
+                            bfo:BFO_0000063 base:FeatureScalingOperation15 ;
+                            ml:executes base:TypeCastingAlgorithm1 .
+
+
+###  http://example.com/MNIST#TypeCastingOperation2
+base:TypeCastingOperation2 rdf:type owl:NamedIndividual ,
+                                    ml:TypeCastingOperation ;
+                           bfo:BFO_0000059 base:DataTypeSetting1 ;
+                           bfo:BFO_0000063 base:FeatureScalingOperation2 ;
+                           ml:executes base:TypeCastingAlgorithm1 .
+
+
+###  http://example.com/MNIST#TypeCastingOperation3
+base:TypeCastingOperation3 rdf:type owl:NamedIndividual ,
+                                    ml:TypeCastingOperation ;
+                           bfo:BFO_0000059 base:DataTypeSetting1 ;
+                           bfo:BFO_0000063 base:FeatureScalingOperation3 ;
+                           ml:executes base:TypeCastingAlgorithm1 .
+
+
+###  http://example.com/MNIST#TypeCastingOperation4
+base:TypeCastingOperation4 rdf:type owl:NamedIndividual ,
+                                    ml:TypeCastingOperation ;
+                           bfo:BFO_0000059 base:DataTypeSetting1 ;
+                           bfo:BFO_0000063 base:FeatureScalingOperation4 ;
+                           ml:executes base:TypeCastingAlgorithm1 .
+
+
+###  http://example.com/MNIST#TypeCastingOperation5
+base:TypeCastingOperation5 rdf:type owl:NamedIndividual ,
+                                    ml:TypeCastingOperation ;
+                           bfo:BFO_0000059 base:DataTypeSetting1 ;
+                           bfo:BFO_0000063 base:FeatureScalingOperation5 ;
+                           ml:executes base:TypeCastingAlgorithm1 .
+
+
+###  http://example.com/MNIST#TypeCastingOperation6
+base:TypeCastingOperation6 rdf:type owl:NamedIndividual ,
+                                    ml:TypeCastingOperation ;
+                           bfo:BFO_0000059 base:DataTypeSetting1 ;
+                           bfo:BFO_0000063 base:FeatureScalingOperation6 ;
+                           ml:executes base:TypeCastingAlgorithm1 .
+
+<http://example.com/MNIST#ModelExecution1> ml:hasDataInput <http://example.com/MNIST#PreprocessedDataset1>;
+  bfo:BFO_0000222 <http://example.com/MNIST#TimeInstant1> .
+
+<http://example.com/MNIST#TimeInstant1> iof-core:hasValueExpressionAtAllTimes <http://example.com/MNIST#TimeValueExpression1> .
+
+<http://example.com/MNIST#TimeValueExpression1> iof-core:hasDateTimeValue "2024-01-15T08:00:00-04:00"^^xsd:dateTime .
+
+<http://example.com/MNIST#ModelExecution2> ml:hasDataInput <http://example.com/MNIST#PreprocessedDataset2>;
+  bfo:BFO_0000222 <http://example.com/MNIST#TimeInstant2> .
+
+<http://example.com/MNIST#TimeInstant2> iof-core:hasValueExpressionAtAllTimes <http://example.com/MNIST#TimeValueExpression2> .
+
+<http://example.com/MNIST#TimeValueExpression2> iof-core:hasDateTimeValue "2024-02-20T09:30:00-04:00"^^xsd:dateTime .
+
+<http://example.com/MNIST#ModelExecution5> ml:hasDataInput <http://example.com/MNIST#PreprocessedDataset5>;
+  bfo:BFO_0000222 <http://example.com/MNIST#TimeInstant5> .
+
+<http://example.com/MNIST#TimeInstant5> iof-core:hasValueExpressionAtAllTimes <http://example.com/MNIST#TimeValueExpression5> .
+
+<http://example.com/MNIST#TimeValueExpression5> iof-core:hasDateTimeValue "2024-03-10T14:45:00-04:00"^^xsd:dateTime .
+
+<http://example.com/MNIST#ModelExecution4> ml:hasDataInput <http://example.com/MNIST#PreprocessedDataset4>;
+  bfo:BFO_0000222 <http://example.com/MNIST#TimeInstant4> .
+
+<http://example.com/MNIST#TimeInstant4> iof-core:hasValueExpressionAtAllTimes <http://example.com/MNIST#TimeValueExpression4> .
+
+<http://example.com/MNIST#TimeValueExpression4> iof-core:hasDateTimeValue "2024-04-05T16:00:00-04:00"^^xsd:dateTime .
+
+<http://example.com/MNIST#ModelExecution3> ml:hasDataInput <http://example.com/MNIST#PreprocessedDataset3>;
+  bfo:BFO_0000222 <http://example.com/MNIST#TimeInstant3> .
+
+<http://example.com/MNIST#TimeInstant3> iof-core:hasValueExpressionAtAllTimes <http://example.com/MNIST#TimeValueExpression3> .
+
+<http://example.com/MNIST#TimeValueExpression3> iof-core:hasDateTimeValue "2024-05-25T11:15:00-04:00"^^xsd:dateTime .
+
+<http://example.com/MNIST#ModelExecution6> ml:hasDataInput <http://example.com/MNIST#PreprocessedDataset6>;
+  bfo:BFO_0000222 <http://example.com/MNIST#TimeInstant6> .
+
+<http://example.com/MNIST#TimeInstant6> iof-core:hasValueExpressionAtAllTimes <http://example.com/MNIST#TimeValueExpression6> .
+
+<http://example.com/MNIST#TimeValueExpression6> iof-core:hasDateTimeValue "2024-06-30T13:30:00-04:00"^^xsd:dateTime .
+
+<http://example.com/MNIST#ModelExecution14> ml:hasDataInput <http://example.com/MNIST#PreprocessedDataset14>;
+  bfo:BFO_0000222 <http://example.com/MNIST#TimeInstant14> .
+
+<http://example.com/MNIST#TimeInstant14> iof-core:hasValueExpressionAtAllTimes <http://example.com/MNIST#TimeValueExpression14> .
+
+<http://example.com/MNIST#TimeValueExpression14> iof-core:hasDateTimeValue "2024-07-22T09:00:00-04:00"^^xsd:dateTime .
+
+<http://example.com/MNIST#ModelExecution13> ml:hasDataInput <http://example.com/MNIST#PreprocessedDataset13>;
+  bfo:BFO_0000222 <http://example.com/MNIST#TimeInstant13> .
+
+<http://example.com/MNIST#TimeInstant13> iof-core:hasValueExpressionAtAllTimes <http://example.com/MNIST#TimeValueExpression13> .
+
+<http://example.com/MNIST#TimeValueExpression13> iof-core:hasDateTimeValue "2024-08-18T15:00:00-04:00"^^xsd:dateTime .
+
+<http://example.com/MNIST#ModelExecution12> ml:hasDataInput <http://example.com/MNIST#PreprocessedDataset12>;
+  bfo:BFO_0000222 <http://example.com/MNIST#TimeInstant12> .
+
+<http://example.com/MNIST#TimeInstant12> iof-core:hasValueExpressionAtAllTimes <http://example.com/MNIST#TimeValueExpression12> .
+
+<http://example.com/MNIST#TimeValueExpression12> iof-core:hasDateTimeValue "2024-09-12T10:30:00-04:00"^^xsd:dateTime .
+
+<http://example.com/MNIST#ModelExecution15> ml:hasDataInput <http://example.com/MNIST#PreprocessedDataset15>;
+  bfo:BFO_0000222 <http://example.com/MNIST#TimeInstant15> .
+
+<http://example.com/MNIST#TimeInstant15> iof-core:hasValueExpressionAtAllTimes <http://example.com/MNIST#TimeValueExpression15> .
+
+<http://example.com/MNIST#TimeValueExpression15> iof-core:hasDateTimeValue "2024-10-05T14:00:00-04:00"^^xsd:dateTime .
+
+<http://example.com/MNIST#ModelExecution11> ml:hasDataInput <http://example.com/MNIST#PreprocessedDataset11>;
+  bfo:BFO_0000222 <http://example.com/MNIST#TimeInstant11> .
+
+<http://example.com/MNIST#TimeInstant11> iof-core:hasValueExpressionAtAllTimes <http://example.com/MNIST#TimeValueExpression11> .
+
+<http://example.com/MNIST#TimeValueExpression11> iof-core:hasDateTimeValue "2024-11-23T08:45:00-04:00"^^xsd:dateTime .
+
+<http://example.com/MNIST#ModelExecution10> ml:hasDataInput <http://example.com/MNIST#PreprocessedDataset10>;
+  bfo:BFO_0000222 <http://example.com/MNIST#TimeInstant10> .
+
+<http://example.com/MNIST#TimeInstant10> iof-core:hasValueExpressionAtAllTimes <http://example.com/MNIST#TimeValueExpression10> .
+
+<http://example.com/MNIST#TimeValueExpression10> iof-core:hasDateTimeValue "2024-12-15T07:30:00-04:00"^^xsd:dateTime .
+
+<http://example.com/MNIST#ModelExecution24> ml:hasDataInput <http://example.com/MNIST#PreprocessedDataset24>;
+  bfo:BFO_0000222 <http://example.com/MNIST#TimeInstant24> .
+
+<http://example.com/MNIST#TimeInstant24> iof-core:hasValueExpressionAtAllTimes <http://example.com/MNIST#TimeValueExpression24> .
+
+<http://example.com/MNIST#TimeValueExpression24> iof-core:hasDateTimeValue "2024-11-01T11:00:00-04:00"^^xsd:dateTime .
+
+<http://example.com/MNIST#ModelExecution23> ml:hasDataInput <http://example.com/MNIST#PreprocessedDataset23>;
+  bfo:BFO_0000222 <http://example.com/MNIST#TimeInstant23> .
+
+<http://example.com/MNIST#TimeInstant23> iof-core:hasValueExpressionAtAllTimes <http://example.com/MNIST#TimeValueExpression23> .
+
+<http://example.com/MNIST#TimeValueExpression23> iof-core:hasDateTimeValue "2024-09-28T16:00:00-04:00"^^xsd:dateTime .
+
+<http://example.com/MNIST#ModelExecution22> ml:hasDataInput <http://example.com/MNIST#PreprocessedDataset22>;
+  bfo:BFO_0000222 <http://example.com/MNIST#TimeInstant22> .
+
+<http://example.com/MNIST#TimeInstant22> iof-core:hasValueExpressionAtAllTimes <http://example.com/MNIST#TimeValueExpression22> .
+
+<http://example.com/MNIST#TimeValueExpression22> iof-core:hasDateTimeValue "2024-08-22T12:00:00-04:00"^^xsd:dateTime .
+
+<http://example.com/MNIST#ModelExecution21> ml:hasDataInput <http://example.com/MNIST#PreprocessedDataset21>;
+  bfo:BFO_0000222 <http://example.com/MNIST#TimeInstant21> .
+
+<http://example.com/MNIST#TimeInstant21> iof-core:hasValueExpressionAtAllTimes <http://example.com/MNIST#TimeValueExpression21> .
+
+<http://example.com/MNIST#TimeValueExpression21> iof-core:hasDateTimeValue "2024-07-18T09:45:00-04:00"^^xsd:dateTime .
+
+<http://example.com/MNIST#ModelExecution20> ml:hasDataInput <http://example.com/MNIST#PreprocessedDataset20>;
+  bfo:BFO_0000222 <http://example.com/MNIST#TimeInstant20> .
+
+<http://example.com/MNIST#TimeInstant20> iof-core:hasValueExpressionAtAllTimes <http://example.com/MNIST#TimeValueExpression20> .
+
+<http://example.com/MNIST#TimeValueExpression20> iof-core:hasDateTimeValue "2024-06-15T14:00:00-04:00"^^xsd:dateTime .
+
+<http://example.com/MNIST#ModelExecution25> ml:hasDataInput <http://example.com/MNIST#PreprocessedDataset25>;
+  bfo:BFO_0000222 <http://example.com/MNIST#TimeInstant25> .
+
+<http://example.com/MNIST#TimeInstant25> iof-core:hasValueExpressionAtAllTimes <http://example.com/MNIST#TimeValueExpression25> .
+
+<http://example.com/MNIST#TimeValueExpression25> iof-core:hasDateTimeValue "2024-05-30T16:30:00-04:00"^^xsd:dateTime .
+###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
