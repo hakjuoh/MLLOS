@@ -1,0 +1,347 @@
+@prefix dcterm: <http://purl.org/dc/terms/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix md: <http://www.w3.org/ns/md#> .
+@prefix mapper: <http://www.ontotext.com/mapper/> .
+@prefix base: <http://example.com/bio#> .
+@prefix ml: <http://www.semanticweb.org/mnd14/ml/> .
+@prefix iof-core: <https://spec.industrialontologies.org/ontology/core/Core/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf4j: <http://rdf4j.org/schema/rdf4j#> .
+@prefix sesame: <http://www.openrdf.org/schema/sesame#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix fn: <http://www.w3.org/2005/xpath-functions#> .
+
+<http://example.com/bio#>
+  a owl:Ontology;
+    owl:imports <http://www.semanticweb.org/mnd14/ml/> ;
+
+  .
+base:ModelObjectiveBio3 a ml:RegressionObjective;
+  dcterm:description "predicting the biomass production from Y. lipolytica fermentation conditions data" .
+
+base:ModelDevelopmentPipelineBio3 a ml:MachineLearningModelDevelopmentPipeline;
+ml:hasDataInput base:FermentationConditionsDataSet;
+  obo:BFO_0000117 base:ModelTrainingBio3, base:ModelExecutionBio3, base:MachineLearningDataSetPartitioningBio3,base:ModelEvaluationBio3, base:ModelEvaluationBio30, base:ModelEvaluationBio300 .
+
+base:ModelDevelopmentPipelineBio4 a ml:MachineLearningModelDevelopmentPipeline;
+ml:hasDataInput base:FermentationConditionsDataSet;
+  obo:BFO_0000117 base:MachineLearningDataSetPartitioningBio3,
+    base:ModelTrainingBio4, base:ModelExecutionBio4, base:ModelEvaluationBio4, base:ModelEvaluationBio40, base:ModelEvaluationBio400.    
+
+base:ModelDevelopmentPipelineBio5 a ml:MachineLearningModelDevelopmentPipeline;
+ml:hasDataInput base:FermentationConditionsDataSet;
+  obo:BFO_0000117 base:MachineLearningDataSetPartitioningBio3,
+    base:ModelTrainingBio5, base:ModelExecutionBio5, base:ModelEvaluationBio5, base:ModelEvaluationBio50, base:ModelEvaluationBio500.
+
+base:ModelDevelopmentPipelineBio6 a ml:MachineLearningModelDevelopmentPipeline;
+ml:hasDataInput base:FermentationConditionsDataSet;
+  obo:BFO_0000117 base:MachineLearningDataSetPartitioningBio3,
+    base:ModelTrainingBio6, base:ModelExecutionBio6, base:ModelEvaluationBio6, base:ModelEvaluationBio60, base:ModelEvaluationBio600.  
+
+base:ModelDevelopmentPipelineBio7 a ml:MachineLearningModelDevelopmentPipeline;
+ml:hasDataInput base:FermentationConditionsDataSet;
+  obo:BFO_0000117 base:MachineLearningDataSetPartitioningBio3,
+    base:ModelTrainingBio7, base:ModelExecutionBio7, base:ModelEvaluationBio7, base:ModelEvaluationBio70, base:ModelEvaluationBio700.  
+
+base:ModelDevelopmentPipelineBio8 a ml:MachineLearningModelDevelopmentPipeline;
+ml:hasDataInput base:FermentationConditionsDataSet;
+  obo:BFO_0000117 base:MachineLearningDataSetPartitioningBio3,
+    base:ModelTrainingBio8, base:ModelExecutionBio8, base:ModelEvaluationBio8, base:ModelEvaluationBio80, base:ModelEvaluationBio800.        
+
+base:ModelSelectionBio3 a ml:ModelSelection;
+  iof-core:hasInput base:GroupOfMachineLearningModelsBio3;
+  obo:BFO_0000117 base:ModelEvaluationBio3, base:ModelEvaluationBio30, base:ModelEvaluationBio300,
+    base:ModelEvaluationBio4, base:ModelEvaluationBio40, base:ModelEvaluationBio400, base:ModelEvaluationBio5,
+    base:ModelEvaluationBio50, base:ModelEvaluationBio500, base:ModelEvaluationBio6, base:ModelEvaluationBio60,
+    base:ModelEvaluationBio600, base:ModelEvaluationBio7, base:ModelEvaluationBio70, base:ModelEvaluationBio700,
+    base:ModelEvaluationBio8, base:ModelEvaluationBio80, base:ModelEvaluationBio800 .
+
+base:GroupOfMachineLearningModelsBio3 a ml:GroupOfMachineLearningModels;
+  obo:BFO_0000178 base:MachineLearningModelBio3, base:MachineLearningModelBio4,
+    base:MachineLearningModelBio5, base:MachineLearningModelBio6, base:MachineLearningModelBio7,
+    base:MachineLearningModelBio8 .
+
+base:FermentationConditionsDataSet a ml:RawDataSet;
+  ml:InformationContentEntityLocation "./datasets/input_datasets/yeast_fermentation.xlsx";
+  dcterm:description "dataset where each feature vector consists of 25 features: Inoculum size (cell/ml), COD(g/L), Oil and grease (g/L), TKN, Olive oil(%), Glucose (g/L), Crude glycerol(%), Tween20 (%), Tween80 (%) Peptone(g/L) Ammonium sulfate (g/L), Yeast extract (g/L), Urea (g /L), Total nitrogen(g/L), Mono-sodiumglutamate (g/l), Di-potassiumhydrogenphosphate (g/l), Magnesiumchloride(g/l), Iron(III)chloride(g/l) PotassiumDi-hydrogenphosphate (g/l), Calciumchloride (g/l), Sodiumchloride (g/l), Temp(C), Shaking rate (rpm), pH, Time (h)";
+  dcterm:source "dataset was created by merging data from various publications on yarowia fermentation";
+  ml:specifiesDimensionShape "[301,25]" .
+
+base:TrainingDataSetBio3 a ml:TrainingDataSet;
+  ml:specifiesDimensionShape "[241,25]" .
+
+base:TestDataSetBio3 a ml:TestDataSet;
+  ml:specifiesDimensionShape "[30,25]" .
+
+base:MachineLearningDataSetPartitioningBio3 a ml:MachineLearningDataSetPartitioning;
+  ml:hasDataInput base:FermentationConditionsDataSet;
+  ml:hasDataOutput base:TrainingDataSetBio3, base:TestDataSetBio3;
+  obo:BFO_0000063 base:ModelTrainingBio3, base:ModelTrainingBio4, base:ModelTrainingBio5,
+    base:ModelTrainingBio6, base:ModelTrainingBio7, base:ModelTrainingBio8 .
+
+base:MachineLearningOutputDataSetBio3 a ml:ModelOutputDataSet .
+
+base:MachineLearningModelBio3 a ml:LinearModel;
+  obo:BFO_0000178 base:ModelObjectiveBio3 .
+
+base:ModelTrainingBio3 a ml:SupervisedLearning;
+  ml:hasDataInput base:TrainingDataSetBio3;
+  iof-core:hasSpecifiedOutput base:MachineLearningModelBio3;
+  obo:BFO_0000063 base:ModelExecutionBio3 .
+
+base:ModelExecutionBio3 a ml:ModelExecution;
+  ml:executes base:MachineLearningModelBio3;
+  ml:hasDataInput base:TestDataSetBio3;
+  ml:hasDataOutput base:MachineLearningOutputDataSetBio3;
+  obo:BFO_0000063 base:ModelEvaluationBio3, base:ModelEvaluationBio30, base:ModelEvaluationBio300 .
+
+base:ModelEvaluationBio3 a ml:ModelEvaluation;
+  ml:hasDataInput base:MachineLearningOutputDataSetBio3;
+  obo:BFO_0000059 base:MetricBio3;
+  ml:hasDataOutput base:EvaluationResultBio3 .
+
+base:ModelEvaluationBio30 a ml:ModelEvaluation;
+  ml:hasDataInput base:MachineLearningOutputDataSetBio3;
+  obo:BFO_0000059 base:MetricBio4;
+  ml:hasDataOutput base:EvaluationResultBio30 .
+
+base:ModelEvaluationBio300 a ml:ModelEvaluation;
+  ml:hasDataInput base:MachineLearningOutputDataSetBio3;
+  obo:BFO_0000059 base:MetricBio5;
+  ml:hasDataOutput base:EvaluationResultBio300 .
+
+base:EvaluationResultBio3 a ml:ModelPerformanceResult;
+  iof-core:isValueExpressionOfAtSomeTime base:MachineLearningModelBio3;
+  iof-core:hasSimpleExpressionValue "1.44"^^xsd:float .
+
+base:EvaluationResultBio30 a ml:ModelPerformanceResult;
+  iof-core:isValueExpressionOfAtSomeTime base:MachineLearningModelBio3;
+  iof-core:hasSimpleExpressionValue "0.77"^^xsd:float .
+
+base:EvaluationResultBio300 a ml:ModelPerformanceResult;
+  iof-core:isValueExpressionOfAtSomeTime base:MachineLearningModelBio3;
+  iof-core:hasSimpleExpressionValue "0.98"^^xsd:float .
+
+base:MetricBio3 a ml:RootMeanSquaredError .
+
+base:MetricBio4 a ml:RSquared .
+
+base:MetricBio5 a ml:MeanAbsoluteError .
+
+base:MachineLearningOutputDataSetBio4 a ml:ModelOutputDataSet .
+
+base:MachineLearningModelBio4 a ml:LinearModel;
+  obo:BFO_0000178 base:ModelObjectiveBio3 .
+
+base:ModelTrainingBio4 a ml:SupervisedLearning;
+  ml:hasDataInput base:TrainingDataSetBio3;
+  iof-core:hasSpecifiedOutput base:MachineLearningModelBio4;
+  obo:BFO_0000063 base:ModelExecutionBio4 .
+
+base:ModelExecutionBio4 a ml:ModelExecution;
+  ml:executes base:MachineLearningModelBio4;
+  ml:hasDataInput base:TestDataSetBio3;
+  ml:hasDataOutput base:MachineLearningOutputDataSetBio4;
+  obo:BFO_0000063 base:ModelEvaluationBio4, base:ModelEvaluationBio40, base:ModelEvaluationBio400 .
+
+base:ModelEvaluationBio4 a ml:ModelEvaluation;
+  ml:hasDataInput base:MachineLearningOutputDataSetBio4;
+  obo:BFO_0000059 base:MetricBio3;
+  ml:hasDataOutput base:EvaluationResultBio4 .
+
+base:ModelEvaluationBio40 a ml:ModelEvaluation;
+  ml:hasDataInput base:MachineLearningOutputDataSetBio4;
+  obo:BFO_0000059 base:MetricBio4;
+  ml:hasDataOutput base:EvaluationResultBio31 .
+
+base:ModelEvaluationBio400 a ml:ModelEvaluation;
+  ml:hasDataInput base:MachineLearningOutputDataSetBio4;
+  obo:BFO_0000059 base:MetricBio5;
+  ml:hasDataOutput base:EvaluationResultBio301 .
+
+base:EvaluationResultBio4 a ml:ModelPerformanceResult;
+  iof-core:isValueExpressionOfAtSomeTime base:MachineLearningModelBio4;
+  iof-core:hasSimpleExpressionValue "1.34"^^xsd:float .
+
+base:EvaluationResultBio31 a ml:ModelPerformanceResult;
+  iof-core:isValueExpressionOfAtSomeTime base:MachineLearningModelBio4;
+  iof-core:hasSimpleExpressionValue "0.79"^^xsd:float .
+
+base:EvaluationResultBio301 a ml:ModelPerformanceResult;
+  iof-core:isValueExpressionOfAtSomeTime base:MachineLearningModelBio4;
+  iof-core:hasSimpleExpressionValue "0.79"^^xsd:float .
+
+base:MachineLearningOutputDataSetBio5 a ml:ModelOutputDataSet .
+
+base:MachineLearningModelBio5 a ml:DecisionTreeModel;
+  obo:BFO_0000178 base:ModelObjectiveBio3 .
+
+base:ModelTrainingBio5 a ml:SupervisedLearning;
+  ml:hasDataInput base:TrainingDataSetBio3;
+  iof-core:hasSpecifiedOutput base:MachineLearningModelBio5;
+  obo:BFO_0000063 base:ModelExecutionBio5 .
+
+base:ModelExecutionBio5 a ml:ModelExecution;
+  ml:executes base:MachineLearningModelBio5;
+  ml:hasDataInput base:TestDataSetBio3;
+  ml:hasDataOutput base:MachineLearningOutputDataSetBio5;
+  obo:BFO_0000063 base:ModelEvaluationBio5, base:ModelEvaluationBio50, base:ModelEvaluationBio500 .
+
+base:ModelEvaluationBio5 a ml:ModelEvaluation;
+  ml:hasDataInput base:MachineLearningOutputDataSetBio5;
+  obo:BFO_0000059 base:MetricBio3;
+  ml:hasDataOutput base:EvaluationResultBio5 .
+
+base:ModelEvaluationBio50 a ml:ModelEvaluation;
+  ml:hasDataInput base:MachineLearningOutputDataSetBio5;
+  obo:BFO_0000059 base:MetricBio4;
+  ml:hasDataOutput base:EvaluationResultBio32 .
+
+base:ModelEvaluationBio500 a ml:ModelEvaluation;
+  ml:hasDataInput base:MachineLearningOutputDataSetBio5;
+  obo:BFO_0000059 base:MetricBio5;
+  ml:hasDataOutput base:EvaluationResultBio302 .
+
+base:EvaluationResultBio5 a ml:ModelPerformanceResult;
+  iof-core:isValueExpressionOfAtSomeTime base:MachineLearningModelBio5;
+  iof-core:hasSimpleExpressionValue "1.66"^^xsd:float .
+
+base:EvaluationResultBio32 a ml:ModelPerformanceResult;
+  iof-core:isValueExpressionOfAtSomeTime base:MachineLearningModelBio5;
+  iof-core:hasSimpleExpressionValue "0.67"^^xsd:float .
+
+base:EvaluationResultBio302 a ml:ModelPerformanceResult;
+  iof-core:isValueExpressionOfAtSomeTime base:MachineLearningModelBio5;
+  iof-core:hasSimpleExpressionValue "0.89"^^xsd:float .
+
+base:MachineLearningOutputDataSetBio6 a ml:ModelOutputDataSet .
+
+base:MachineLearningModelBio6 a ml:SupportVectorMachine;
+  obo:BFO_0000178 base:ModelObjectiveBio3 .
+
+base:ModelTrainingBio6 a ml:SupervisedLearning;
+  ml:hasDataInput base:TrainingDataSetBio3;
+  iof-core:hasSpecifiedOutput base:MachineLearningModelBio6;
+  obo:BFO_0000063 base:ModelExecutionBio6 .
+
+base:ModelExecutionBio6 a ml:ModelExecution;
+  ml:executes base:MachineLearningModelBio6;
+  ml:hasDataInput base:TestDataSetBio3;
+  ml:hasDataOutput base:MachineLearningOutputDataSetBio6;
+  obo:BFO_0000063 base:ModelEvaluationBio6, base:ModelEvaluationBio60, base:ModelEvaluationBio600 .
+
+base:ModelEvaluationBio6 a ml:ModelEvaluation;
+  ml:hasDataInput base:MachineLearningOutputDataSetBio6;
+  obo:BFO_0000059 base:MetricBio3;
+  ml:hasDataOutput base:EvaluationResultBio6 .
+
+base:ModelEvaluationBio60 a ml:ModelEvaluation;
+  ml:hasDataInput base:MachineLearningOutputDataSetBio6;
+  obo:BFO_0000059 base:MetricBio4;
+  ml:hasDataOutput base:EvaluationResultBio33 .
+
+base:ModelEvaluationBio600 a ml:ModelEvaluation;
+  ml:hasDataInput base:MachineLearningOutputDataSetBio6;
+  obo:BFO_0000059 base:MetricBio5;
+  ml:hasDataOutput base:EvaluationResultBio303 .
+
+base:EvaluationResultBio6 a ml:ModelPerformanceResult;
+  iof-core:isValueExpressionOfAtSomeTime base:MachineLearningModelBio6;
+  iof-core:hasSimpleExpressionValue "1.47"^^xsd:float .
+
+base:EvaluationResultBio33 a ml:ModelPerformanceResult;
+  iof-core:isValueExpressionOfAtSomeTime base:MachineLearningModelBio6;
+  iof-core:hasSimpleExpressionValue "0.76"^^xsd:float .
+
+base:EvaluationResultBio303 a ml:ModelPerformanceResult;
+  iof-core:isValueExpressionOfAtSomeTime base:MachineLearningModelBio6;
+  iof-core:hasSimpleExpressionValue "0.93"^^xsd:float .
+
+base:MachineLearningOutputDataSetBio7 a ml:ModelOutputDataSet .
+
+base:MachineLearningModelBio7 a ml:GaussianProcessRegression;
+  obo:BFO_0000178 base:ModelObjectiveBio3 .
+
+base:ModelTrainingBio7 a ml:SupervisedLearning;
+  ml:hasDataInput base:TrainingDataSetBio3;
+  iof-core:hasSpecifiedOutput base:MachineLearningModelBio7;
+  obo:BFO_0000063 base:ModelExecutionBio7 .
+
+base:ModelExecutionBio7 a ml:ModelExecution;
+  ml:executes base:MachineLearningModelBio7;
+  ml:hasDataInput base:TestDataSetBio3;
+  ml:hasDataOutput base:MachineLearningOutputDataSetBio7;
+  obo:BFO_0000063 base:ModelEvaluationBio7, base:ModelEvaluationBio70, base:ModelEvaluationBio700 .
+
+base:ModelEvaluationBio7 a ml:ModelEvaluation;
+  ml:hasDataInput base:MachineLearningOutputDataSetBio7;
+  obo:BFO_0000059 base:MetricBio3;
+  ml:hasDataOutput base:EvaluationResultBio7 .
+
+base:ModelEvaluationBio70 a ml:ModelEvaluation;
+  ml:hasDataInput base:MachineLearningOutputDataSetBio7;
+  obo:BFO_0000059 base:MetricBio4;
+  ml:hasDataOutput base:EvaluationResultBio34 .
+
+base:ModelEvaluationBio700 a ml:ModelEvaluation;
+  ml:hasDataInput base:MachineLearningOutputDataSetBio7;
+  obo:BFO_0000059 base:MetricBio5;
+  ml:hasDataOutput base:EvaluationResultBio304 .
+
+base:EvaluationResultBio7 a ml:ModelPerformanceResult;
+  iof-core:isValueExpressionOfAtSomeTime base:MachineLearningModelBio7;
+  iof-core:hasSimpleExpressionValue "0.72"^^xsd:float .
+
+base:EvaluationResultBio34 a ml:ModelPerformanceResult;
+  iof-core:isValueExpressionOfAtSomeTime base:MachineLearningModelBio7;
+  iof-core:hasSimpleExpressionValue "0.94"^^xsd:float .
+
+base:EvaluationResultBio304 a ml:ModelPerformanceResult;
+  iof-core:isValueExpressionOfAtSomeTime base:MachineLearningModelBio7;
+  iof-core:hasSimpleExpressionValue "0.52"^^xsd:float .
+
+base:MachineLearningOutputDataSetBio8 a ml:ModelOutputDataSet .
+
+base:MachineLearningModelBio8 a ml:MultiLayerPerceptron;
+  obo:BFO_0000178 base:ModelObjectiveBio3 .
+
+base:ModelTrainingBio8 a ml:SupervisedLearning;
+  ml:hasDataInput base:TrainingDataSetBio3;
+  iof-core:hasSpecifiedOutput base:MachineLearningModelBio8;
+  obo:BFO_0000063 base:ModelExecutionBio8 .
+
+base:ModelExecutionBio8 a ml:ModelExecution;
+  ml:executes base:MachineLearningModelBio8;
+  ml:hasDataInput base:TestDataSetBio3;
+  ml:hasDataOutput base:MachineLearningOutputDataSetBio8;
+  obo:BFO_0000063 base:ModelEvaluationBio8, base:ModelEvaluationBio80, base:ModelEvaluationBio800 .
+
+base:ModelEvaluationBio8 a ml:ModelEvaluation;
+  ml:hasDataInput base:MachineLearningOutputDataSetBio8;
+  obo:BFO_0000059 base:MetricBio3;
+  ml:hasDataOutput base:EvaluationResultBio8 .
+
+base:ModelEvaluationBio80 a ml:ModelEvaluation;
+  ml:hasDataInput base:MachineLearningOutputDataSetBio8;
+  obo:BFO_0000059 base:MetricBio4;
+  ml:hasDataOutput base:EvaluationResultBio35 .
+
+base:ModelEvaluationBio800 a ml:ModelEvaluation;
+  ml:hasDataInput base:MachineLearningOutputDataSetBio8;
+  obo:BFO_0000059 base:MetricBio5;
+  ml:hasDataOutput base:EvaluationResultBio305 .
+
+base:EvaluationResultBio8 a ml:ModelPerformanceResult;
+  iof-core:isValueExpressionOfAtSomeTime base:MachineLearningModelBio8;
+  iof-core:hasSimpleExpressionValue "1.19"^^xsd:float .
+
+base:EvaluationResultBio35 a ml:ModelPerformanceResult;
+  iof-core:isValueExpressionOfAtSomeTime base:MachineLearningModelBio8;
+  iof-core:hasSimpleExpressionValue "0.84"^^xsd:float .
+
+base:EvaluationResultBio305 a ml:ModelPerformanceResult;
+  iof-core:isValueExpressionOfAtSomeTime base:MachineLearningModelBio8;
+  iof-core:hasSimpleExpressionValue "0.68"^^xsd:float .

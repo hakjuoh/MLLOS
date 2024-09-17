@@ -1,0 +1,233 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/milos/ontologies/2024/8/untitled-ontology-830/"
+     xml:base="http://www.semanticweb.org/milos/ontologies/2024/8/untitled-ontology-830/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ml="http://www.semanticweb.org/mnd14/ml/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:Core="https://spec.industrialontologies.org/ontology/core/Core/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:AnnotationVocabulary="https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/milos/ontologies/2024/8/untitled-ontology-830">
+        <owl:imports rdf:resource="http://www.semanticweb.org/mnd14/ml/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.com/bio#DataPreparationPipelineBio1 -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/bio#DataPreparationPipelineBio1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningDataPreparationPipeline"/>
+        <obo:BFO_0000063 rdf:resource="http://example.com/bio#MachineLearningPartitioningBio1"/>
+        <obo:BFO_0000117 rdf:resource="http://example.com/bio#FeatureDecompositionBio1"/>
+        <obo:BFO_0000117 rdf:resource="http://example.com/bio#OneHotEncodingOperationBio1"/>
+        <ml:hasDataInput rdf:resource="http://example.com/bio#ThreonineStrainEngineeringDataset1"/>
+        <ml:hasDataOutput rdf:resource="http://example.com/bio#ProcessedDataSetBio1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/bio#DecodingScheme1 -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/bio#DecodingScheme1">
+        <ml:hasConfigurationSettingAtSomeTime rdf:resource="http://example.com/bio#DecodingSchemeSetting1"/>
+        <terms:description>describes decomposing sample names into individual strain mutations</terms:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/bio#DecodingSchemeSetting1 -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/bio#DecodingSchemeSetting1">
+        <ml:InformationContentEntityLocation>https://rnaseq.theseed.org/threonine/labels.html</ml:InformationContentEntityLocation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/bio#FeatureDecompositionAlgorithmBio1 -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/bio#FeatureDecompositionAlgorithmBio1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/FeatureEngineeringAlgorithm"/>
+        <ml:hasConfigurationVariable rdf:resource="http://example.com/bio#DecodingScheme1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/bio#FeatureDecompositionBio1 -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/bio#FeatureDecompositionBio1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/FeatureDecomposition"/>
+        <obo:BFO_0000059 rdf:resource="http://example.com/bio#DecodingSchemeSetting1"/>
+        <obo:BFO_0000063 rdf:resource="http://example.com/bio#OneHotEncodingOperationBio1"/>
+        <ml:executes rdf:resource="http://example.com/bio#FeatureDecompositionAlgorithmBio1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/bio#MLModelBio1 -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/bio#MLModelBio1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/MultiLayerPerceptron"/>
+        <obo:BFO_0000178 rdf:resource="http://example.com/bio#ModelObjectiveBio1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/bio#MachineLearningPartitioningBio1 -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/bio#MachineLearningPartitioningBio1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningDataSetPartitioning"/>
+        <obo:BFO_0000063 rdf:resource="http://example.com/bio#ModelTrainingBio1"/>
+        <ml:hasDataInput rdf:resource="http://example.com/bio#ProcessedDataSetBio1"/>
+        <ml:hasDataOutput rdf:resource="http://example.com/bio#TestDatasetBio1"/>
+        <ml:hasDataOutput rdf:resource="http://example.com/bio#TrainingDatasetBio1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/bio#ModelDevelopmentBio1 -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/bio#ModelDevelopmentBio1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/MachineLearningModelDevelopmentPipeline"/>
+        <obo:BFO_0000117 rdf:resource="http://example.com/bio#DataPreparationPipelineBio1"/>
+        <obo:BFO_0000117 rdf:resource="http://example.com/bio#MachineLearningPartitioningBio1"/>
+        <obo:BFO_0000117 rdf:resource="http://example.com/bio#ModelEvaluationBio1"/>
+        <obo:BFO_0000117 rdf:resource="http://example.com/bio#ModelTrainingBio1"/>
+        <ml:hasDataInput rdf:resource="http://example.com/bio#ThreonineStrainEngineeringDataset1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/bio#ModelEvaluationBio1 -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/bio#ModelEvaluationBio1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelEvaluation"/>
+        <obo:BFO_0000059 rdf:resource="http://example.com/bio#PerformanceMetricBio1"/>
+        <ml:hasDataInput rdf:resource="http://example.com/bio#ModelOutputDatasetBio1"/>
+        <ml:hasDataOutput rdf:resource="http://example.com/bio#ModelEvaluationResultBio1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/bio#ModelEvaluationResultBio1 -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/bio#ModelEvaluationResultBio1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelPerformanceResult"/>
+        <Core:isValueExpressionOfAtSomeTime rdf:resource="http://example.com/bio#MLModelBio1"/>
+        <Core:hasSimpleExpressionValue>40%</Core:hasSimpleExpressionValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/bio#ModelExecutionBio1 -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/bio#ModelExecutionBio1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelExecution"/>
+        <obo:BFO_0000063 rdf:resource="http://example.com/bio#ModelEvaluationBio1"/>
+        <ml:executes rdf:resource="http://example.com/bio#MLModelBio1"/>
+        <ml:hasDataInput rdf:resource="http://example.com/bio#TestDatasetBio1"/>
+        <ml:hasDataOutput rdf:resource="http://example.com/bio#ModelOutputDatasetBio1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/bio#ModelObjectiveBio1 -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/bio#ModelObjectiveBio1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/RegressionObjective"/>
+        <terms:description>predict threonine production from combinations of strain-engineering elements used as descriptive attributes (features) in order to guide engineering designs</terms:description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/bio#ModelOutputDatasetBio1 -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/bio#ModelOutputDatasetBio1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/ModelOutputDataSet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/bio#ModelTrainingBio1 -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/bio#ModelTrainingBio1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/SupervisedLearning"/>
+        <obo:BFO_0000057 rdf:resource="http://example.com/bio#MLModelBio1"/>
+        <obo:BFO_0000063 rdf:resource="http://example.com/bio#ModelExecutionBio1"/>
+        <ml:hasDataInput rdf:resource="http://example.com/bio#TrainingDatasetBio1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/bio#OneHotEncodingOperationBio1 -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/bio#OneHotEncodingOperationBio1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/OneHotEncoding"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/bio#PerformanceMetricBio1 -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/bio#PerformanceMetricBio1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/SuccessRate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/bio#ProcessedDataSetBio1 -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/bio#ProcessedDataSetBio1"/>
+    
+
+
+    <!-- http://example.com/bio#TestDatasetBio1 -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/bio#TestDatasetBio1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/TestDataSet"/>
+        <ml:specifiesDimensionShape>[50,33]</ml:specifiesDimensionShape>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/bio#ThreonineStrainEngineeringDataset1 -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/bio#ThreonineStrainEngineeringDataset1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/RawDataSet"/>
+        <ml:specifiesDimensionShape>[3888,1]</ml:specifiesDimensionShape>
+        <terms:description>dataset consisting of strain names encoded to contain the mutation information of the strain</terms:description>
+        <terms:source>E.coli threonine-production strain samples gathered in a lab environment</terms:source>
+        <ml:InformationContentEntityLocation>https://rnaseq.theseed.org/threonine/big_production.html
+Column 1</ml:InformationContentEntityLocation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/bio#TrainingDatasetBio1 -->
+
+    <owl:NamedIndividual rdf:about="http://example.com/bio#TrainingDatasetBio1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mnd14/ml/TrainingDataSet"/>
+        <ml:specifiesDimensionShape>[1963,33]</ml:specifiesDimensionShape>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
