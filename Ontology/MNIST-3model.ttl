@@ -1046,7 +1046,7 @@ base:PreprocessedDataset10 rdf:type owl:NamedIndividual ,
                                     ml:TestDataSet ;
                            ml:hasInformationContentEntityCharacteristic base:DatasetCharacteristic1 ;
                            ml:informationContentEntityDerivedFrom base:MnistG16 ;
-                           ml:specifiesDimensionShape "[784,28,28,1]" .
+                           ml:specifiesDimensionShape "[10000,784,1]" .
 
 
 ###  http://example.com/MNIST#PreprocessedDataset11
@@ -1054,7 +1054,7 @@ base:PreprocessedDataset11 rdf:type owl:NamedIndividual ,
                                     ml:TestDataSet ;
                            ml:hasInformationContentEntityCharacteristic base:DatasetCharacteristic2 ;
                            ml:informationContentEntityDerivedFrom base:MnistG48 ;
-                           ml:specifiesDimensionShape "[784,28,28,1]" .
+                           ml:specifiesDimensionShape "[10000,784,1]" .
 
 
 ###  http://example.com/MNIST#PreprocessedDataset12
@@ -1062,14 +1062,14 @@ base:PreprocessedDataset12 rdf:type owl:NamedIndividual ,
                                     ml:TestDataSet ;
                            ml:hasInformationContentEntityCharacteristic base:DatasetCharacteristic3 ;
                            ml:informationContentEntityDerivedFrom base:MnistG96 ;
-                           ml:specifiesDimensionShape "[784,28,28,1]" .
+                           ml:specifiesDimensionShape "[10000,784,1]" .
 
 
 ###  http://example.com/MNIST#PreprocessedDataset13
 base:PreprocessedDataset13 rdf:type owl:NamedIndividual ,
                                     ml:TestDataSet ;
                            ml:informationContentEntityDerivedFrom base:MnistNoNoise ;
-                           ml:specifiesDimensionShape "[784,28,28,1]" .
+                           ml:specifiesDimensionShape "[10000,784,1]" .
 
 
 ###  http://example.com/MNIST#PreprocessedDataset14
@@ -1077,7 +1077,7 @@ base:PreprocessedDataset14 rdf:type owl:NamedIndividual ,
                                     ml:TestDataSet ;
                            ml:hasInformationContentEntityCharacteristic base:DatasetCharacteristic5 ;
                            ml:informationContentEntityDerivedFrom base:MnistP ;
-                           ml:specifiesDimensionShape "[784,28,28,1]" .
+                           ml:specifiesDimensionShape "[10000,784,1]" .
 
 
 ###  http://example.com/MNIST#PreprocessedDataset15
@@ -1086,7 +1086,7 @@ base:PreprocessedDataset15 rdf:type owl:NamedIndividual ,
                            ml:hasInformationContentEntityCharacteristic base:DatasetCharacteristic6 ,
                                                                         base:DatasetCharacteristic7 ;
                            ml:informationContentEntityDerivedFrom base:MnistG48P ;
-                           ml:specifiesDimensionShape "[784,28,28,1]" .
+                           ml:specifiesDimensionShape "[10000,784,1]" .
 
 
 ###  http://example.com/MNIST#PreprocessedDataset2
